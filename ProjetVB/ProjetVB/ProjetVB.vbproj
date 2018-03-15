@@ -72,6 +72,33 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client.vb" />
+    <Compile Include="Facturation\Facture.vb" />
+    <Compile Include="Facturation\FacturesScreen.Designer.vb">
+      <DependentUpon>FacturesScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Facturation\FacturesScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturation\LigneFacture.vb" />
+    <Compile Include="Facturation\Paiement\CarteDeCrédit.vb" />
+    <Compile Include="Facturation\Paiement\Chèque.vb" />
+    <Compile Include="Facturation\Paiement\Paiement.Designer.vb">
+      <DependentUpon>Paiement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Facturation\Paiement\Paiement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturation\Paiement\RetraitDirect.vb" />
+    <Compile Include="Facturation\Taxes\Taxe.Designer.vb">
+      <DependentUpon>Taxe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Facturation\Taxes\Taxe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturation\Taxes\TPS.vb" />
+    <Compile Include="Facturation\Taxes\TVQ.vb" />
+    <Compile Include="FakeDataBase\DataBase.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +130,12 @@
     <Compile Include="Service\Service.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Facturation\FacturesScreen.resx">
+      <DependentUpon>FacturesScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturation\Taxes\Taxe.resx">
+      <DependentUpon>Taxe.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>

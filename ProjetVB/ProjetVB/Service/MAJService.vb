@@ -4,11 +4,7 @@
 
     'Charge les services existant dans la listbox
     Private Sub MAJService_Load(sender As Object, e As EventArgs) Handles Me.Load
-        myList = New List(Of Service) From {
-            New Service(1, "Service1", "blabla", 2.5),
-            New Service(2, "Service2", "Bonjour", 3)
-        }
-
+        myList = DataBase.Services
         SetDataSource()
 
     End Sub

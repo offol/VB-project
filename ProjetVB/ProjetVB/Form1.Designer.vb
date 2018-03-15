@@ -85,7 +85,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContratToolStripMenuItem, Me.ÉToolStripMenuItem, Me.ServiceToolStripMenuItem, Me.FacturationToolStripMenuItem, Me.FournisseurToolStripMenuItem, Me.RapportsToolStripMenuItem, Me.SécuritéToolStripMenuItem, Me.ToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(696, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1424, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -176,7 +176,7 @@ Partial Class Form1
         'MenuItem_Service
         '
         Me.MenuItem_Service.Name = "MenuItem_Service"
-        Me.MenuItem_Service.Size = New System.Drawing.Size(152, 22)
+        Me.MenuItem_Service.Size = New System.Drawing.Size(142, 22)
         Me.MenuItem_Service.Text = "MÀJ services"
         '
         'FacturationToolStripMenuItem
@@ -190,36 +190,36 @@ Partial Class Form1
         '
         Me.FacturesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DaujourdhuiToolStripMenuItem, Me.AutresToolStripMenuItem})
         Me.FacturesToolStripMenuItem.Name = "FacturesToolStripMenuItem"
-        Me.FacturesToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.FacturesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FacturesToolStripMenuItem.Text = "Factures"
         '
         'DaujourdhuiToolStripMenuItem
         '
         Me.DaujourdhuiToolStripMenuItem.Name = "DaujourdhuiToolStripMenuItem"
-        Me.DaujourdhuiToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.DaujourdhuiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.DaujourdhuiToolStripMenuItem.Text = "d'aujourd'hui"
         '
         'AutresToolStripMenuItem
         '
         Me.AutresToolStripMenuItem.Name = "AutresToolStripMenuItem"
-        Me.AutresToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.AutresToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AutresToolStripMenuItem.Text = "Autres"
         '
         'PaiementToolStripMenuItem
         '
         Me.PaiementToolStripMenuItem.Name = "PaiementToolStripMenuItem"
-        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.PaiementToolStripMenuItem.Text = "Paiement"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(121, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
         '
         'TaxeToolStripMenuItem
         '
         Me.TaxeToolStripMenuItem.Name = "TaxeToolStripMenuItem"
-        Me.TaxeToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.TaxeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.TaxeToolStripMenuItem.Text = "Taxe"
         '
         'FournisseurToolStripMenuItem
@@ -232,19 +232,19 @@ Partial Class Form1
         'CréerToolStripMenuItem1
         '
         Me.CréerToolStripMenuItem1.Name = "CréerToolStripMenuItem1"
-        Me.CréerToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
+        Me.CréerToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.CréerToolStripMenuItem1.Text = "Créer"
         '
         'ConsulterToolStripMenuItem1
         '
         Me.ConsulterToolStripMenuItem1.Name = "ConsulterToolStripMenuItem1"
-        Me.ConsulterToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
+        Me.ConsulterToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ConsulterToolStripMenuItem1.Text = "Consulter"
         '
         'ModifierToolStripMenuItem1
         '
         Me.ModifierToolStripMenuItem1.Name = "ModifierToolStripMenuItem1"
-        Me.ModifierToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
+        Me.ModifierToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ModifierToolStripMenuItem1.Text = "Modifier"
         '
         'RapportsToolStripMenuItem
@@ -414,12 +414,12 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(696, 409)
+        Me.ClientSize = New System.Drawing.Size(1424, 676)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "SGARI : ABONNET"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
