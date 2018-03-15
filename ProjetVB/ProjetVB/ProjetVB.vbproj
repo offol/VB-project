@@ -133,6 +133,9 @@
     <EmbeddedResource Include="Facturation\FacturesScreen.resx">
       <DependentUpon>FacturesScreen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Facturation\Paiement\Paiement.resx">
+      <DependentUpon>Paiement.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Facturation\Taxes\Taxe.resx">
       <DependentUpon>Taxe.vb</DependentUpon>
     </EmbeddedResource>
