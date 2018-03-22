@@ -1,14 +1,17 @@
 ﻿Public Class Facture
     Private myNumClient As Integer
     Private myNumero As Integer
-    Private myDateFacture As Date
+    Private myDateFacture As DateTime
     Private myEtat As String
     Private myMontantHT As Double
     Private myMontantTPS As Double
     Private myMontantTVQ As Double
     Private myMontantTotal As Double
+    Private myDatePaiement As DateTime
+    Private myMontantRestant As Double
 
-    Public Sub New(NewNumClient As Integer, NewNumero As Integer, NewDate As Date, NewEtat As String, NewHT As Double, NewTPS As Double, NewTVQ As Double, NewTotal As Double)
+    Public Sub New(NewNumClient As Integer, NewNumero As Integer, NewDate As DateTime, NewEtat As String, NewHT As Double, NewTPS As Double, NewTVQ As Double _
+                   , NewTotal As Double, NewDatePaiement As DateTime, NewMontantRestant As Double)
         Me.myNumClient = NewNumClient
         Me.myNumero = NewNumero
         Me.myDateFacture = NewDate
@@ -17,6 +20,8 @@
         Me.myMontantTPS = NewTPS
         Me.myMontantTVQ = NewTVQ
         Me.myMontantTotal = NewTotal
+        Me.myDatePaiement = NewDatePaiement
+        Me.myMontantRestant = NewMontantRestant
     End Sub
 
     Public Property Numéro() As Integer
@@ -30,13 +35,24 @@
         End Set
     End Property
 
-    Public Property Date_Facture() As Date
+    Public Property Date_Facture() As DateTime
         Get
             Return myDateFacture
         End Get
         Set(value As Date)
             If myDateFacture <> value Then
                 myDateFacture = value
+            End If
+        End Set
+    End Property
+
+    Public Property Date_Paiement() As DateTime
+        Get
+            Return myDatePaiement
+        End Get
+        Set(value As DateTime)
+            If myDatePaiement <> value Then
+                myDatePaiement = value
             End If
         End Set
     End Property
@@ -92,6 +108,17 @@
         Set(value As Double)
             If myMontantTotal <> value Then
                 myMontantTotal = value
+            End If
+        End Set
+    End Property
+
+    Public Property Montant_Restant() As Double
+        Get
+            Return myMontantRestant
+        End Get
+        Set(value As Double)
+            If myMontantRestant <> value Then
+                myMontantRestant = value
             End If
         End Set
     End Property

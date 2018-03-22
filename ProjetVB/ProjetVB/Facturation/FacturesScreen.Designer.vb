@@ -23,13 +23,6 @@ Partial Class FacturesScreen
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView_Facture = New System.Windows.Forms.DataGridView()
-        Me.Numéro = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Date_facture = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.État = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Montant_Hors_Taxe = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Montant_TVQ = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Montant_TPS = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button_New_Facture = New System.Windows.Forms.Button()
         Me._Sauvegarder = New System.Windows.Forms.Button()
         Me.Button_Supprimer = New System.Windows.Forms.Button()
@@ -53,6 +46,15 @@ Partial Class FacturesScreen
         Me.Prix_Hors_Taxe = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Button_CalcLigneHT = New System.Windows.Forms.Button()
+        Me.Numéro = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Date_facture = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Date_Paiement = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.État = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Montant_Hors_Taxe = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Montant_TVQ = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Montant_TPS = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Montant_Restant = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView_Facture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox_option.SuspendLayout()
         Me.GrouBox_calcul.SuspendLayout()
@@ -66,62 +68,14 @@ Partial Class FacturesScreen
         '
         Me.DataGridView_Facture.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
         Me.DataGridView_Facture.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView_Facture.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Numéro, Me.Date_facture, Me.État, Me.Montant_Hors_Taxe, Me.Montant_TVQ, Me.Montant_TPS, Me.Total})
+        Me.DataGridView_Facture.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Numéro, Me.Date_facture, Me.Date_Paiement, Me.État, Me.Montant_Hors_Taxe, Me.Montant_TVQ, Me.Montant_TPS, Me.Total, Me.Montant_Restant})
         Me.DataGridView_Facture.Location = New System.Drawing.Point(6, 18)
         Me.DataGridView_Facture.MultiSelect = False
         Me.DataGridView_Facture.Name = "DataGridView_Facture"
         Me.DataGridView_Facture.RowHeadersVisible = False
         Me.DataGridView_Facture.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView_Facture.Size = New System.Drawing.Size(723, 187)
+        Me.DataGridView_Facture.Size = New System.Drawing.Size(805, 187)
         Me.DataGridView_Facture.TabIndex = 1
-        '
-        'Numéro
-        '
-        Me.Numéro.DataPropertyName = "Numéro"
-        Me.Numéro.HeaderText = "Numéro"
-        Me.Numéro.Name = "Numéro"
-        Me.Numéro.ReadOnly = True
-        '
-        'Date_facture
-        '
-        Me.Date_facture.DataPropertyName = "Date_Facture"
-        Me.Date_facture.HeaderText = "Date_Facture"
-        Me.Date_facture.Name = "Date_facture"
-        Me.Date_facture.ReadOnly = True
-        '
-        'État
-        '
-        Me.État.DataPropertyName = "État"
-        Me.État.HeaderText = "État"
-        Me.État.Name = "État"
-        Me.État.ReadOnly = True
-        '
-        'Montant_Hors_Taxe
-        '
-        Me.Montant_Hors_Taxe.DataPropertyName = "Montant_Hors_Taxe"
-        Me.Montant_Hors_Taxe.HeaderText = "Montant_Hors_Taxe"
-        Me.Montant_Hors_Taxe.Name = "Montant_Hors_Taxe"
-        '
-        'Montant_TVQ
-        '
-        Me.Montant_TVQ.DataPropertyName = "Montant_TVQ"
-        Me.Montant_TVQ.HeaderText = "Montant_TVQ"
-        Me.Montant_TVQ.Name = "Montant_TVQ"
-        Me.Montant_TVQ.ReadOnly = True
-        '
-        'Montant_TPS
-        '
-        Me.Montant_TPS.DataPropertyName = "Montant_TPS"
-        Me.Montant_TPS.HeaderText = "Montant_TPS"
-        Me.Montant_TPS.Name = "Montant_TPS"
-        Me.Montant_TPS.ReadOnly = True
-        '
-        'Total
-        '
-        Me.Total.DataPropertyName = "Total"
-        Me.Total.HeaderText = "Total"
-        Me.Total.Name = "Total"
-        Me.Total.ReadOnly = True
         '
         'Button_New_Facture
         '
@@ -246,7 +200,7 @@ Partial Class FacturesScreen
         Me.GroupBox1.Controls.Add(Me.DataGridView_Facture)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 151)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(743, 211)
+        Me.GroupBox1.Size = New System.Drawing.Size(821, 211)
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Facture"
@@ -334,11 +288,71 @@ Partial Class FacturesScreen
         Me.Button_CalcLigneHT.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button_CalcLigneHT.UseVisualStyleBackColor = True
         '
+        'Numéro
+        '
+        Me.Numéro.DataPropertyName = "Numéro"
+        Me.Numéro.HeaderText = "Numéro"
+        Me.Numéro.Name = "Numéro"
+        Me.Numéro.ReadOnly = True
+        '
+        'Date_facture
+        '
+        Me.Date_facture.DataPropertyName = "Date_Facture"
+        Me.Date_facture.HeaderText = "Date_Facture"
+        Me.Date_facture.Name = "Date_facture"
+        Me.Date_facture.ReadOnly = True
+        '
+        'Date_Paiement
+        '
+        Me.Date_Paiement.DataPropertyName = "Date_Paiement"
+        Me.Date_Paiement.HeaderText = "Date_Paiement"
+        Me.Date_Paiement.Name = "Date_Paiement"
+        '
+        'État
+        '
+        Me.État.DataPropertyName = "État"
+        Me.État.HeaderText = "État"
+        Me.État.Name = "État"
+        Me.État.ReadOnly = True
+        '
+        'Montant_Hors_Taxe
+        '
+        Me.Montant_Hors_Taxe.DataPropertyName = "Montant_Hors_Taxe"
+        Me.Montant_Hors_Taxe.HeaderText = "Montant_Hors_Taxe"
+        Me.Montant_Hors_Taxe.Name = "Montant_Hors_Taxe"
+        '
+        'Montant_TVQ
+        '
+        Me.Montant_TVQ.DataPropertyName = "Montant_TVQ"
+        Me.Montant_TVQ.HeaderText = "Montant_TVQ"
+        Me.Montant_TVQ.Name = "Montant_TVQ"
+        Me.Montant_TVQ.ReadOnly = True
+        '
+        'Montant_TPS
+        '
+        Me.Montant_TPS.DataPropertyName = "Montant_TPS"
+        Me.Montant_TPS.HeaderText = "Montant_TPS"
+        Me.Montant_TPS.Name = "Montant_TPS"
+        Me.Montant_TPS.ReadOnly = True
+        '
+        'Total
+        '
+        Me.Total.DataPropertyName = "Total"
+        Me.Total.HeaderText = "Total"
+        Me.Total.Name = "Total"
+        Me.Total.ReadOnly = True
+        '
+        'Montant_Restant
+        '
+        Me.Montant_Restant.DataPropertyName = "Montant_Restant"
+        Me.Montant_Restant.HeaderText = "Montant_Restant"
+        Me.Montant_Restant.Name = "Montant_Restant"
+        '
         'FacturesScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(791, 619)
+        Me.ClientSize = New System.Drawing.Size(845, 619)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -370,13 +384,6 @@ Partial Class FacturesScreen
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DataGridView_LigneFacture As DataGridView
-    Friend WithEvents Numéro As DataGridViewTextBoxColumn
-    Friend WithEvents Date_facture As DataGridViewTextBoxColumn
-    Friend WithEvents État As DataGridViewTextBoxColumn
-    Friend WithEvents Montant_Hors_Taxe As DataGridViewTextBoxColumn
-    Friend WithEvents Montant_TVQ As DataGridViewTextBoxColumn
-    Friend WithEvents Montant_TPS As DataGridViewTextBoxColumn
-    Friend WithEvents Total As DataGridViewTextBoxColumn
     Friend WithEvents Button_NewLigneFac As Button
     Friend WithEvents Button_SuppLigne As Button
     Friend WithEvents GroupBox3 As GroupBox
@@ -387,4 +394,13 @@ Partial Class FacturesScreen
     Friend WithEvents Quantité As DataGridViewTextBoxColumn
     Friend WithEvents Prix_Unitaire As DataGridViewTextBoxColumn
     Friend WithEvents Prix_Hors_Taxe As DataGridViewTextBoxColumn
+    Friend WithEvents Numéro As DataGridViewTextBoxColumn
+    Friend WithEvents Date_facture As DataGridViewTextBoxColumn
+    Friend WithEvents Date_Paiement As DataGridViewTextBoxColumn
+    Friend WithEvents État As DataGridViewTextBoxColumn
+    Friend WithEvents Montant_Hors_Taxe As DataGridViewTextBoxColumn
+    Friend WithEvents Montant_TVQ As DataGridViewTextBoxColumn
+    Friend WithEvents Montant_TPS As DataGridViewTextBoxColumn
+    Friend WithEvents Total As DataGridViewTextBoxColumn
+    Friend WithEvents Montant_Restant As DataGridViewTextBoxColumn
 End Class

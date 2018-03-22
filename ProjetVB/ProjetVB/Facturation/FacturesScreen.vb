@@ -18,10 +18,10 @@
         ListFactures = DataBase.Factures
 
         If myOption Is "Today" Then
-            ListFactures = ListFactures.Where(Function(f) f.Date_Facture.Year = DateTime.Now.Year AndAlso f.Date_Facture.Day = DateTime.Now.Day).ToList()
+            ListFactures = ListFactures.Where(Function(f) f.Date_Facture.ToString("yyyy/MM/dd") = DateTime.Now.ToString("yyyy/MM/dd")).ToList()
 
         Else
-            ListFactures = ListFactures.Where(Function(f) f.Date_Facture.Year <> DateTime.Now.Year AndAlso f.Date_Facture.Day <> DateTime.Now.Day).ToList()
+            ListFactures = ListFactures.Where(Function(f) f.Date_Facture.ToString("yyyy/MM/dd") <> DateTime.Now.ToString("yyyy/MM/dd")).ToList()
         End If
 
         UpdateDataSource()
@@ -38,7 +38,7 @@
         Next
         maxNum += 1
 
-        ListFactures.Add(New Facture(1, maxNum, System.DateTime.Now.ToString(), "Ouvert", 0, 0, 0, 0))
+        ListFactures.Add(New Facture(1, maxNum, System.DateTime.Now.ToString(), "Ouvert", 0, 0, 0, 0, Nothing, 0))
 
         UpdateDataSource()
 
@@ -107,6 +107,7 @@
             Dim SelectedFacture As Facture = FindSelectedFacture()
 
             SelectedFacture.Total = SelectedFacture.Montant_Hors_Taxe + SelectedFacture.Montant_TPS + SelectedFacture.Montant_TVQ
+            SelectedFacture.Montant_Restant = SelectedFacture.Total
 
             UpdateDataSource()
         End If
