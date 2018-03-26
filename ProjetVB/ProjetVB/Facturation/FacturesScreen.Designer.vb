@@ -23,6 +23,15 @@ Partial Class FacturesScreen
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView_Facture = New System.Windows.Forms.DataGridView()
+        Me.Numéro = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Date_facture = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Date_Paiement = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.État = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Montant_Hors_Taxe = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Montant_TVQ = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Montant_TPS = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Montant_Restant = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button_New_Facture = New System.Windows.Forms.Button()
         Me._Sauvegarder = New System.Windows.Forms.Button()
         Me.Button_Supprimer = New System.Windows.Forms.Button()
@@ -46,15 +55,6 @@ Partial Class FacturesScreen
         Me.Prix_Hors_Taxe = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Button_CalcLigneHT = New System.Windows.Forms.Button()
-        Me.Numéro = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Date_facture = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Date_Paiement = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.État = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Montant_Hors_Taxe = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Montant_TVQ = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Montant_TPS = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Montant_Restant = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView_Facture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox_option.SuspendLayout()
         Me.GrouBox_calcul.SuspendLayout()
@@ -76,6 +76,66 @@ Partial Class FacturesScreen
         Me.DataGridView_Facture.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView_Facture.Size = New System.Drawing.Size(805, 187)
         Me.DataGridView_Facture.TabIndex = 1
+        '
+        'Numéro
+        '
+        Me.Numéro.DataPropertyName = "Numéro"
+        Me.Numéro.HeaderText = "Numéro"
+        Me.Numéro.Name = "Numéro"
+        Me.Numéro.ReadOnly = True
+        '
+        'Date_facture
+        '
+        Me.Date_facture.DataPropertyName = "Date_Facture"
+        Me.Date_facture.HeaderText = "Date_Facture"
+        Me.Date_facture.Name = "Date_facture"
+        Me.Date_facture.ReadOnly = True
+        '
+        'Date_Paiement
+        '
+        Me.Date_Paiement.DataPropertyName = "Date_Paiement"
+        Me.Date_Paiement.HeaderText = "Date_Paiement"
+        Me.Date_Paiement.Name = "Date_Paiement"
+        '
+        'État
+        '
+        Me.État.DataPropertyName = "État"
+        Me.État.HeaderText = "État"
+        Me.État.Name = "État"
+        Me.État.ReadOnly = True
+        '
+        'Montant_Hors_Taxe
+        '
+        Me.Montant_Hors_Taxe.DataPropertyName = "Montant_Hors_Taxe"
+        Me.Montant_Hors_Taxe.HeaderText = "Montant_Hors_Taxe"
+        Me.Montant_Hors_Taxe.Name = "Montant_Hors_Taxe"
+        '
+        'Montant_TVQ
+        '
+        Me.Montant_TVQ.DataPropertyName = "Montant_TVQ"
+        Me.Montant_TVQ.HeaderText = "Montant_TVQ"
+        Me.Montant_TVQ.Name = "Montant_TVQ"
+        Me.Montant_TVQ.ReadOnly = True
+        '
+        'Montant_TPS
+        '
+        Me.Montant_TPS.DataPropertyName = "Montant_TPS"
+        Me.Montant_TPS.HeaderText = "Montant_TPS"
+        Me.Montant_TPS.Name = "Montant_TPS"
+        Me.Montant_TPS.ReadOnly = True
+        '
+        'Total
+        '
+        Me.Total.DataPropertyName = "Total"
+        Me.Total.HeaderText = "Total"
+        Me.Total.Name = "Total"
+        Me.Total.ReadOnly = True
+        '
+        'Montant_Restant
+        '
+        Me.Montant_Restant.DataPropertyName = "Montant_Restant"
+        Me.Montant_Restant.HeaderText = "Montant_Restant"
+        Me.Montant_Restant.Name = "Montant_Restant"
         '
         'Button_New_Facture
         '
@@ -287,66 +347,6 @@ Partial Class FacturesScreen
         Me.Button_CalcLigneHT.Text = "Calculer prix hors-taxe"
         Me.Button_CalcLigneHT.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button_CalcLigneHT.UseVisualStyleBackColor = True
-        '
-        'Numéro
-        '
-        Me.Numéro.DataPropertyName = "Numéro"
-        Me.Numéro.HeaderText = "Numéro"
-        Me.Numéro.Name = "Numéro"
-        Me.Numéro.ReadOnly = True
-        '
-        'Date_facture
-        '
-        Me.Date_facture.DataPropertyName = "Date_Facture"
-        Me.Date_facture.HeaderText = "Date_Facture"
-        Me.Date_facture.Name = "Date_facture"
-        Me.Date_facture.ReadOnly = True
-        '
-        'Date_Paiement
-        '
-        Me.Date_Paiement.DataPropertyName = "Date_Paiement"
-        Me.Date_Paiement.HeaderText = "Date_Paiement"
-        Me.Date_Paiement.Name = "Date_Paiement"
-        '
-        'État
-        '
-        Me.État.DataPropertyName = "État"
-        Me.État.HeaderText = "État"
-        Me.État.Name = "État"
-        Me.État.ReadOnly = True
-        '
-        'Montant_Hors_Taxe
-        '
-        Me.Montant_Hors_Taxe.DataPropertyName = "Montant_Hors_Taxe"
-        Me.Montant_Hors_Taxe.HeaderText = "Montant_Hors_Taxe"
-        Me.Montant_Hors_Taxe.Name = "Montant_Hors_Taxe"
-        '
-        'Montant_TVQ
-        '
-        Me.Montant_TVQ.DataPropertyName = "Montant_TVQ"
-        Me.Montant_TVQ.HeaderText = "Montant_TVQ"
-        Me.Montant_TVQ.Name = "Montant_TVQ"
-        Me.Montant_TVQ.ReadOnly = True
-        '
-        'Montant_TPS
-        '
-        Me.Montant_TPS.DataPropertyName = "Montant_TPS"
-        Me.Montant_TPS.HeaderText = "Montant_TPS"
-        Me.Montant_TPS.Name = "Montant_TPS"
-        Me.Montant_TPS.ReadOnly = True
-        '
-        'Total
-        '
-        Me.Total.DataPropertyName = "Total"
-        Me.Total.HeaderText = "Total"
-        Me.Total.Name = "Total"
-        Me.Total.ReadOnly = True
-        '
-        'Montant_Restant
-        '
-        Me.Montant_Restant.DataPropertyName = "Montant_Restant"
-        Me.Montant_Restant.HeaderText = "Montant_Restant"
-        Me.Montant_Restant.Name = "Montant_Restant"
         '
         'FacturesScreen
         '

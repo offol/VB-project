@@ -33,4 +33,12 @@
        }
         fac.Show()
     End Sub
+
+    Private Sub ContratToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ContratToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub CréerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CréerToolStripMenuItem.Click
+
+    End Sub
 End Class
