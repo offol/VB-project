@@ -39,6 +39,11 @@
     End Sub
 
     Private Sub CréerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CréerToolStripMenuItem.Click
+        Dim contrat As New Créer_Contrat() With {
+            .MdiParent = Me
+        }
+        contrat.Show()
 
     End Sub
+
 End Class

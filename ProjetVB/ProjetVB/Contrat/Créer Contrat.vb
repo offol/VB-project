@@ -26,4 +26,8 @@
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
+
+    Private Sub btnEquipement_Click(sender As Object, e As EventArgs) Handles btnEquipement.Click
+
+    End Sub
 End Class

@@ -73,10 +73,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.vb" />
-    <Compile Include="Facturation\Créer Contrat.Designer.vb">
+    <Compile Include="Contrat\Créer Contrat.Designer.vb">
       <DependentUpon>Créer Contrat.vb</DependentUpon>
     </Compile>
-    <Compile Include="Facturation\Créer Contrat.vb">
+    <Compile Include="Contrat\Créer Contrat.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Facturation\Facture.vb" />
@@ -104,10 +104,10 @@
     </Compile>
     <Compile Include="Facturation\Taxes\TPS.vb" />
     <Compile Include="Facturation\Taxes\TVQ.vb" />
-    <Compile Include="Facturation\Équipement.Designer.vb">
+    <Compile Include="Contrat\Équipement.Designer.vb">
       <DependentUpon>Équipement.vb</DependentUpon>
     </Compile>
-    <Compile Include="Facturation\Équipement.vb">
+    <Compile Include="Contrat\Équipement.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FakeDataBase\DataBase.vb" />
@@ -142,7 +142,7 @@
     <Compile Include="Service\Service.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Facturation\Créer Contrat.resx">
+    <EmbeddedResource Include="Contrat\Créer Contrat.resx">
       <DependentUpon>Créer Contrat.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Facturation\FacturesScreen.resx">
@@ -154,7 +154,7 @@
     <EmbeddedResource Include="Facturation\Taxes\Taxe.resx">
       <DependentUpon>Taxe.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Facturation\Équipement.resx">
+    <EmbeddedResource Include="Contrat\Équipement.resx">
       <DependentUpon>Équipement.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
