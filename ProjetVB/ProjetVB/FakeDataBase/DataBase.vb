@@ -7,6 +7,7 @@ Public Module DataBase
         New Client(1, "Entreprise", "blabla road", "819-456-3456", "819-436-7654")
     }
 
+
     'Liste de services
     Public Services = New List(Of Service) From {
             New Service(1, "Service1", "blabla", 2.5),

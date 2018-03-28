@@ -46,9 +46,9 @@ Partial Class Form1
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.TaxeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FournisseurToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CréerToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConsulterToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModifierToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuCréerFournisseur = New System.Windows.Forms.ToolStripMenuItem()
+        Me.consulterFournisseur = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuModifierFournisseur = New System.Windows.Forms.ToolStripMenuItem()
         Me.RapportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AchèvementDesContractsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
@@ -99,47 +99,47 @@ Partial Class Form1
         'CréerToolStripMenuItem
         '
         Me.CréerToolStripMenuItem.Name = "CréerToolStripMenuItem"
-        Me.CréerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CréerToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.CréerToolStripMenuItem.Text = "Créer"
         '
         'RenouvelerToolStripMenuItem
         '
         Me.RenouvelerToolStripMenuItem.Name = "RenouvelerToolStripMenuItem"
-        Me.RenouvelerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RenouvelerToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.RenouvelerToolStripMenuItem.Text = "Renouveler"
         '
         'RésilierToolStripMenuItem
         '
         Me.RésilierToolStripMenuItem.Name = "RésilierToolStripMenuItem"
-        Me.RésilierToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RésilierToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.RésilierToolStripMenuItem.Text = "Résilier"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(130, 6)
         '
         'ConsulterToolStripMenuItem
         '
         Me.ConsulterToolStripMenuItem.Name = "ConsulterToolStripMenuItem"
-        Me.ConsulterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ConsulterToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.ConsulterToolStripMenuItem.Text = "Consulter"
         '
         'ModifierToolStripMenuItem
         '
         Me.ModifierToolStripMenuItem.Name = "ModifierToolStripMenuItem"
-        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.ModifierToolStripMenuItem.Text = "Modifier"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(130, 6)
         '
         'QuitterToolStripMenuItem
         '
         Me.QuitterToolStripMenuItem.Name = "QuitterToolStripMenuItem"
-        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.QuitterToolStripMenuItem.Text = "Quitter"
         '
         'ÉToolStripMenuItem
@@ -224,28 +224,28 @@ Partial Class Form1
         '
         'FournisseurToolStripMenuItem
         '
-        Me.FournisseurToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CréerToolStripMenuItem1, Me.ConsulterToolStripMenuItem1, Me.ModifierToolStripMenuItem1})
+        Me.FournisseurToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuCréerFournisseur, Me.consulterFournisseur, Me.mnuModifierFournisseur})
         Me.FournisseurToolStripMenuItem.Name = "FournisseurToolStripMenuItem"
         Me.FournisseurToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
         Me.FournisseurToolStripMenuItem.Text = "Fournisseur"
         '
-        'CréerToolStripMenuItem1
+        'mnuCréerFournisseur
         '
-        Me.CréerToolStripMenuItem1.Name = "CréerToolStripMenuItem1"
-        Me.CréerToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
-        Me.CréerToolStripMenuItem1.Text = "Créer"
+        Me.mnuCréerFournisseur.Name = "mnuCréerFournisseur"
+        Me.mnuCréerFournisseur.Size = New System.Drawing.Size(180, 22)
+        Me.mnuCréerFournisseur.Text = "Créer"
         '
-        'ConsulterToolStripMenuItem1
+        'consulterFournisseur
         '
-        Me.ConsulterToolStripMenuItem1.Name = "ConsulterToolStripMenuItem1"
-        Me.ConsulterToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
-        Me.ConsulterToolStripMenuItem1.Text = "Consulter"
+        Me.consulterFournisseur.Name = "consulterFournisseur"
+        Me.consulterFournisseur.Size = New System.Drawing.Size(180, 22)
+        Me.consulterFournisseur.Text = "Consulter"
         '
-        'ModifierToolStripMenuItem1
+        'mnuModifierFournisseur
         '
-        Me.ModifierToolStripMenuItem1.Name = "ModifierToolStripMenuItem1"
-        Me.ModifierToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
-        Me.ModifierToolStripMenuItem1.Text = "Modifier"
+        Me.mnuModifierFournisseur.Name = "mnuModifierFournisseur"
+        Me.mnuModifierFournisseur.Size = New System.Drawing.Size(180, 22)
+        Me.mnuModifierFournisseur.Text = "Modifier"
         '
         'RapportsToolStripMenuItem
         '
@@ -454,9 +454,9 @@ Partial Class Form1
     Friend WithEvents RéceptionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents RetourToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CréerToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ConsulterToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ModifierToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents mnuCréerFournisseur As ToolStripMenuItem
+    Friend WithEvents consulterFournisseur As ToolStripMenuItem
+    Friend WithEvents mnuModifierFournisseur As ToolStripMenuItem
     Friend WithEvents AchèvementDesContractsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ÉquipementsÀRetournerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator5 As ToolStripSeparator

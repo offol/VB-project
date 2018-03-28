@@ -118,6 +118,25 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Fournisseur\ConsulterFournisseur.Designer.vb">
+      <DependentUpon>ConsulterFournisseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fournisseur\ConsulterFournisseur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fournisseur\ModifierFournisseur.Designer.vb">
+      <DependentUpon>ModifierFournisseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fournisseur\ModifierFournisseur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fournisseur\Fournisseur.vb" />
+    <Compile Include="Fournisseur\CréerFournisseur.Designer.vb">
+      <DependentUpon>CréerFournisseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fournisseur\CréerFournisseur.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Service\MAJService.Designer.vb">
       <DependentUpon>MAJService.vb</DependentUpon>
     </Compile>
@@ -159,6 +178,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fournisseur\CréerFournisseur.resx">
+      <DependentUpon>CréerFournisseur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fournisseur\ConsulterFournisseur.resx">
+      <DependentUpon>ConsulterFournisseur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fournisseur\ModifierFournisseur.resx">
+      <DependentUpon>ModifierFournisseur.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Service\MAJService.resx">
       <DependentUpon>MAJService.vb</DependentUpon>
