@@ -10,4 +10,9 @@
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Ordi1.SelectedIndexChanged
 
     End Sub
+
+    Private Sub Btn_équipementsave_Click(sender As Object, e As EventArgs) Handles Btn_équipementsave.Click
+        Me.Close()
+
+    End Sub
 End Class

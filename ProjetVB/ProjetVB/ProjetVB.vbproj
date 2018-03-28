@@ -50,6 +50,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -73,10 +74,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.vb" />
+    <Compile Include="Contrat\Ajout Client Commercial.Designer.vb">
+      <DependentUpon>Ajout Client Commercial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\Ajout Client Commercial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrat\Ajout Client Particulier.Designer.vb">
+      <DependentUpon>Ajout Client Particulier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\Ajout Client Particulier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrat\Confirmation Client Ajouté.Designer.vb">
+      <DependentUpon>Confirmation Client Ajouté.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\Confirmation Client Ajouté.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Contrat\Créer Contrat.Designer.vb">
       <DependentUpon>Créer Contrat.vb</DependentUpon>
     </Compile>
     <Compile Include="Contrat\Créer Contrat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrat\Service.Designer.vb">
+      <DependentUpon>Service.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\Service.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Facturation\Facture.vb" />
@@ -158,11 +183,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Service\Service.vb" />
+    <Compile Include="Service\Service.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Contrat\Ajout Client Commercial.resx">
+      <DependentUpon>Ajout Client Commercial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrat\Ajout Client Particulier.resx">
+      <DependentUpon>Ajout Client Particulier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrat\Confirmation Client Ajouté.resx">
+      <DependentUpon>Confirmation Client Ajouté.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contrat\Créer Contrat.resx">
       <DependentUpon>Créer Contrat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrat\Service.resx">
+      <DependentUpon>Service.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Facturation\FacturesScreen.resx">
       <DependentUpon>FacturesScreen.vb</DependentUpon>

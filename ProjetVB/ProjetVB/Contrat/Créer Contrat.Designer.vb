@@ -70,6 +70,8 @@ Partial Class Créer_Contrat
         Me.btn_cliParticulier = New System.Windows.Forms.Button()
         Me.Lb_ajoutClient = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Btn_supprimer = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1_ClientActuel.SuspendLayout()
         Me.GroupBox1_Contrat.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -263,6 +265,8 @@ Partial Class Créer_Contrat
         '
         'GroupBox1_Contrat
         '
+        Me.GroupBox1_Contrat.Controls.Add(Me.Button1)
+        Me.GroupBox1_Contrat.Controls.Add(Me.Btn_supprimer)
         Me.GroupBox1_Contrat.Controls.Add(Me.btnComplete)
         Me.GroupBox1_Contrat.Controls.Add(Me.DateTimePicker3)
         Me.GroupBox1_Contrat.Controls.Add(Me.DataGridView1)
@@ -522,6 +526,28 @@ Partial Class Créer_Contrat
         Me.Label2.Size = New System.Drawing.Size(0, 13)
         Me.Label2.TabIndex = 1
         '
+        'Btn_supprimer
+        '
+        Me.Btn_supprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_supprimer.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_supprimer.Location = New System.Drawing.Point(440, 262)
+        Me.Btn_supprimer.Name = "Btn_supprimer"
+        Me.Btn_supprimer.Size = New System.Drawing.Size(59, 22)
+        Me.Btn_supprimer.TabIndex = 25
+        Me.Btn_supprimer.Text = "Supprimer"
+        Me.Btn_supprimer.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(440, 491)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(59, 22)
+        Me.Button1.TabIndex = 26
+        Me.Button1.Text = "Supprimer"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Créer_Contrat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -590,4 +616,6 @@ Partial Class Créer_Contrat
     Friend WithEvents Description As DataGridViewTextBoxColumn
     Friend WithEvents Quantité As DataGridViewTextBoxColumn
     Friend WithEvents Prix_Unitaire As DataGridViewTextBoxColumn
+    Friend WithEvents Btn_supprimer As Button
+    Friend WithEvents Button1 As Button
 End Class
