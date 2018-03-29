@@ -56,7 +56,10 @@
     End Sub
 
     Private Sub RenouvelerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RenouvelerToolStripMenuItem.Click
-
+        Dim Renouveler As New Renew() With {
+            .MdiParent = Me
+        }
+        Renouveler.Show()
     End Sub
 
     Private Sub FournisseurToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FournisseurToolStripMenuItem.Click
