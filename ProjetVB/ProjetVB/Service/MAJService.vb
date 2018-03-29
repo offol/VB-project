@@ -1,6 +1,6 @@
 ﻿Public Class MAJService
 
-    Private myList As List(Of Service)
+    Private myList As List(Of ServiceObject)
 
     'Charge les services existant dans la listbox
     Private Sub MAJService_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -24,7 +24,7 @@
 
     'Ouvre la fenêtre de création de service
     Private Sub Button_CréerService_Click(sender As Object, e As EventArgs) Handles Button_CréerService.Click
-        myList.Add(New Service(myList.Last().Id + 1, TextBox_Nom.Text, TextBox_Description.Text, TextBox_Prix.Text))
+        myList.Add(New ServiceObject(myList.Last().Id + 1, TextBox_Nom.Text, TextBox_Description.Text, TextBox_Prix.Text))
         SetDataSource()
     End Sub
 

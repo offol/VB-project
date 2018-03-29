@@ -9,9 +9,9 @@ Public Module DataBase
 
 
     'Liste de services
-    Public Services = New List(Of Service) From {
-            New Service(1, "Service1", "blabla", 2.5),
-            New Service(2, "Service2", "Bonjour", 3)
+    Public Services = New List(Of ServiceObject) From {
+            New ServiceObject(1, "Service1", "blabla", 2.5),
+            New ServiceObject(2, "Service2", "Bonjour", 3)
         }
 
     'Liste de factures

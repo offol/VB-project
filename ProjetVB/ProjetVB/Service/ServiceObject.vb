@@ -1,4 +1,4 @@
-﻿Public Class Service
+﻿Public Class ServiceObject
 
     Private myId As Integer
     Private myNom As String
@@ -50,6 +50,7 @@
             End If
         End Set
     End Property
+
 
 
 End Class
