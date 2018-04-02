@@ -110,6 +110,12 @@
     <Compile Include="Contrat\Service.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Contrat\Équip_v2.Designer.vb">
+      <DependentUpon>Équip_v2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\Équip_v2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Facturation\Facture.vb" />
     <Compile Include="Facturation\FacturesScreen.Designer.vb">
       <DependentUpon>FacturesScreen.vb</DependentUpon>
@@ -168,10 +174,10 @@
     <Compile Include="Fournisseur\CréerFournisseur.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Renew.Designer.vb">
+    <Compile Include="Contrat\Renew.Designer.vb">
       <DependentUpon>Renew.vb</DependentUpon>
     </Compile>
-    <Compile Include="Renew.vb">
+    <Compile Include="Contrat\Renew.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Service\MAJService.Designer.vb">
@@ -216,6 +222,9 @@
     <EmbeddedResource Include="Contrat\Service.resx">
       <DependentUpon>Service.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Contrat\Équip_v2.resx">
+      <DependentUpon>Équip_v2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Facturation\FacturesScreen.resx">
       <DependentUpon>FacturesScreen.vb</DependentUpon>
     </EmbeddedResource>
@@ -240,7 +249,7 @@
     <EmbeddedResource Include="Fournisseur\ModifierFournisseur.resx">
       <DependentUpon>ModifierFournisseur.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Renew.resx">
+    <EmbeddedResource Include="Contrat\Renew.resx">
       <DependentUpon>Renew.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Service\MAJService.resx">

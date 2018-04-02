@@ -69,4 +69,12 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub consulterFournisseur_Click(sender As Object, e As EventArgs) Handles consulterFournisseur.Click
+        Dim Cf As New ConsulterFournisseur() With {
+        .MdiParent = Me
+        }
+
+        Cf.Show()
+    End Sub
 End Class

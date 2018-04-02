@@ -99,47 +99,47 @@ Partial Class Form1
         'CréerToolStripMenuItem
         '
         Me.CréerToolStripMenuItem.Name = "CréerToolStripMenuItem"
-        Me.CréerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CréerToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.CréerToolStripMenuItem.Text = "Créer"
         '
         'RenouvelerToolStripMenuItem
         '
         Me.RenouvelerToolStripMenuItem.Name = "RenouvelerToolStripMenuItem"
-        Me.RenouvelerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RenouvelerToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.RenouvelerToolStripMenuItem.Text = "Renouveler"
         '
         'RésilierToolStripMenuItem
         '
         Me.RésilierToolStripMenuItem.Name = "RésilierToolStripMenuItem"
-        Me.RésilierToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RésilierToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.RésilierToolStripMenuItem.Text = "Résilier"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(130, 6)
         '
         'ConsulterToolStripMenuItem
         '
         Me.ConsulterToolStripMenuItem.Name = "ConsulterToolStripMenuItem"
-        Me.ConsulterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ConsulterToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.ConsulterToolStripMenuItem.Text = "Consulter"
         '
         'ModifierToolStripMenuItem
         '
         Me.ModifierToolStripMenuItem.Name = "ModifierToolStripMenuItem"
-        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.ModifierToolStripMenuItem.Text = "Modifier"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(130, 6)
         '
         'QuitterToolStripMenuItem
         '
         Me.QuitterToolStripMenuItem.Name = "QuitterToolStripMenuItem"
-        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.QuitterToolStripMenuItem.Text = "Quitter"
         '
         'ÉToolStripMenuItem
@@ -152,18 +152,18 @@ Partial Class Form1
         'RéceptionToolStripMenuItem
         '
         Me.RéceptionToolStripMenuItem.Name = "RéceptionToolStripMenuItem"
-        Me.RéceptionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RéceptionToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.RéceptionToolStripMenuItem.Text = "Réception"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(124, 6)
         '
         'RetourToolStripMenuItem
         '
         Me.RetourToolStripMenuItem.Name = "RetourToolStripMenuItem"
-        Me.RetourToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RetourToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.RetourToolStripMenuItem.Text = "Retour"
         '
         'ServiceToolStripMenuItem
@@ -176,7 +176,7 @@ Partial Class Form1
         'MenuItem_Service
         '
         Me.MenuItem_Service.Name = "MenuItem_Service"
-        Me.MenuItem_Service.Size = New System.Drawing.Size(152, 22)
+        Me.MenuItem_Service.Size = New System.Drawing.Size(142, 22)
         Me.MenuItem_Service.Text = "MÀJ services"
         '
         'FacturationToolStripMenuItem
@@ -190,36 +190,36 @@ Partial Class Form1
         '
         Me.FacturesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DaujourdhuiToolStripMenuItem, Me.AutresToolStripMenuItem})
         Me.FacturesToolStripMenuItem.Name = "FacturesToolStripMenuItem"
-        Me.FacturesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FacturesToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.FacturesToolStripMenuItem.Text = "Factures"
         '
         'DaujourdhuiToolStripMenuItem
         '
         Me.DaujourdhuiToolStripMenuItem.Name = "DaujourdhuiToolStripMenuItem"
-        Me.DaujourdhuiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DaujourdhuiToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.DaujourdhuiToolStripMenuItem.Text = "d'aujourd'hui"
         '
         'AutresToolStripMenuItem
         '
         Me.AutresToolStripMenuItem.Name = "AutresToolStripMenuItem"
-        Me.AutresToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AutresToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.AutresToolStripMenuItem.Text = "Autres"
         '
         'PaiementToolStripMenuItem
         '
         Me.PaiementToolStripMenuItem.Name = "PaiementToolStripMenuItem"
-        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.PaiementToolStripMenuItem.Text = "Paiement"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(121, 6)
         '
         'TaxeToolStripMenuItem
         '
         Me.TaxeToolStripMenuItem.Name = "TaxeToolStripMenuItem"
-        Me.TaxeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TaxeToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.TaxeToolStripMenuItem.Text = "Taxe"
         '
         'FournisseurToolStripMenuItem
