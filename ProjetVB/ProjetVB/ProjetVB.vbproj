@@ -180,6 +180,12 @@
     <Compile Include="Contrat\Renew.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LogIn.Designer.vb">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Service\MAJService.Designer.vb">
       <DependentUpon>MAJService.vb</DependentUpon>
     </Compile>
@@ -251,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Contrat\Renew.resx">
       <DependentUpon>Renew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Service\MAJService.resx">
       <DependentUpon>MAJService.vb</DependentUpon>

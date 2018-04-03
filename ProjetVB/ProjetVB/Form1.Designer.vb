@@ -77,7 +77,11 @@ Partial Class Form1
         Me.FormationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator12 = New System.Windows.Forms.ToolStripSeparator()
         Me.ÀProposSGARIToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.MenuStrip1.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -232,19 +236,19 @@ Partial Class Form1
         'mnuCréerFournisseur
         '
         Me.mnuCréerFournisseur.Name = "mnuCréerFournisseur"
-        Me.mnuCréerFournisseur.Size = New System.Drawing.Size(152, 22)
+        Me.mnuCréerFournisseur.Size = New System.Drawing.Size(125, 22)
         Me.mnuCréerFournisseur.Text = "Créer"
         '
         'consulterFournisseur
         '
         Me.consulterFournisseur.Name = "consulterFournisseur"
-        Me.consulterFournisseur.Size = New System.Drawing.Size(152, 22)
+        Me.consulterFournisseur.Size = New System.Drawing.Size(125, 22)
         Me.consulterFournisseur.Text = "Consulter"
         '
         'mnuModifierFournisseur
         '
         Me.mnuModifierFournisseur.Name = "mnuModifierFournisseur"
-        Me.mnuModifierFournisseur.Size = New System.Drawing.Size(152, 22)
+        Me.mnuModifierFournisseur.Size = New System.Drawing.Size(125, 22)
         Me.mnuModifierFournisseur.Text = "Modifier"
         '
         'RapportsToolStripMenuItem
@@ -410,11 +414,32 @@ Partial Class Form1
         Me.ÀProposSGARIToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
         Me.ÀProposSGARIToolStripMenuItem.Text = "À propos SGARI"
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel2, Me.ToolStripStatusLabel1})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 654)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(1424, 22)
+        Me.StatusStrip1.TabIndex = 3
+        Me.StatusStrip1.Text = "TEst"
+        '
+        'ToolStripStatusLabel1
+        '
+        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(0, 17)
+        '
+        'ToolStripStatusLabel2
+        '
+        Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(118, 17)
+        Me.ToolStripStatusLabel2.Text = "Utilisateur connecté :"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1424, 676)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
@@ -422,6 +447,8 @@ Partial Class Form1
         Me.Text = "SGARI : ABONNET"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -482,4 +509,7 @@ Partial Class Form1
     Friend WithEvents FormationToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator12 As ToolStripSeparator
     Friend WithEvents ÀProposSGARIToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
+    Friend WithEvents ToolStripStatusLabel2 As ToolStripStatusLabel
 End Class

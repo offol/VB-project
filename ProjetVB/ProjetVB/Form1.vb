@@ -1,4 +1,12 @@
 ﻿Public Class Form1
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim login As New LogIn With {
+         .MdiParent = Me
+     }
+        login.Show()
+    End Sub
+
     Private Sub MenuItem_Service_Click(sender As Object, e As EventArgs) Handles MenuItem_Service.Click
         Dim serv As New MAJService With {
             .MdiParent = Me
@@ -63,10 +71,6 @@
     End Sub
 
     Private Sub FournisseurToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FournisseurToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 

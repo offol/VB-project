@@ -24,8 +24,10 @@
 
     'Ouvre la fenêtre de création de service
     Private Sub Button_CréerService_Click(sender As Object, e As EventArgs) Handles Button_CréerService.Click
-        myList.Add(New ServiceObject(myList.Last().Id + 1, TextBox_Nom.Text, TextBox_Description.Text, TextBox_Prix.Text))
-        SetDataSource()
+        If TextBox_Nom.Text IsNot "" AndAlso TextBox_Description.Text IsNot "" AndAlso TextBox_Prix.Text IsNot "" Then
+            myList.Add(New ServiceObject(myList.Last().Id + 1, TextBox_Nom.Text, TextBox_Description.Text, TextBox_Prix.Text))
+            SetDataSource()
+        End If
     End Sub
 
     'Met à jour les textbox pour voir les informations du service sélectionné
