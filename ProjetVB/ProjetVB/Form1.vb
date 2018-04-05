@@ -53,16 +53,6 @@
         contrat.Show()
     End Sub
 
-    Private Sub CréerToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles mnuCréerFournisseur.Click
-        CréerFournisseur.Show()
-
-    End Sub
-
-    Private Sub ModifierToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles mnuModifierFournisseur.Click
-        ModifierFournisseur.Show()
-
-    End Sub
-
     Private Sub RenouvelerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RenouvelerToolStripMenuItem.Click
         Dim Renouveler As New Renew() With {
             .MdiParent = Me
