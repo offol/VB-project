@@ -26,8 +26,6 @@ Partial Class CréerFournisseur
         Me.lbnumeroFournisseur = New System.Windows.Forms.Label()
         Me.lbtelephoneFournisseur = New System.Windows.Forms.Label()
         Me.lbtelecopieurFournisseur = New System.Windows.Forms.Label()
-        Me.EnregistrerFournisseur = New System.Windows.Forms.Button()
-        Me.AnnulerFournisseur = New System.Windows.Forms.Button()
         Me.Enregistrer_lbl = New System.Windows.Forms.Label()
         Me.TextBox_Nom = New System.Windows.Forms.TextBox()
         Me.TextBoxtelecopieur = New System.Windows.Forms.TextBox()
@@ -38,6 +36,8 @@ Partial Class CréerFournisseur
         Me.Lb_rueFournisseur = New System.Windows.Forms.Label()
         Me.TextBoxNuméroCivique = New System.Windows.Forms.TextBox()
         Me.TextBoxCodePostal = New System.Windows.Forms.TextBox()
+        Me.Btn_enregistrerF = New System.Windows.Forms.Button()
+        Me.AnnulerFournisseur = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lbnomFournisseur
@@ -79,26 +79,6 @@ Partial Class CréerFournisseur
         Me.lbtelecopieurFournisseur.Size = New System.Drawing.Size(91, 17)
         Me.lbtelecopieurFournisseur.TabIndex = 3
         Me.lbtelecopieurFournisseur.Text = "Télécopieur :"
-        '
-        'EnregistrerFournisseur
-        '
-        Me.EnregistrerFournisseur.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
-        Me.EnregistrerFournisseur.Location = New System.Drawing.Point(16, 311)
-        Me.EnregistrerFournisseur.Name = "EnregistrerFournisseur"
-        Me.EnregistrerFournisseur.Size = New System.Drawing.Size(108, 39)
-        Me.EnregistrerFournisseur.TabIndex = 4
-        Me.EnregistrerFournisseur.Text = "Enregistrer"
-        Me.EnregistrerFournisseur.UseVisualStyleBackColor = True
-        '
-        'AnnulerFournisseur
-        '
-        Me.AnnulerFournisseur.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
-        Me.AnnulerFournisseur.Location = New System.Drawing.Point(197, 310)
-        Me.AnnulerFournisseur.Name = "AnnulerFournisseur"
-        Me.AnnulerFournisseur.Size = New System.Drawing.Size(108, 40)
-        Me.AnnulerFournisseur.TabIndex = 5
-        Me.AnnulerFournisseur.Text = "Annuler"
-        Me.AnnulerFournisseur.UseVisualStyleBackColor = True
         '
         'Enregistrer_lbl
         '
@@ -180,11 +160,35 @@ Partial Class CréerFournisseur
         Me.TextBoxCodePostal.Size = New System.Drawing.Size(75, 20)
         Me.TextBoxCodePostal.TabIndex = 15
         '
+        'Btn_enregistrerF
+        '
+        Me.Btn_enregistrerF.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_enregistrerF.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_enregistrerF.Location = New System.Drawing.Point(28, 310)
+        Me.Btn_enregistrerF.Name = "Btn_enregistrerF"
+        Me.Btn_enregistrerF.Size = New System.Drawing.Size(110, 30)
+        Me.Btn_enregistrerF.TabIndex = 16
+        Me.Btn_enregistrerF.Text = "Enregistrer"
+        Me.Btn_enregistrerF.UseVisualStyleBackColor = True
+        '
+        'AnnulerFournisseur
+        '
+        Me.AnnulerFournisseur.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.AnnulerFournisseur.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AnnulerFournisseur.Location = New System.Drawing.Point(208, 310)
+        Me.AnnulerFournisseur.Name = "AnnulerFournisseur"
+        Me.AnnulerFournisseur.Size = New System.Drawing.Size(110, 30)
+        Me.AnnulerFournisseur.TabIndex = 17
+        Me.AnnulerFournisseur.Text = "Annuler"
+        Me.AnnulerFournisseur.UseVisualStyleBackColor = True
+        '
         'CréerFournisseur
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(357, 373)
+        Me.Controls.Add(Me.AnnulerFournisseur)
+        Me.Controls.Add(Me.Btn_enregistrerF)
         Me.Controls.Add(Me.TextBoxCodePostal)
         Me.Controls.Add(Me.TextBoxNuméroCivique)
         Me.Controls.Add(Me.Lb_rueFournisseur)
@@ -195,8 +199,6 @@ Partial Class CréerFournisseur
         Me.Controls.Add(Me.TextBoxtelecopieur)
         Me.Controls.Add(Me.TextBox_Nom)
         Me.Controls.Add(Me.Enregistrer_lbl)
-        Me.Controls.Add(Me.AnnulerFournisseur)
-        Me.Controls.Add(Me.EnregistrerFournisseur)
         Me.Controls.Add(Me.lbtelecopieurFournisseur)
         Me.Controls.Add(Me.lbtelephoneFournisseur)
         Me.Controls.Add(Me.lbnumeroFournisseur)
@@ -212,8 +214,6 @@ Partial Class CréerFournisseur
     Friend WithEvents lbnumeroFournisseur As Label
     Friend WithEvents lbtelephoneFournisseur As Label
     Friend WithEvents lbtelecopieurFournisseur As Label
-    Friend WithEvents EnregistrerFournisseur As Button
-    Friend WithEvents AnnulerFournisseur As Button
     Friend WithEvents Enregistrer_lbl As Label
     Friend WithEvents TextBox_Nom As TextBox
     Friend WithEvents TextBoxtelecopieur As TextBox
@@ -224,4 +224,6 @@ Partial Class CréerFournisseur
     Friend WithEvents Lb_rueFournisseur As Label
     Friend WithEvents TextBoxNuméroCivique As TextBox
     Friend WithEvents TextBoxCodePostal As TextBox
+    Friend WithEvents Btn_enregistrerF As Button
+    Friend WithEvents AnnulerFournisseur As Button
 End Class

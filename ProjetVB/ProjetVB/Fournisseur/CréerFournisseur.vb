@@ -15,7 +15,7 @@
 
     End Sub
 
-    Private Sub AnnulerFournisseur_Click(sender As Object, e As EventArgs) Handles AnnulerFournisseur.Click
+    Private Sub AnnulerFournisseur_Click_1(sender As Object, e As EventArgs) Handles AnnulerFournisseur.Click
         Close()
     End Sub
 End Class

@@ -81,4 +81,32 @@
 
         Cf.Show()
     End Sub
+
+    Private Sub creerFournisseur_Click(sender As Object, e As EventArgs) Handles mnuCréerFournisseur.Click
+        Dim Creerf As New CréerFournisseur() With {
+        .MdiParent = Me
+        }
+        Creerf.Show()
+    End Sub
+
+    Private Sub modifierFournisseur_Click(sender As Object, e As EventArgs) Handles mnuModifierFournisseur.Click
+        Dim modifierf As New ModifierFournisseur() With {
+        .MdiParent = Me
+        }
+        modifierf.Show()
+    End Sub
+
+    Private Sub ChangerLeMotDePasseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangerLeMotDePasseToolStripMenuItem.Click
+        Dim changerpassword As New ChangerMotDePasse() With {
+        .MdiParent = Me
+            }
+        changerpassword.Show()
+    End Sub
+
+    Private Sub ListeDesUtilisateursToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListeDesUtilisateursToolStripMenuItem.Click
+        Dim listeUtilisateur As New ListeUtilisateur() With {
+        .MdiParent = Me
+        }
+        listeUtilisateur.Show()
+    End Sub
 End Class
