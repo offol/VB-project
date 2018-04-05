@@ -15,8 +15,4 @@
         Me.Close()
 
     End Sub
-
-    Private Sub GroupBox_ordi_Enter(sender As Object, e As EventArgs) Handles GroupBox_ordi.Enter
-
-    End Sub
 End Class

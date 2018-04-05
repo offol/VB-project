@@ -19,4 +19,8 @@
 
         NoClient.Text = ramdomnumber.Next()
     End Sub
+
+    Private Sub Lb_NoClient_Click(sender As Object, e As EventArgs) Handles Lb_NoClient.Click
+
+    End Sub
 End Class

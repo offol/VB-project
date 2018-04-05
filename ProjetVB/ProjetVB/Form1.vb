@@ -54,7 +54,7 @@
     End Sub
 
     Private Sub RenouvelerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RenouvelerToolStripMenuItem.Click
-        Dim Renouveler As New Renew() With {
+        Dim Renouveler As New Renouvellement() With {
             .MdiParent = Me
         }
         Renouveler.Show()
@@ -72,31 +72,41 @@
         Cf.Show()
     End Sub
 
-    Private Sub creerFournisseur_Click(sender As Object, e As EventArgs) Handles mnuCréerFournisseur.Click
-        Dim Creerf As New CréerFournisseur() With {
-        .MdiParent = Me
-        }
-        Creerf.Show()
+    Private Sub RésilierToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RésilierToolStripMenuItem.Click
+        Dim Résil As New Résilier() With {
+          .MdiParent = Me
+      }
+        Résil.Show()
+
     End Sub
 
-    Private Sub modifierFournisseur_Click(sender As Object, e As EventArgs) Handles mnuModifierFournisseur.Click
-        Dim modifierf As New ModifierFournisseur() With {
-        .MdiParent = Me
-        }
-        modifierf.Show()
+    Private Sub RéceptionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RéceptionToolStripMenuItem.Click
+        Dim Recep As New Rececption_équipement() With {
+           .MdiParent = Me
+       }
+        Recep.Show()
     End Sub
 
-    Private Sub ChangerLeMotDePasseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangerLeMotDePasseToolStripMenuItem.Click
-        Dim changerpassword As New ChangerMotDePasse() With {
-        .MdiParent = Me
-            }
-        changerpassword.Show()
+    Private Sub ConsulterToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
     End Sub
 
-    Private Sub ListeDesUtilisateursToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListeDesUtilisateursToolStripMenuItem.Click
-        Dim listeUtilisateur As New ListeUtilisateur() With {
-        .MdiParent = Me
-        }
-        listeUtilisateur.Show()
+    Private Sub LivraisonToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LivraisonToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub ModifierToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModifierToolStripMenuItem.Click
+        Dim ModifLivraison As New Modifier_Livraison() With {
+           .MdiParent = Me
+       }
+        ModifLivraison.Show()
+    End Sub
+
+    Private Sub AnnulerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AnnulerToolStripMenuItem.Click
+        Dim CancelLivraison As New Annuler_Livraison() With {
+           .MdiParent = Me
+       }
+        CancelLivraison.Show()
+
     End Sub
 End Class
