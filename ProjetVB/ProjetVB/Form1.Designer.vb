@@ -231,19 +231,19 @@ Partial Class Form1
         'mnuCréerFournisseur
         '
         Me.mnuCréerFournisseur.Name = "mnuCréerFournisseur"
-        Me.mnuCréerFournisseur.Size = New System.Drawing.Size(180, 22)
+        Me.mnuCréerFournisseur.Size = New System.Drawing.Size(125, 22)
         Me.mnuCréerFournisseur.Text = "Créer"
         '
         'consulterFournisseur
         '
         Me.consulterFournisseur.Name = "consulterFournisseur"
-        Me.consulterFournisseur.Size = New System.Drawing.Size(180, 22)
+        Me.consulterFournisseur.Size = New System.Drawing.Size(125, 22)
         Me.consulterFournisseur.Text = "Consulter"
         '
         'mnuModifierFournisseur
         '
         Me.mnuModifierFournisseur.Name = "mnuModifierFournisseur"
-        Me.mnuModifierFournisseur.Size = New System.Drawing.Size(180, 22)
+        Me.mnuModifierFournisseur.Size = New System.Drawing.Size(125, 22)
         Me.mnuModifierFournisseur.Text = "Modifier"
         '
         'RapportsToolStripMenuItem

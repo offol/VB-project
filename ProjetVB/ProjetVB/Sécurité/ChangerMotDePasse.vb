@@ -8,11 +8,6 @@
     End Sub
 
     Private Sub Changer_Click(sender As Object, e As EventArgs) Handles Changer.Click
-        Dim ConfirmeChangerMotDePasse As New ChangerMotDePasse() With {
-            .MdiParent = Form1
-            }
-        ConfirmeChangerMotDePasse.Show()
-        Me.Close()
-
+        MsgBox("Votre mot de passe à été changé avec succès")
     End Sub
 End Class

@@ -120,4 +120,18 @@
     Private Sub mnuModifierFournisseur_Click(sender As Object, e As EventArgs) Handles mnuModifierFournisseur.Click
 
     End Sub
+
+    Private Sub ChangerLeMotDePasseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangerLeMotDePasseToolStripMenuItem.Click
+        Dim ChangerMotdepasse As New ChangerMotDePasse() With {
+        .MdiParent = Me
+        }
+        ChangerMotdepasse.Show()
+    End Sub
+
+    Private Sub ListeDesUtilisateursToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListeDesUtilisateursToolStripMenuItem.Click
+        Dim ListeUtilisateur As New ListeUtilisateur() With {
+            .MdiParent = Me
+        }
+        ListeUtilisateur.Show()
+    End Sub
 End Class
