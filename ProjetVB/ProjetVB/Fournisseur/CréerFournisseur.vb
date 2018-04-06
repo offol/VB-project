@@ -18,4 +18,8 @@
     Private Sub AnnulerFournisseur_Click_1(sender As Object, e As EventArgs) Handles AnnulerFournisseur.Click
         Close()
     End Sub
+
+    Private Sub Btn_enregistrerF_Click(sender As Object, e As EventArgs) Handles Btn_enregistrerF.Click
+        MsgBox("Le fournisseur a été enregistré avec succès")
+    End Sub
 End Class

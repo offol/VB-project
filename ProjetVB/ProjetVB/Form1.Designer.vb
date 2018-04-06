@@ -31,6 +31,9 @@ Partial Class Form1
         Me.QuitterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ÉToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RéceptionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LivraisonToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModifierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AnnulerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ServiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuItem_Service = New System.Windows.Forms.ToolStripMenuItem()
@@ -76,9 +79,6 @@ Partial Class Form1
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.LivraisonToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModifierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AnnulerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -102,30 +102,30 @@ Partial Class Form1
         'CréerToolStripMenuItem
         '
         Me.CréerToolStripMenuItem.Name = "CréerToolStripMenuItem"
-        Me.CréerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CréerToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.CréerToolStripMenuItem.Text = "Créer"
         '
         'RenouvelerToolStripMenuItem
         '
         Me.RenouvelerToolStripMenuItem.Name = "RenouvelerToolStripMenuItem"
-        Me.RenouvelerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RenouvelerToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.RenouvelerToolStripMenuItem.Text = "Renouveler"
         '
         'RésilierToolStripMenuItem
         '
         Me.RésilierToolStripMenuItem.Name = "RésilierToolStripMenuItem"
-        Me.RésilierToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RésilierToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.RésilierToolStripMenuItem.Text = "Résilier"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(130, 6)
         '
         'QuitterToolStripMenuItem
         '
         Me.QuitterToolStripMenuItem.Name = "QuitterToolStripMenuItem"
-        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.QuitterToolStripMenuItem.Text = "Quitter"
         '
         'ÉToolStripMenuItem
@@ -138,13 +138,32 @@ Partial Class Form1
         'RéceptionToolStripMenuItem
         '
         Me.RéceptionToolStripMenuItem.Name = "RéceptionToolStripMenuItem"
-        Me.RéceptionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RéceptionToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.RéceptionToolStripMenuItem.Text = "Réception"
+        '
+        'LivraisonToolStripMenuItem
+        '
+        Me.LivraisonToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModifierToolStripMenuItem, Me.AnnulerToolStripMenuItem})
+        Me.LivraisonToolStripMenuItem.Name = "LivraisonToolStripMenuItem"
+        Me.LivraisonToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
+        Me.LivraisonToolStripMenuItem.Text = "Livraison"
+        '
+        'ModifierToolStripMenuItem
+        '
+        Me.ModifierToolStripMenuItem.Name = "ModifierToolStripMenuItem"
+        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.ModifierToolStripMenuItem.Text = "Modifier"
+        '
+        'AnnulerToolStripMenuItem
+        '
+        Me.AnnulerToolStripMenuItem.Name = "AnnulerToolStripMenuItem"
+        Me.AnnulerToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.AnnulerToolStripMenuItem.Text = "Annuler"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(124, 6)
         '
         'ServiceToolStripMenuItem
         '
@@ -156,7 +175,7 @@ Partial Class Form1
         'MenuItem_Service
         '
         Me.MenuItem_Service.Name = "MenuItem_Service"
-        Me.MenuItem_Service.Size = New System.Drawing.Size(180, 22)
+        Me.MenuItem_Service.Size = New System.Drawing.Size(142, 22)
         Me.MenuItem_Service.Text = "MÀJ services"
         '
         'FacturationToolStripMenuItem
@@ -170,36 +189,36 @@ Partial Class Form1
         '
         Me.FacturesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DaujourdhuiToolStripMenuItem, Me.AutresToolStripMenuItem})
         Me.FacturesToolStripMenuItem.Name = "FacturesToolStripMenuItem"
-        Me.FacturesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FacturesToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.FacturesToolStripMenuItem.Text = "Factures"
         '
         'DaujourdhuiToolStripMenuItem
         '
         Me.DaujourdhuiToolStripMenuItem.Name = "DaujourdhuiToolStripMenuItem"
-        Me.DaujourdhuiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DaujourdhuiToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.DaujourdhuiToolStripMenuItem.Text = "d'aujourd'hui"
         '
         'AutresToolStripMenuItem
         '
         Me.AutresToolStripMenuItem.Name = "AutresToolStripMenuItem"
-        Me.AutresToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AutresToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.AutresToolStripMenuItem.Text = "Autres"
         '
         'PaiementToolStripMenuItem
         '
         Me.PaiementToolStripMenuItem.Name = "PaiementToolStripMenuItem"
-        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.PaiementToolStripMenuItem.Text = "Paiement"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(121, 6)
         '
         'TaxeToolStripMenuItem
         '
         Me.TaxeToolStripMenuItem.Name = "TaxeToolStripMenuItem"
-        Me.TaxeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TaxeToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.TaxeToolStripMenuItem.Text = "Taxe"
         '
         'FournisseurToolStripMenuItem
@@ -409,25 +428,6 @@ Partial Class Form1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(0, 17)
-        '
-        'LivraisonToolStripMenuItem
-        '
-        Me.LivraisonToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModifierToolStripMenuItem, Me.AnnulerToolStripMenuItem})
-        Me.LivraisonToolStripMenuItem.Name = "LivraisonToolStripMenuItem"
-        Me.LivraisonToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.LivraisonToolStripMenuItem.Text = "Livraison"
-        '
-        'ModifierToolStripMenuItem
-        '
-        Me.ModifierToolStripMenuItem.Name = "ModifierToolStripMenuItem"
-        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ModifierToolStripMenuItem.Text = "Modifier"
-        '
-        'AnnulerToolStripMenuItem
-        '
-        Me.AnnulerToolStripMenuItem.Name = "AnnulerToolStripMenuItem"
-        Me.AnnulerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AnnulerToolStripMenuItem.Text = "Annuler"
         '
         'Form1
         '

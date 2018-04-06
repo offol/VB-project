@@ -109,4 +109,15 @@
         CancelLivraison.Show()
 
     End Sub
+
+    Private Sub mnuCréerFournisseur_Click(sender As Object, e As EventArgs) Handles mnuCréerFournisseur.Click
+        Dim CréerFournisseur As New CréerFournisseur() With {
+         .MdiParent = Me
+        }
+        CréerFournisseur.Show()
+    End Sub
+
+    Private Sub mnuModifierFournisseur_Click(sender As Object, e As EventArgs) Handles mnuModifierFournisseur.Click
+
+    End Sub
 End Class
