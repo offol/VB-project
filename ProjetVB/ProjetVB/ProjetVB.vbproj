@@ -146,6 +146,48 @@
     <Compile Include="Livraison\Validation Annulation livraison.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Rapports\AchevementContrats.Designer.vb">
+      <DependentUpon>AchevementContrats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\AchevementContrats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapports\ContratsOuverts.Designer.vb">
+      <DependentUpon>ContratsOuverts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\ContratsOuverts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapports\ContratsResiliers.Designer.vb">
+      <DependentUpon>ContratsResiliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\ContratsResiliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapports\EquipementCommander.Designer.vb">
+      <DependentUpon>EquipementCommander.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\EquipementCommander.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapports\EquipementRetour.Designer.vb">
+      <DependentUpon>EquipementRetour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\EquipementRetour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapports\PaiementCarteCredit.Designer.vb">
+      <DependentUpon>PaiementCarteCredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\PaiementCarteCredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapports\PaiementRetraitDirect.Designer.vb">
+      <DependentUpon>PaiementRetraitDirect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\PaiementRetraitDirect.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Retour équipement.Designer.vb">
       <DependentUpon>Retour équipement.vb</DependentUpon>
     </Compile>
@@ -384,6 +426,27 @@
     <EmbeddedResource Include="Livraison\Validation Annulation livraison.resx">
       <DependentUpon>Validation Annulation livraison.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\AchevementContrats.resx">
+      <DependentUpon>AchevementContrats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\ContratsOuverts.resx">
+      <DependentUpon>ContratsOuverts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\ContratsResiliers.resx">
+      <DependentUpon>ContratsResiliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\EquipementCommander.resx">
+      <DependentUpon>EquipementCommander.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\EquipementRetour.resx">
+      <DependentUpon>EquipementRetour.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\PaiementCarteCredit.resx">
+      <DependentUpon>PaiementCarteCredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\PaiementRetraitDirect.resx">
+      <DependentUpon>PaiementRetraitDirect.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Équipement\Impression équipement receptionné.resx">
       <DependentUpon>Impression équipement receptionné.vb</DependentUpon>
     </EmbeddedResource>
@@ -484,5 +547,6 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -60,9 +60,6 @@
         Renouveler.Show()
     End Sub
 
-    Private Sub FournisseurToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FournisseurToolStripMenuItem.Click
-
-    End Sub
 
     Private Sub consulterFournisseur_Click(sender As Object, e As EventArgs) Handles consulterFournisseur.Click
         Dim Cf As New ConsulterFournisseur() With {
@@ -118,6 +115,10 @@
     End Sub
 
     Private Sub mnuModifierFournisseur_Click(sender As Object, e As EventArgs) Handles mnuModifierFournisseur.Click
+
+    End Sub
+
+
     Private Sub AchèvementDesContractsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AchèvementDesContractsToolStripMenuItem.Click
         Dim Achevement As New AchevementContrats() With {
             .MdiParent = Me
