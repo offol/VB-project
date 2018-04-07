@@ -89,7 +89,6 @@ Partial Class MAJService
         'TextBox_Prix
         '
         Me.TextBox_Prix.Location = New System.Drawing.Point(84, 217)
-        Me.TextBox_Prix.Mask = "000.00$"
         Me.TextBox_Prix.Name = "TextBox_Prix"
         Me.TextBox_Prix.Size = New System.Drawing.Size(100, 20)
         Me.TextBox_Prix.TabIndex = 7

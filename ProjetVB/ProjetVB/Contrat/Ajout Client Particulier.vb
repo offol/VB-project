@@ -13,4 +13,14 @@
 
 
     End Sub
+
+    Private Sub Ajout_Client_Particulier_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim ramdomnumber As System.Random = New System.Random()
+
+        NoClient.Text = ramdomnumber.Next()
+    End Sub
+
+    Private Sub Lb_NoClient_Click(sender As Object, e As EventArgs) Handles Lb_NoClient.Click
+
+    End Sub
 End Class

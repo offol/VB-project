@@ -165,7 +165,7 @@ Partial Class Ajout_Client_Commercial
         '
         Me.ComboBox_Adressefact_Prov.FormattingEnabled = True
         Me.ComboBox_Adressefact_Prov.Items.AddRange(New Object() {"L'Alberta", "La Colombie-Britannique", "L'Île-du-Prince-Édouard", "Le Manitoba", "Le Nouveau-Brunswick", "La Nouvelle-Écosse", "L'Ontario", "Le Québec", "La Saskatchewan", "Terre-Neuve et Labrador", "Les Territoires du Nord-Ouest", "Le Nunavut", "Le Yukon"})
-        Me.ComboBox_Adressefact_Prov.Location = New System.Drawing.Point(301, 152)
+        Me.ComboBox_Adressefact_Prov.Location = New System.Drawing.Point(301, 159)
         Me.ComboBox_Adressefact_Prov.Name = "ComboBox_Adressefact_Prov"
         Me.ComboBox_Adressefact_Prov.Size = New System.Drawing.Size(97, 21)
         Me.ComboBox_Adressefact_Prov.TabIndex = 22
@@ -174,7 +174,7 @@ Partial Class Ajout_Client_Commercial
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(246, 156)
+        Me.Label20.Location = New System.Drawing.Point(246, 163)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(49, 13)
         Me.Label20.TabIndex = 53
@@ -182,7 +182,7 @@ Partial Class Ajout_Client_Commercial
         '
         'Adressefact_rue
         '
-        Me.Adressefact_rue.Location = New System.Drawing.Point(47, 153)
+        Me.Adressefact_rue.Location = New System.Drawing.Point(47, 160)
         Me.Adressefact_rue.Name = "Adressefact_rue"
         Me.Adressefact_rue.Size = New System.Drawing.Size(184, 20)
         Me.Adressefact_rue.TabIndex = 21
@@ -191,7 +191,7 @@ Partial Class Ajout_Client_Commercial
         '
         Me.Lbl_AdressefactRue.AutoSize = True
         Me.Lbl_AdressefactRue.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_AdressefactRue.Location = New System.Drawing.Point(12, 156)
+        Me.Lbl_AdressefactRue.Location = New System.Drawing.Point(12, 163)
         Me.Lbl_AdressefactRue.Name = "Lbl_AdressefactRue"
         Me.Lbl_AdressefactRue.Size = New System.Drawing.Size(30, 13)
         Me.Lbl_AdressefactRue.TabIndex = 51
@@ -199,7 +199,7 @@ Partial Class Ajout_Client_Commercial
         '
         'Adressefact_codepostale
         '
-        Me.Adressefact_codepostale.Location = New System.Drawing.Point(237, 131)
+        Me.Adressefact_codepostale.Location = New System.Drawing.Point(237, 133)
         Me.Adressefact_codepostale.Name = "Adressefact_codepostale"
         Me.Adressefact_codepostale.Size = New System.Drawing.Size(69, 20)
         Me.Adressefact_codepostale.TabIndex = 20
@@ -208,7 +208,7 @@ Partial Class Ajout_Client_Commercial
         '
         Me.Lbl_AdressefactCodepostale.AutoSize = True
         Me.Lbl_AdressefactCodepostale.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_AdressefactCodepostale.Location = New System.Drawing.Point(164, 134)
+        Me.Lbl_AdressefactCodepostale.Location = New System.Drawing.Point(164, 136)
         Me.Lbl_AdressefactCodepostale.Name = "Lbl_AdressefactCodepostale"
         Me.Lbl_AdressefactCodepostale.Size = New System.Drawing.Size(67, 13)
         Me.Lbl_AdressefactCodepostale.TabIndex = 49
@@ -218,7 +218,7 @@ Partial Class Ajout_Client_Commercial
         '
         Me.lbl_adressefact_No.AutoSize = True
         Me.lbl_adressefact_No.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_adressefact_No.Location = New System.Drawing.Point(11, 134)
+        Me.lbl_adressefact_No.Location = New System.Drawing.Point(11, 136)
         Me.lbl_adressefact_No.Name = "lbl_adressefact_No"
         Me.lbl_adressefact_No.Size = New System.Drawing.Size(84, 13)
         Me.lbl_adressefact_No.TabIndex = 48
@@ -226,7 +226,7 @@ Partial Class Ajout_Client_Commercial
         '
         'Adressefact_no
         '
-        Me.Adressefact_no.Location = New System.Drawing.Point(101, 131)
+        Me.Adressefact_no.Location = New System.Drawing.Point(101, 133)
         Me.Adressefact_no.Name = "Adressefact_no"
         Me.Adressefact_no.Size = New System.Drawing.Size(48, 20)
         Me.Adressefact_no.TabIndex = 19
