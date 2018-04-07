@@ -2,6 +2,14 @@
 'Ajouter les données que vous voulez a l'intérieur de ce module
 Public Module DataBase
 
+    Public PaiementCredit = New List(Of PCarteCredit) From {
+        New PCarteCredit("123456789", New System.DateTime(1993, 5, 31, 12, 14, 0), "Visa", 230.99)
+    }
+
+    Public PaiementRetrait = New List(Of PRetraitDirect) From {
+        New PRetraitDirect("567546", "Desjardin", 543.82)
+    }
+
     'Liste de clients
     Public Clients = New List(Of Client) From {
         New Client(1, "Entreprise", "blabla road", "819-456-3456", "819-436-7654")

@@ -44,6 +44,18 @@
         End If
 
         'TODO sauvegarder les informations de paiement du client
+        If ComboBox_modePaiement.SelectedItem Is "Carte de crédit" Then
+
+            Dim DbPaiement As List(Of PCarteCredit) = DataBase.PaiementCredit
+
+            DbPaiement.Add(New PCarteCredit(TextBox_NoCarte.Text, DateTime.Now, TextBox_TypeCarte.Text, TextBox_montantPayer.Text))
+
+        ElseIf ComboBox_modePaiement.SelectedItem Is "Retrait direct" Then
+            Dim DbPaiement As List(Of PRetraitDirect) = DataBase.PaiementRetrait
+
+            DbPaiement.Add(New PRetraitDirect(TextBox_NoCompte.Text, TextBox_TypeRD.Text, TextBox_montantPayer.Text))
+
+        End If
 
         UpdateDataSource()
     End Sub
