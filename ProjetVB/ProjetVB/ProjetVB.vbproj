@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contrat\Choix Résiliation.Designer.vb">
+      <DependentUpon>Choix Résiliation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\Choix Résiliation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Client.vb" />
     <Compile Include="Contrat\Ajout Client Commercial.Designer.vb">
       <DependentUpon>Ajout Client Commercial.vb</DependentUpon>
@@ -84,6 +90,96 @@
       <DependentUpon>Ajout Client Particulier.vb</DependentUpon>
     </Compile>
     <Compile Include="Contrat\Ajout Client Particulier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrat\Confirmation Livraison.Designer.vb">
+      <DependentUpon>Confirmation Livraison.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\Confirmation Livraison.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrat\Impression Contrat.Designer.vb">
+      <DependentUpon>Impression Contrat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\Impression Contrat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrat\Impression Réception.Designer.vb">
+      <DependentUpon>Impression Réception.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\Impression Réception.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrat\Mise en Service.Designer.vb">
+      <DependentUpon>Mise en Service.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\Mise en Service.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livraison\Annuler Livraison.Designer.vb">
+      <DependentUpon>Annuler Livraison.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Livraison\Annuler Livraison.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livraison\Confirmation modification livraison.Designer.vb">
+      <DependentUpon>Confirmation modification livraison.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Livraison\Confirmation modification livraison.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livraison\Confirmation Mofidication Livraison.Designer.vb">
+      <DependentUpon>Confirmation Mofidication Livraison.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Livraison\Confirmation Mofidication Livraison.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livraison\Modifier Livraison.Designer.vb">
+      <DependentUpon>Modifier Livraison.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Livraison\Modifier Livraison.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livraison\Validation Annulation livraison.Designer.vb">
+      <DependentUpon>Validation Annulation livraison.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Livraison\Validation Annulation livraison.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retour équipement.Designer.vb">
+      <DependentUpon>Retour équipement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Retour équipement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Équipement\Impression équipement receptionné.Designer.vb">
+      <DependentUpon>Impression équipement receptionné.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Équipement\Impression équipement receptionné.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Équipement\Rececption équipement.Designer.vb">
+      <DependentUpon>Rececption équipement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Équipement\Rececption équipement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renew\Impression Renouvellement.Designer.vb">
+      <DependentUpon>Impression Renouvellement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Renew\Impression Renouvellement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renew\Choix Renouvellement.Designer.vb">
+      <DependentUpon>Choix Renouvellement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Renew\Choix Renouvellement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Équipement\Confimation Équip Ajouté.Designer.vb">
+      <DependentUpon>Confimation Équip Ajouté.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Équipement\Confimation Équip Ajouté.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Contrat\Confirmation Client Ajouté.Designer.vb">
@@ -108,6 +204,24 @@
       <DependentUpon>Service.vb</DependentUpon>
     </Compile>
     <Compile Include="Contrat\Service.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livraison\Validation bon de livraison.Designer.vb">
+      <DependentUpon>Validation bon de livraison.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Livraison\Validation bon de livraison.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Équipement\Validation équipement.Designer.vb">
+      <DependentUpon>Validation équipement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Équipement\Validation équipement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Équipement\Équipement.Designer.vb">
+      <DependentUpon>Équipement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Équipement\Équipement.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Facturation\Facture.vb" />
@@ -135,12 +249,6 @@
     </Compile>
     <Compile Include="Facturation\Taxes\TPS.vb" />
     <Compile Include="Facturation\Taxes\TVQ.vb" />
-    <Compile Include="Contrat\Équipement.Designer.vb">
-      <DependentUpon>Équipement.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Contrat\Équipement.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FakeDataBase\DataBase.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -168,10 +276,34 @@
     <Compile Include="Fournisseur\CréerFournisseur.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Renew.Designer.vb">
-      <DependentUpon>Renew.vb</DependentUpon>
+    <Compile Include="Renew\Impression Résiliation.Designer.vb">
+      <DependentUpon>Impression Résiliation.vb</DependentUpon>
     </Compile>
-    <Compile Include="Renew.vb">
+    <Compile Include="Renew\Impression Résiliation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renew\Modification équipement et service.Designer.vb">
+      <DependentUpon>Modification équipement et service.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Renew\Modification équipement et service.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renew\Renouvellement.Designer.vb">
+      <DependentUpon>Renouvellement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Renew\Renouvellement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.vb">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrat\Résilier.Designer.vb">
+      <DependentUpon>Résilier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\Résilier.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Service\MAJService.Designer.vb">
@@ -196,13 +328,76 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Service\ServiceObject.vb" />
+    <Compile Include="Sécurité\Ajout.Modifier.Destruction.Designer.vb">
+      <DependentUpon>Ajout.Modifier.Destruction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sécurité\Ajout.Modifier.Destruction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sécurité\ChangerMotDePasse.Designer.vb">
+      <DependentUpon>ChangerMotDePasse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sécurité\ChangerMotDePasse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sécurité\ListeUtilisateur.Designer.vb">
+      <DependentUpon>ListeUtilisateur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sécurité\ListeUtilisateur.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Contrat\Choix Résiliation.resx">
+      <DependentUpon>Choix Résiliation.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contrat\Ajout Client Commercial.resx">
       <DependentUpon>Ajout Client Commercial.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contrat\Ajout Client Particulier.resx">
       <DependentUpon>Ajout Client Particulier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrat\Confirmation Livraison.resx">
+      <DependentUpon>Confirmation Livraison.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrat\Impression Contrat.resx">
+      <DependentUpon>Impression Contrat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrat\Impression Réception.resx">
+      <DependentUpon>Impression Réception.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrat\Mise en Service.resx">
+      <DependentUpon>Mise en Service.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livraison\Annuler Livraison.resx">
+      <DependentUpon>Annuler Livraison.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livraison\Confirmation modification livraison.resx">
+      <DependentUpon>Confirmation modification livraison.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livraison\Confirmation Mofidication Livraison.resx">
+      <DependentUpon>Confirmation Mofidication Livraison.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livraison\Modifier Livraison.resx">
+      <DependentUpon>Modifier Livraison.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livraison\Validation Annulation livraison.resx">
+      <DependentUpon>Validation Annulation livraison.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Équipement\Impression équipement receptionné.resx">
+      <DependentUpon>Impression équipement receptionné.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Équipement\Rececption équipement.resx">
+      <DependentUpon>Rececption équipement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renew\Impression Renouvellement.resx">
+      <DependentUpon>Impression Renouvellement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renew\Choix Renouvellement.resx">
+      <DependentUpon>Choix Renouvellement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Équipement\Confimation Équip Ajouté.resx">
+      <DependentUpon>Confimation Équip Ajouté.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contrat\Confirmation Client Ajouté.resx">
       <DependentUpon>Confirmation Client Ajouté.vb</DependentUpon>
@@ -216,6 +411,15 @@
     <EmbeddedResource Include="Contrat\Service.resx">
       <DependentUpon>Service.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Livraison\Validation bon de livraison.resx">
+      <DependentUpon>Validation bon de livraison.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Équipement\Validation équipement.resx">
+      <DependentUpon>Validation équipement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Équipement\Équipement.resx">
+      <DependentUpon>Équipement.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Facturation\FacturesScreen.resx">
       <DependentUpon>FacturesScreen.vb</DependentUpon>
     </EmbeddedResource>
@@ -224,9 +428,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Facturation\Taxes\Taxe.resx">
       <DependentUpon>Taxe.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Contrat\Équipement.resx">
-      <DependentUpon>Équipement.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -240,8 +441,20 @@
     <EmbeddedResource Include="Fournisseur\ModifierFournisseur.resx">
       <DependentUpon>ModifierFournisseur.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Renew.resx">
-      <DependentUpon>Renew.vb</DependentUpon>
+    <EmbeddedResource Include="Renew\Impression Résiliation.resx">
+      <DependentUpon>Impression Résiliation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renew\Modification équipement et service.resx">
+      <DependentUpon>Modification équipement et service.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renew\Renouvellement.resx">
+      <DependentUpon>Renouvellement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrat\Résilier.resx">
+      <DependentUpon>Résilier.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Service\MAJService.resx">
       <DependentUpon>MAJService.vb</DependentUpon>
@@ -251,6 +464,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sécurité\ChangerMotDePasse.resx">
+      <DependentUpon>ChangerMotDePasse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sécurité\ListeUtilisateur.resx">
+      <DependentUpon>ListeUtilisateur.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

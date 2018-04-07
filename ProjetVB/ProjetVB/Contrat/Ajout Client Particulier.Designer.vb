@@ -24,6 +24,8 @@ Partial Class Ajout_Client_Particulier
     Private Sub InitializeComponent()
         Me.Btn_CréerCltCom = New System.Windows.Forms.Button()
         Me.GroupBox1_ClientActuel = New System.Windows.Forms.GroupBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox_AjoutcltCom_com = New System.Windows.Forms.GroupBox()
         Me.lbl_adressefact = New System.Windows.Forms.Label()
         Me.ComboBox_Adressefact_Prov = New System.Windows.Forms.ComboBox()
@@ -81,7 +83,7 @@ Partial Class Ajout_Client_Particulier
         '
         Me.Btn_CréerCltCom.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Btn_CréerCltCom.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_CréerCltCom.Location = New System.Drawing.Point(422, 521)
+        Me.Btn_CréerCltCom.Location = New System.Drawing.Point(425, 519)
         Me.Btn_CréerCltCom.Name = "Btn_CréerCltCom"
         Me.Btn_CréerCltCom.Size = New System.Drawing.Size(110, 30)
         Me.Btn_CréerCltCom.TabIndex = 34
@@ -90,6 +92,8 @@ Partial Class Ajout_Client_Particulier
         '
         'GroupBox1_ClientActuel
         '
+        Me.GroupBox1_ClientActuel.Controls.Add(Me.TextBox1)
+        Me.GroupBox1_ClientActuel.Controls.Add(Me.Label1)
         Me.GroupBox1_ClientActuel.Controls.Add(Me.GroupBox_AjoutcltCom_com)
         Me.GroupBox1_ClientActuel.Controls.Add(Me.ComboBox_AjoutcltCom_prov)
         Me.GroupBox1_ClientActuel.Controls.Add(Me.Label5)
@@ -112,9 +116,25 @@ Partial Class Ajout_Client_Particulier
         Me.GroupBox1_ClientActuel.Controls.Add(Me.Lb_NoClient)
         Me.GroupBox1_ClientActuel.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1_ClientActuel.Name = "GroupBox1_ClientActuel"
-        Me.GroupBox1_ClientActuel.Size = New System.Drawing.Size(520, 503)
+        Me.GroupBox1_ClientActuel.Size = New System.Drawing.Size(523, 503)
         Me.GroupBox1_ClientActuel.TabIndex = 33
         Me.GroupBox1_ClientActuel.TabStop = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(387, 54)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(102, 20)
+        Me.TextBox1.TabIndex = 4
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(349, 57)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(32, 13)
+        Me.Label1.TabIndex = 40
+        Me.Label1.Text = "NAS:"
         '
         'GroupBox_AjoutcltCom_com
         '
@@ -137,7 +157,7 @@ Partial Class Ajout_Client_Particulier
         Me.GroupBox_AjoutcltCom_com.Controls.Add(Me.CheckBox_francais)
         Me.GroupBox_AjoutcltCom_com.Location = New System.Drawing.Point(0, 185)
         Me.GroupBox_AjoutcltCom_com.Name = "GroupBox_AjoutcltCom_com"
-        Me.GroupBox_AjoutcltCom_com.Size = New System.Drawing.Size(520, 223)
+        Me.GroupBox_AjoutcltCom_com.Size = New System.Drawing.Size(523, 223)
         Me.GroupBox_AjoutcltCom_com.TabIndex = 39
         Me.GroupBox_AjoutcltCom_com.TabStop = False
         Me.GroupBox_AjoutcltCom_com.Text = "Communication"
@@ -146,7 +166,7 @@ Partial Class Ajout_Client_Particulier
         '
         Me.lbl_adressefact.AutoSize = True
         Me.lbl_adressefact.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_adressefact.Location = New System.Drawing.Point(11, 115)
+        Me.lbl_adressefact.Location = New System.Drawing.Point(11, 113)
         Me.lbl_adressefact.Name = "lbl_adressefact"
         Me.lbl_adressefact.Size = New System.Drawing.Size(160, 13)
         Me.lbl_adressefact.TabIndex = 55
@@ -156,16 +176,16 @@ Partial Class Ajout_Client_Particulier
         '
         Me.ComboBox_Adressefact_Prov.FormattingEnabled = True
         Me.ComboBox_Adressefact_Prov.Items.AddRange(New Object() {"L'Alberta", "La Colombie-Britannique", "L'Île-du-Prince-Édouard", "Le Manitoba", "Le Nouveau-Brunswick", "La Nouvelle-Écosse", "L'Ontario", "Le Québec", "La Saskatchewan", "Terre-Neuve et Labrador", "Les Territoires du Nord-Ouest", "Le Nunavut", "Le Yukon"})
-        Me.ComboBox_Adressefact_Prov.Location = New System.Drawing.Point(301, 152)
+        Me.ComboBox_Adressefact_Prov.Location = New System.Drawing.Point(301, 155)
         Me.ComboBox_Adressefact_Prov.Name = "ComboBox_Adressefact_Prov"
         Me.ComboBox_Adressefact_Prov.Size = New System.Drawing.Size(97, 21)
-        Me.ComboBox_Adressefact_Prov.TabIndex = 17
+        Me.ComboBox_Adressefact_Prov.TabIndex = 16
         '
         'Label20
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(246, 156)
+        Me.Label20.Location = New System.Drawing.Point(246, 159)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(49, 13)
         Me.Label20.TabIndex = 53
@@ -173,16 +193,16 @@ Partial Class Ajout_Client_Particulier
         '
         'Adressefact_rue
         '
-        Me.Adressefact_rue.Location = New System.Drawing.Point(47, 153)
+        Me.Adressefact_rue.Location = New System.Drawing.Point(47, 156)
         Me.Adressefact_rue.Name = "Adressefact_rue"
         Me.Adressefact_rue.Size = New System.Drawing.Size(184, 20)
-        Me.Adressefact_rue.TabIndex = 16
+        Me.Adressefact_rue.TabIndex = 15
         '
         'Lbl_AdressefactRue
         '
         Me.Lbl_AdressefactRue.AutoSize = True
         Me.Lbl_AdressefactRue.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_AdressefactRue.Location = New System.Drawing.Point(12, 156)
+        Me.Lbl_AdressefactRue.Location = New System.Drawing.Point(12, 159)
         Me.Lbl_AdressefactRue.Name = "Lbl_AdressefactRue"
         Me.Lbl_AdressefactRue.Size = New System.Drawing.Size(30, 13)
         Me.Lbl_AdressefactRue.TabIndex = 51
@@ -190,16 +210,16 @@ Partial Class Ajout_Client_Particulier
         '
         'Adressefact_codepostale
         '
-        Me.Adressefact_codepostale.Location = New System.Drawing.Point(237, 131)
+        Me.Adressefact_codepostale.Location = New System.Drawing.Point(237, 129)
         Me.Adressefact_codepostale.Name = "Adressefact_codepostale"
         Me.Adressefact_codepostale.Size = New System.Drawing.Size(69, 20)
-        Me.Adressefact_codepostale.TabIndex = 15
+        Me.Adressefact_codepostale.TabIndex = 14
         '
         'Lbl_AdressefactCodepostale
         '
         Me.Lbl_AdressefactCodepostale.AutoSize = True
         Me.Lbl_AdressefactCodepostale.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_AdressefactCodepostale.Location = New System.Drawing.Point(164, 134)
+        Me.Lbl_AdressefactCodepostale.Location = New System.Drawing.Point(164, 132)
         Me.Lbl_AdressefactCodepostale.Name = "Lbl_AdressefactCodepostale"
         Me.Lbl_AdressefactCodepostale.Size = New System.Drawing.Size(67, 13)
         Me.Lbl_AdressefactCodepostale.TabIndex = 49
@@ -209,7 +229,7 @@ Partial Class Ajout_Client_Particulier
         '
         Me.lbl_adressefact_No.AutoSize = True
         Me.lbl_adressefact_No.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_adressefact_No.Location = New System.Drawing.Point(11, 134)
+        Me.lbl_adressefact_No.Location = New System.Drawing.Point(11, 132)
         Me.lbl_adressefact_No.Name = "lbl_adressefact_No"
         Me.lbl_adressefact_No.Size = New System.Drawing.Size(84, 13)
         Me.lbl_adressefact_No.TabIndex = 48
@@ -217,10 +237,10 @@ Partial Class Ajout_Client_Particulier
         '
         'Adressefact_no
         '
-        Me.Adressefact_no.Location = New System.Drawing.Point(101, 131)
+        Me.Adressefact_no.Location = New System.Drawing.Point(101, 129)
         Me.Adressefact_no.Name = "Adressefact_no"
         Me.Adressefact_no.Size = New System.Drawing.Size(48, 20)
-        Me.Adressefact_no.TabIndex = 14
+        Me.Adressefact_no.TabIndex = 13
         '
         'CheckBox_courriel
         '
@@ -249,7 +269,7 @@ Partial Class Ajout_Client_Particulier
         Me.Lbl_fact.Location = New System.Drawing.Point(10, 71)
         Me.Lbl_fact.Name = "Lbl_fact"
         Me.Lbl_fact.Size = New System.Drawing.Size(71, 13)
-        Me.Lbl_fact.TabIndex = 11
+        Me.Lbl_fact.TabIndex = 12
         Me.Lbl_fact.Text = "Facturation"
         '
         'Lbl_langue
@@ -259,7 +279,7 @@ Partial Class Ajout_Client_Particulier
         Me.Lbl_langue.Location = New System.Drawing.Point(12, 26)
         Me.Lbl_langue.Name = "Lbl_langue"
         Me.Lbl_langue.Size = New System.Drawing.Size(49, 13)
-        Me.Lbl_langue.TabIndex = 10
+        Me.Lbl_langue.TabIndex = 11
         Me.Lbl_langue.Text = "Langue"
         '
         'TextBox13
@@ -267,7 +287,7 @@ Partial Class Ajout_Client_Particulier
         Me.TextBox13.Location = New System.Drawing.Point(63, 186)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(221, 20)
-        Me.TextBox13.TabIndex = 18
+        Me.TextBox13.TabIndex = 17
         '
         'Lbl_Adressefact_courriel
         '
@@ -305,7 +325,7 @@ Partial Class Ajout_Client_Particulier
         Me.ComboBox_AjoutcltCom_prov.Location = New System.Drawing.Point(301, 158)
         Me.ComboBox_AjoutcltCom_prov.Name = "ComboBox_AjoutcltCom_prov"
         Me.ComboBox_AjoutcltCom_prov.Size = New System.Drawing.Size(97, 21)
-        Me.ComboBox_AjoutcltCom_prov.TabIndex = 9
+        Me.ComboBox_AjoutcltCom_prov.TabIndex = 10
         '
         'Label5
         '
@@ -321,7 +341,7 @@ Partial Class Ajout_Client_Particulier
         Me.rue.Location = New System.Drawing.Point(47, 159)
         Me.rue.Name = "rue"
         Me.rue.Size = New System.Drawing.Size(184, 20)
-        Me.rue.TabIndex = 8
+        Me.rue.TabIndex = 9
         '
         'Lbl_rue
         '
@@ -341,15 +361,15 @@ Partial Class Ajout_Client_Particulier
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(338, 83)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(294, 83)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(104, 20)
-        Me.DateTimePicker2.TabIndex = 5
+        Me.DateTimePicker2.TabIndex = 6
         '
         'Lbl_AjoutcltCom_Birth
         '
         Me.Lbl_AjoutcltCom_Birth.AutoSize = True
-        Me.Lbl_AjoutcltCom_Birth.Location = New System.Drawing.Point(234, 86)
+        Me.Lbl_AjoutcltCom_Birth.Location = New System.Drawing.Point(190, 86)
         Me.Lbl_AjoutcltCom_Birth.Name = "Lbl_AjoutcltCom_Birth"
         Me.Lbl_AjoutcltCom_Birth.Size = New System.Drawing.Size(96, 13)
         Me.Lbl_AjoutcltCom_Birth.TabIndex = 16
@@ -357,15 +377,15 @@ Partial Class Ajout_Client_Particulier
         '
         'AjoutcltCom_tel
         '
-        Me.AjoutcltCom_tel.Location = New System.Drawing.Point(80, 83)
+        Me.AjoutcltCom_tel.Location = New System.Drawing.Point(78, 83)
         Me.AjoutcltCom_tel.Name = "AjoutcltCom_tel"
-        Me.AjoutcltCom_tel.Size = New System.Drawing.Size(140, 20)
-        Me.AjoutcltCom_tel.TabIndex = 4
+        Me.AjoutcltCom_tel.Size = New System.Drawing.Size(106, 20)
+        Me.AjoutcltCom_tel.TabIndex = 5
         '
         'Lb_tel
         '
         Me.Lb_tel.AutoSize = True
-        Me.Lb_tel.Location = New System.Drawing.Point(12, 86)
+        Me.Lb_tel.Location = New System.Drawing.Point(10, 86)
         Me.Lb_tel.Name = "Lb_tel"
         Me.Lb_tel.Size = New System.Drawing.Size(61, 13)
         Me.Lb_tel.TabIndex = 14
@@ -376,7 +396,7 @@ Partial Class Ajout_Client_Particulier
         Me.CodePostale.Location = New System.Drawing.Point(237, 134)
         Me.CodePostale.Name = "CodePostale"
         Me.CodePostale.Size = New System.Drawing.Size(69, 20)
-        Me.CodePostale.TabIndex = 7
+        Me.CodePostale.TabIndex = 8
         '
         'Lb_CodePostale
         '
@@ -401,7 +421,7 @@ Partial Class Ajout_Client_Particulier
         Me.NoCivique.Location = New System.Drawing.Point(101, 134)
         Me.NoCivique.Name = "NoCivique"
         Me.NoCivique.Size = New System.Drawing.Size(48, 20)
-        Me.NoCivique.TabIndex = 6
+        Me.NoCivique.TabIndex = 7
         '
         'Lb_adresse
         '
@@ -417,7 +437,7 @@ Partial Class Ajout_Client_Particulier
         '
         Me.AjoutcltCom_nom.Location = New System.Drawing.Point(49, 54)
         Me.AjoutcltCom_nom.Name = "AjoutcltCom_nom"
-        Me.AjoutcltCom_nom.Size = New System.Drawing.Size(169, 20)
+        Me.AjoutcltCom_nom.Size = New System.Drawing.Size(122, 20)
         Me.AjoutcltCom_nom.TabIndex = 2
         '
         'Lbl_AjoutcltCom_nom
@@ -431,15 +451,15 @@ Partial Class Ajout_Client_Particulier
         '
         'AjoutcltCom_prenom
         '
-        Me.AjoutcltCom_prenom.Location = New System.Drawing.Point(286, 54)
+        Me.AjoutcltCom_prenom.Location = New System.Drawing.Point(229, 54)
         Me.AjoutcltCom_prenom.Name = "AjoutcltCom_prenom"
-        Me.AjoutcltCom_prenom.Size = New System.Drawing.Size(156, 20)
+        Me.AjoutcltCom_prenom.Size = New System.Drawing.Size(110, 20)
         Me.AjoutcltCom_prenom.TabIndex = 3
         '
         'Lb_prenom
         '
         Me.Lb_prenom.AutoSize = True
-        Me.Lb_prenom.Location = New System.Drawing.Point(234, 57)
+        Me.Lb_prenom.Location = New System.Drawing.Point(177, 57)
         Me.Lb_prenom.Name = "Lb_prenom"
         Me.Lb_prenom.Size = New System.Drawing.Size(46, 13)
         Me.Lb_prenom.TabIndex = 2
@@ -469,7 +489,7 @@ Partial Class Ajout_Client_Particulier
         Me.GroupBox_mandataireCom.Controls.Add(Me.Lbl_mandaprenom)
         Me.GroupBox_mandataireCom.Location = New System.Drawing.Point(12, 409)
         Me.GroupBox_mandataireCom.Name = "GroupBox_mandataireCom"
-        Me.GroupBox_mandataireCom.Size = New System.Drawing.Size(520, 106)
+        Me.GroupBox_mandataireCom.Size = New System.Drawing.Size(523, 106)
         Me.GroupBox_mandataireCom.TabIndex = 40
         Me.GroupBox_mandataireCom.TabStop = False
         Me.GroupBox_mandataireCom.Text = "Mandataire"
@@ -479,7 +499,7 @@ Partial Class Ajout_Client_Particulier
         Me.mandajeunefille.Location = New System.Drawing.Point(387, 59)
         Me.mandajeunefille.Name = "mandajeunefille"
         Me.mandajeunefille.Size = New System.Drawing.Size(117, 20)
-        Me.mandajeunefille.TabIndex = 23
+        Me.mandajeunefille.TabIndex = 22
         '
         'lbl_mandajeunefille
         '
@@ -495,7 +515,7 @@ Partial Class Ajout_Client_Particulier
         Me.DateTimePicker_mandaBirth.Location = New System.Drawing.Point(114, 59)
         Me.DateTimePicker_mandaBirth.Name = "DateTimePicker_mandaBirth"
         Me.DateTimePicker_mandaBirth.Size = New System.Drawing.Size(104, 20)
-        Me.DateTimePicker_mandaBirth.TabIndex = 22
+        Me.DateTimePicker_mandaBirth.TabIndex = 21
         '
         'lbl_mandaBirth
         '
@@ -511,7 +531,7 @@ Partial Class Ajout_Client_Particulier
         Me.mandaTel.Location = New System.Drawing.Point(404, 31)
         Me.mandaTel.Name = "mandaTel"
         Me.mandaTel.Size = New System.Drawing.Size(100, 20)
-        Me.mandaTel.TabIndex = 21
+        Me.mandaTel.TabIndex = 20
         '
         'lbl_mandaTel
         '
@@ -527,7 +547,7 @@ Partial Class Ajout_Client_Particulier
         Me.mandaNom.Location = New System.Drawing.Point(50, 31)
         Me.mandaNom.Name = "mandaNom"
         Me.mandaNom.Size = New System.Drawing.Size(100, 20)
-        Me.mandaNom.TabIndex = 19
+        Me.mandaNom.TabIndex = 18
         '
         'lbl_mandaNom
         '
@@ -543,7 +563,7 @@ Partial Class Ajout_Client_Particulier
         Me.mandaprenom.Location = New System.Drawing.Point(217, 31)
         Me.mandaprenom.Name = "mandaprenom"
         Me.mandaprenom.Size = New System.Drawing.Size(100, 20)
-        Me.mandaprenom.TabIndex = 20
+        Me.mandaprenom.TabIndex = 19
         '
         'Lbl_mandaprenom
         '
@@ -558,7 +578,7 @@ Partial Class Ajout_Client_Particulier
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(543, 561)
+        Me.ClientSize = New System.Drawing.Size(547, 562)
         Me.Controls.Add(Me.GroupBox_mandataireCom)
         Me.Controls.Add(Me.Btn_CréerCltCom)
         Me.Controls.Add(Me.GroupBox1_ClientActuel)
@@ -624,4 +644,6 @@ Partial Class Ajout_Client_Particulier
     Friend WithEvents lbl_mandaNom As Label
     Friend WithEvents mandaprenom As TextBox
     Friend WithEvents Lbl_mandaprenom As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label1 As Label
 End Class

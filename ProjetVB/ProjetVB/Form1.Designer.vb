@@ -27,15 +27,14 @@ Partial Class Form1
         Me.CréerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RenouvelerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RésilierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ConsulterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModifierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.QuitterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ÉToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RéceptionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LivraisonToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModifierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AnnulerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.RetourToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuItem_Service = New System.Windows.Forms.ToolStripMenuItem()
         Me.FacturationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -77,7 +76,11 @@ Partial Class Form1
         Me.FormationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator12 = New System.Windows.Forms.ToolStripSeparator()
         Me.ÀProposSGARIToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.MenuStrip1.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -91,7 +94,7 @@ Partial Class Form1
         '
         'ContratToolStripMenuItem
         '
-        Me.ContratToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CréerToolStripMenuItem, Me.RenouvelerToolStripMenuItem, Me.RésilierToolStripMenuItem, Me.ToolStripSeparator2, Me.ConsulterToolStripMenuItem, Me.ModifierToolStripMenuItem, Me.ToolStripSeparator3, Me.QuitterToolStripMenuItem})
+        Me.ContratToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CréerToolStripMenuItem, Me.RenouvelerToolStripMenuItem, Me.RésilierToolStripMenuItem, Me.ToolStripSeparator3, Me.QuitterToolStripMenuItem})
         Me.ContratToolStripMenuItem.Name = "ContratToolStripMenuItem"
         Me.ContratToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ContratToolStripMenuItem.Text = "Contrat"
@@ -99,52 +102,35 @@ Partial Class Form1
         'CréerToolStripMenuItem
         '
         Me.CréerToolStripMenuItem.Name = "CréerToolStripMenuItem"
-        Me.CréerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CréerToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.CréerToolStripMenuItem.Text = "Créer"
         '
         'RenouvelerToolStripMenuItem
         '
         Me.RenouvelerToolStripMenuItem.Name = "RenouvelerToolStripMenuItem"
-        Me.RenouvelerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RenouvelerToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.RenouvelerToolStripMenuItem.Text = "Renouveler"
         '
         'RésilierToolStripMenuItem
         '
         Me.RésilierToolStripMenuItem.Name = "RésilierToolStripMenuItem"
-        Me.RésilierToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RésilierToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.RésilierToolStripMenuItem.Text = "Résilier"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
-        '
-        'ConsulterToolStripMenuItem
-        '
-        Me.ConsulterToolStripMenuItem.Name = "ConsulterToolStripMenuItem"
-        Me.ConsulterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ConsulterToolStripMenuItem.Text = "Consulter"
-        '
-        'ModifierToolStripMenuItem
-        '
-        Me.ModifierToolStripMenuItem.Name = "ModifierToolStripMenuItem"
-        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ModifierToolStripMenuItem.Text = "Modifier"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(130, 6)
         '
         'QuitterToolStripMenuItem
         '
         Me.QuitterToolStripMenuItem.Name = "QuitterToolStripMenuItem"
-        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.QuitterToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.QuitterToolStripMenuItem.Text = "Quitter"
         '
         'ÉToolStripMenuItem
         '
-        Me.ÉToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RéceptionToolStripMenuItem, Me.ToolStripSeparator4, Me.RetourToolStripMenuItem})
+        Me.ÉToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RéceptionToolStripMenuItem, Me.LivraisonToolStripMenuItem, Me.ToolStripSeparator4})
         Me.ÉToolStripMenuItem.Name = "ÉToolStripMenuItem"
         Me.ÉToolStripMenuItem.Size = New System.Drawing.Size(83, 20)
         Me.ÉToolStripMenuItem.Text = "Équipement"
@@ -152,19 +138,32 @@ Partial Class Form1
         'RéceptionToolStripMenuItem
         '
         Me.RéceptionToolStripMenuItem.Name = "RéceptionToolStripMenuItem"
-        Me.RéceptionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RéceptionToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.RéceptionToolStripMenuItem.Text = "Réception"
+        '
+        'LivraisonToolStripMenuItem
+        '
+        Me.LivraisonToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModifierToolStripMenuItem, Me.AnnulerToolStripMenuItem})
+        Me.LivraisonToolStripMenuItem.Name = "LivraisonToolStripMenuItem"
+        Me.LivraisonToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
+        Me.LivraisonToolStripMenuItem.Text = "Livraison"
+        '
+        'ModifierToolStripMenuItem
+        '
+        Me.ModifierToolStripMenuItem.Name = "ModifierToolStripMenuItem"
+        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.ModifierToolStripMenuItem.Text = "Modifier"
+        '
+        'AnnulerToolStripMenuItem
+        '
+        Me.AnnulerToolStripMenuItem.Name = "AnnulerToolStripMenuItem"
+        Me.AnnulerToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.AnnulerToolStripMenuItem.Text = "Annuler"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(149, 6)
-        '
-        'RetourToolStripMenuItem
-        '
-        Me.RetourToolStripMenuItem.Name = "RetourToolStripMenuItem"
-        Me.RetourToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.RetourToolStripMenuItem.Text = "Retour"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(124, 6)
         '
         'ServiceToolStripMenuItem
         '
@@ -176,7 +175,7 @@ Partial Class Form1
         'MenuItem_Service
         '
         Me.MenuItem_Service.Name = "MenuItem_Service"
-        Me.MenuItem_Service.Size = New System.Drawing.Size(152, 22)
+        Me.MenuItem_Service.Size = New System.Drawing.Size(142, 22)
         Me.MenuItem_Service.Text = "MÀJ services"
         '
         'FacturationToolStripMenuItem
@@ -190,36 +189,36 @@ Partial Class Form1
         '
         Me.FacturesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DaujourdhuiToolStripMenuItem, Me.AutresToolStripMenuItem})
         Me.FacturesToolStripMenuItem.Name = "FacturesToolStripMenuItem"
-        Me.FacturesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FacturesToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.FacturesToolStripMenuItem.Text = "Factures"
         '
         'DaujourdhuiToolStripMenuItem
         '
         Me.DaujourdhuiToolStripMenuItem.Name = "DaujourdhuiToolStripMenuItem"
-        Me.DaujourdhuiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DaujourdhuiToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.DaujourdhuiToolStripMenuItem.Text = "d'aujourd'hui"
         '
         'AutresToolStripMenuItem
         '
         Me.AutresToolStripMenuItem.Name = "AutresToolStripMenuItem"
-        Me.AutresToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AutresToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.AutresToolStripMenuItem.Text = "Autres"
         '
         'PaiementToolStripMenuItem
         '
         Me.PaiementToolStripMenuItem.Name = "PaiementToolStripMenuItem"
-        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.PaiementToolStripMenuItem.Text = "Paiement"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(121, 6)
         '
         'TaxeToolStripMenuItem
         '
         Me.TaxeToolStripMenuItem.Name = "TaxeToolStripMenuItem"
-        Me.TaxeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TaxeToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.TaxeToolStripMenuItem.Text = "Taxe"
         '
         'FournisseurToolStripMenuItem
@@ -232,19 +231,19 @@ Partial Class Form1
         'mnuCréerFournisseur
         '
         Me.mnuCréerFournisseur.Name = "mnuCréerFournisseur"
-        Me.mnuCréerFournisseur.Size = New System.Drawing.Size(152, 22)
+        Me.mnuCréerFournisseur.Size = New System.Drawing.Size(125, 22)
         Me.mnuCréerFournisseur.Text = "Créer"
         '
         'consulterFournisseur
         '
         Me.consulterFournisseur.Name = "consulterFournisseur"
-        Me.consulterFournisseur.Size = New System.Drawing.Size(152, 22)
+        Me.consulterFournisseur.Size = New System.Drawing.Size(125, 22)
         Me.consulterFournisseur.Text = "Consulter"
         '
         'mnuModifierFournisseur
         '
         Me.mnuModifierFournisseur.Name = "mnuModifierFournisseur"
-        Me.mnuModifierFournisseur.Size = New System.Drawing.Size(152, 22)
+        Me.mnuModifierFournisseur.Size = New System.Drawing.Size(125, 22)
         Me.mnuModifierFournisseur.Text = "Modifier"
         '
         'RapportsToolStripMenuItem
@@ -410,11 +409,32 @@ Partial Class Form1
         Me.ÀProposSGARIToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
         Me.ÀProposSGARIToolStripMenuItem.Text = "À propos SGARI"
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel2, Me.ToolStripStatusLabel1})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 654)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(1424, 22)
+        Me.StatusStrip1.TabIndex = 3
+        Me.StatusStrip1.Text = "TEst"
+        '
+        'ToolStripStatusLabel2
+        '
+        Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(118, 17)
+        Me.ToolStripStatusLabel2.Text = "Utilisateur connecté :"
+        '
+        'ToolStripStatusLabel1
+        '
+        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(0, 17)
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1424, 676)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
@@ -422,6 +442,8 @@ Partial Class Form1
         Me.Text = "SGARI : ABONNET"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -446,14 +468,10 @@ Partial Class Form1
     Friend WithEvents CréerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RenouvelerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RésilierToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
-    Friend WithEvents ConsulterToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ModifierToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents QuitterToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RéceptionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
-    Friend WithEvents RetourToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents mnuCréerFournisseur As ToolStripMenuItem
     Friend WithEvents consulterFournisseur As ToolStripMenuItem
     Friend WithEvents mnuModifierFournisseur As ToolStripMenuItem
@@ -482,4 +500,10 @@ Partial Class Form1
     Friend WithEvents FormationToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator12 As ToolStripSeparator
     Friend WithEvents ÀProposSGARIToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
+    Friend WithEvents ToolStripStatusLabel2 As ToolStripStatusLabel
+    Friend WithEvents LivraisonToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ModifierToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AnnulerToolStripMenuItem As ToolStripMenuItem
 End Class
