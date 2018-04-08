@@ -196,6 +196,7 @@
     <Compile Include="Retour équipement.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Équipement\Equip.vb" />
     <Compile Include="Équipement\Impression équipement receptionné.Designer.vb">
       <DependentUpon>Impression équipement receptionné.vb</DependentUpon>
     </Compile>
@@ -542,6 +543,65 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\AchevementContrats.datasource" />
+    <None Include="My Project\DataSources\Ajout.datasource" />
+    <None Include="My Project\DataSources\Ajout_Client_Commercial.datasource" />
+    <None Include="My Project\DataSources\Ajout_Client_Particulier.datasource" />
+    <None Include="My Project\DataSources\Annuler_Livraison.datasource" />
+    <None Include="My Project\DataSources\CarteDeCrédit.datasource" />
+    <None Include="My Project\DataSources\ChangerMotDePasse.datasource" />
+    <None Include="My Project\DataSources\Choix_Renouvellement.datasource" />
+    <None Include="My Project\DataSources\Choix_Résiliation.datasource" />
+    <None Include="My Project\DataSources\Chèque.datasource" />
+    <None Include="My Project\DataSources\Client.datasource" />
+    <None Include="My Project\DataSources\Confication_Équip_Ajouté.datasource" />
+    <None Include="My Project\DataSources\Confirmation_annulation_livraison.datasource" />
+    <None Include="My Project\DataSources\Confirmation_Client_Ajouté.datasource" />
+    <None Include="My Project\DataSources\Confirmation_Livraison.datasource" />
+    <None Include="My Project\DataSources\Confirmation_Mofidication_Livraison.datasource" />
+    <None Include="My Project\DataSources\Confirmation_Service_Ajouté.datasource" />
+    <None Include="My Project\DataSources\ConsulterFournisseur.datasource" />
+    <None Include="My Project\DataSources\ContratsOuverts.datasource" />
+    <None Include="My Project\DataSources\ContratsResiliers.datasource" />
+    <None Include="My Project\DataSources\CréerFournisseur.datasource" />
+    <None Include="My Project\DataSources\Créer_Contrat.datasource" />
+    <None Include="My Project\DataSources\Equip.datasource" />
+    <None Include="My Project\DataSources\EquipementCommander.datasource" />
+    <None Include="My Project\DataSources\EquipementRetour.datasource" />
+    <None Include="My Project\DataSources\Facture.datasource" />
+    <None Include="My Project\DataSources\FacturesScreen.datasource" />
+    <None Include="My Project\DataSources\Form1.datasource" />
+    <None Include="My Project\DataSources\Fournisseur.datasource" />
+    <None Include="My Project\DataSources\Impression_Contrat.datasource" />
+    <None Include="My Project\DataSources\Impression_Renouvellement.datasource" />
+    <None Include="My Project\DataSources\Impression_Réception.datasource" />
+    <None Include="My Project\DataSources\Impression_Résiliation.datasource" />
+    <None Include="My Project\DataSources\Impression_équipement_receptionné.datasource" />
+    <None Include="My Project\DataSources\LigneFacture.datasource" />
+    <None Include="My Project\DataSources\ListeUtilisateur.datasource" />
+    <None Include="My Project\DataSources\LogIn.datasource" />
+    <None Include="My Project\DataSources\MAJService.datasource" />
+    <None Include="My Project\DataSources\Mise_en_Service.datasource" />
+    <None Include="My Project\DataSources\Modification_équipement_et_service.datasource" />
+    <None Include="My Project\DataSources\ModifierFournisseur.datasource" />
+    <None Include="My Project\DataSources\Modifier_Livraison.datasource" />
+    <None Include="My Project\DataSources\Paiement.datasource" />
+    <None Include="My Project\DataSources\PaiementCarteCredit.datasource" />
+    <None Include="My Project\DataSources\PaiementRetraitDirect.datasource" />
+    <None Include="My Project\DataSources\PCarteCredit.datasource" />
+    <None Include="My Project\DataSources\PRetraitDirect.datasource" />
+    <None Include="My Project\DataSources\Rececption_équipement.datasource" />
+    <None Include="My Project\DataSources\Renouvellement.datasource" />
+    <None Include="My Project\DataSources\Retour_équipement.datasource" />
+    <None Include="My Project\DataSources\RetraitDirect.datasource" />
+    <None Include="My Project\DataSources\Résilier.datasource" />
+    <None Include="My Project\DataSources\Service.datasource" />
+    <None Include="My Project\DataSources\ServiceObject.datasource" />
+    <None Include="My Project\DataSources\Taxe.datasource" />
+    <None Include="My Project\DataSources\Validation_Annulation_livraison.datasource" />
+    <None Include="My Project\DataSources\Validation_bon_de_livraison.datasource" />
+    <None Include="My Project\DataSources\Validation_équipement.datasource" />
+    <None Include="My Project\DataSources\Équipement.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -549,6 +609,8 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

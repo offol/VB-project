@@ -23,6 +23,7 @@ Partial Class Équipement
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox_Équip = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.CheckBox18 = New System.Windows.Forms.CheckBox()
         Me.CheckBox17 = New System.Windows.Forms.CheckBox()
         Me.CheckBox16 = New System.Windows.Forms.CheckBox()
@@ -68,8 +69,7 @@ Partial Class Équipement
         Me.ListBox5 = New System.Windows.Forms.ListBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
-        Me.Btn_servicesave = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Btn_Equipsave = New System.Windows.Forms.Button()
         Me.GroupBox_Équip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -120,12 +120,22 @@ Partial Class Équipement
         Me.GroupBox_Équip.Controls.Add(Me.Ordi1)
         Me.GroupBox_Équip.Controls.Add(Me.ListBox5)
         Me.GroupBox_Équip.Controls.Add(Me.Label15)
-        Me.GroupBox_Équip.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox_Équip.Location = New System.Drawing.Point(12, 2)
         Me.GroupBox_Équip.Name = "GroupBox_Équip"
         Me.GroupBox_Équip.Size = New System.Drawing.Size(396, 980)
         Me.GroupBox_Équip.TabIndex = 0
         Me.GroupBox_Équip.TabStop = False
         Me.GroupBox_Équip.Text = "Équipement"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(278, 21)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(62, 15)
+        Me.Label5.TabIndex = 98
+        Me.Label5.Text = "Location"
         '
         'CheckBox18
         '
@@ -622,33 +632,23 @@ Partial Class Équipement
         Me.VScrollBar1.Size = New System.Drawing.Size(17, 80)
         Me.VScrollBar1.TabIndex = 1
         '
-        'Btn_servicesave
+        'Btn_Equipsave
         '
-        Me.Btn_servicesave.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_servicesave.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_servicesave.Location = New System.Drawing.Point(319, 998)
-        Me.Btn_servicesave.Name = "Btn_servicesave"
-        Me.Btn_servicesave.Size = New System.Drawing.Size(89, 30)
-        Me.Btn_servicesave.TabIndex = 55
-        Me.Btn_servicesave.Text = "Ajouter"
-        Me.Btn_servicesave.UseVisualStyleBackColor = True
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(278, 21)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(62, 15)
-        Me.Label5.TabIndex = 98
-        Me.Label5.Text = "Location"
+        Me.Btn_Equipsave.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_Equipsave.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Equipsave.Location = New System.Drawing.Point(318, 988)
+        Me.Btn_Equipsave.Name = "Btn_Equipsave"
+        Me.Btn_Equipsave.Size = New System.Drawing.Size(89, 30)
+        Me.Btn_Equipsave.TabIndex = 55
+        Me.Btn_Equipsave.Text = "Ajouter"
+        Me.Btn_Equipsave.UseVisualStyleBackColor = True
         '
         'Équipement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(419, 1039)
-        Me.Controls.Add(Me.Btn_servicesave)
+        Me.ClientSize = New System.Drawing.Size(419, 1023)
+        Me.Controls.Add(Me.Btn_Equipsave)
         Me.Controls.Add(Me.VScrollBar1)
         Me.Controls.Add(Me.GroupBox_Équip)
         Me.Name = "Équipement"
@@ -705,6 +705,6 @@ Partial Class Équipement
     Friend WithEvents CB_équip1A As CheckBox
     Friend WithEvents CB_équip1M As CheckBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Btn_servicesave As Button
+    Friend WithEvents Btn_Equipsave As Button
     Friend WithEvents Label5 As Label
 End Class

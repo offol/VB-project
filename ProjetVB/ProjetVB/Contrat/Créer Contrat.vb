@@ -1,4 +1,6 @@
 ﻿Public Class Créer_Contrat
+
+
     Private Sub Button_NewLigneFac_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -40,7 +42,7 @@
         NumContrat.Text = ramdomnumber.Next()
     End Sub
 
-    Private Sub Btn_cliParticulier_Click(sender As Object, e As EventArgs) Handles Btn_cliParticulier.Click
+    Private Sub Btn_cliParticulier_Click(sender As Object, e As EventArgs) Handles btn_cliParticulier.Click
         Dim Particulier As New Ajout_Client_Particulier() With {
                    .MdiParent = Form1
                }
@@ -48,7 +50,7 @@
 
     End Sub
 
-    Private Sub Btn_cliCommercial_Click(sender As Object, e As EventArgs) Handles Btn_cliCommercial.Click
+    Private Sub Btn_cliCommercial_Click(sender As Object, e As EventArgs) Handles btn_cliCommercial.Click
         Dim Commercial As New Ajout_Client_Commercial() With {
                 .MdiParent = Form1
             }
@@ -102,7 +104,7 @@
 
     End Sub
 
-    Private Sub DataGridView_LigneFacture_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView_LigneFacture.CellContentClick
+    Public Sub DataGridView_LigneFacture_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView_LignesEquipement.CellContentClick
 
     End Sub
 End Class
