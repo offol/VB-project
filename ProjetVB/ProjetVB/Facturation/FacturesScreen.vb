@@ -40,6 +40,10 @@
 
         ListFactures.Add(New Facture(1, maxNum, System.DateTime.Now.ToString(), "Ouvert", 0, 0, 0, 0, Nothing, 0))
 
+        Dim DBLigneFac As List(Of LigneFacture) = DataBase.LignesFactures
+
+        DBLigneFac.Add(New LigneFacture(maxNum, 1, "", 0, 0, 0))
+
         UpdateDataSource()
 
     End Sub
