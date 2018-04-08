@@ -547,7 +547,7 @@ Partial Class Créer_Contrat
         '
         'EquipBindingSource
         '
-        Me.EquipBindingSource.DataSource = GetType(ProjetVB.Equip)
+        Me.EquipBindingSource.DataSource = GetType(ProjetVB.Equip_Object)
         '
         'ValidationéquipementBindingSource
         '
