@@ -16,9 +16,9 @@
     End Sub
 
     Private Sub Équipement_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim BDEquiplist As List(Of Equip) = DataBase.LignesEquip
+        Dim BDEquiplist As List(Of Equip_Object) = DataBase.LignesEquip
 
-        Dim Listecurrentequip As List(Of Equip) = New List(Of Equip)
+        Dim Listecurrentequip As List(Of Equip_Object) = New List(Of Equip_Object)
 
         If CB_équip1M.Checked = True Then
             Listecurrentequip.Add(BDEquiplist.Where(Function(i) i.NumEquip = 1).First)

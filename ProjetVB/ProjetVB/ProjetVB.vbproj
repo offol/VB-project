@@ -98,6 +98,7 @@
     <Compile Include="Contrat\Confirmation Livraison.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Contrat\Equip_Object.vb" />
     <Compile Include="Contrat\Impression Contrat.Designer.vb">
       <DependentUpon>Impression Contrat.vb</DependentUpon>
     </Compile>
@@ -196,7 +197,6 @@
     <Compile Include="Retour équipement.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Équipement\Equip.vb" />
     <Compile Include="Équipement\Impression équipement receptionné.Designer.vb">
       <DependentUpon>Impression équipement receptionné.vb</DependentUpon>
     </Compile>
