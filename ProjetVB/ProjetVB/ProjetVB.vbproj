@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contrat\AjoutClient.Designer.vb">
+      <DependentUpon>AjoutClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contrat\AjoutClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Contrat\Choix Résiliation.Designer.vb">
       <DependentUpon>Choix Résiliation.vb</DependentUpon>
     </Compile>
@@ -98,6 +104,7 @@
     <Compile Include="Contrat\Confirmation Livraison.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Contrat\Contrat.vb" />
     <Compile Include="Contrat\Equip_Object.vb" />
     <Compile Include="Contrat\Impression Contrat.Designer.vb">
       <DependentUpon>Impression Contrat.vb</DependentUpon>
@@ -115,6 +122,12 @@
       <DependentUpon>Mise en Service.vb</DependentUpon>
     </Compile>
     <Compile Include="Contrat\Mise en Service.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formation.Designer.vb">
+      <DependentUpon>Formation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formation.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Fournisseur\StatutFournisseur.Designer.vb">
@@ -171,12 +184,6 @@
     <Compile Include="Rapports\ContratsResiliers.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Rapports\EquipementCommander.Designer.vb">
-      <DependentUpon>EquipementCommander.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Rapports\EquipementCommander.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Rapports\EquipementRetour.Designer.vb">
       <DependentUpon>EquipementRetour.vb</DependentUpon>
     </Compile>
@@ -203,6 +210,7 @@
     <Compile Include="Retour équipement.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Sécurité\Utilisateur.vb" />
     <Compile Include="Équipement\Impression équipement receptionné.Designer.vb">
       <DependentUpon>Impression équipement receptionné.vb</DependentUpon>
     </Compile>
@@ -399,6 +407,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Contrat\AjoutClient.resx">
+      <DependentUpon>AjoutClient.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contrat\Choix Résiliation.resx">
       <DependentUpon>Choix Résiliation.vb</DependentUpon>
     </EmbeddedResource>
@@ -419,6 +430,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Contrat\Mise en Service.resx">
       <DependentUpon>Mise en Service.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formation.resx">
+      <DependentUpon>Formation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fournisseur\StatutFournisseur.resx">
       <DependentUpon>StatutFournisseur.vb</DependentUpon>
@@ -446,9 +460,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rapports\ContratsResiliers.resx">
       <DependentUpon>ContratsResiliers.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Rapports\EquipementCommander.resx">
-      <DependentUpon>EquipementCommander.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Rapports\EquipementRetour.resx">
       <DependentUpon>EquipementRetour.vb</DependentUpon>

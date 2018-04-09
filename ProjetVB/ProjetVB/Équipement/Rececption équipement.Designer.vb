@@ -23,7 +23,7 @@ Partial Class Rececption_équipement
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextboxNumsérie = New System.Windows.Forms.TextBox()
         Me.BtnValideréquip = New System.Windows.Forms.Button()
         Me.Gbaccesoires = New System.Windows.Forms.GroupBox()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
@@ -47,12 +47,12 @@ Partial Class Rececption_équipement
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Numéro de série:"
         '
-        'TextBox1
+        'TextboxNumsérie
         '
-        Me.TextBox1.Location = New System.Drawing.Point(105, 19)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(198, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.TextboxNumsérie.Location = New System.Drawing.Point(105, 19)
+        Me.TextboxNumsérie.Name = "TextboxNumsérie"
+        Me.TextboxNumsérie.Size = New System.Drawing.Size(198, 20)
+        Me.TextboxNumsérie.TabIndex = 1
         '
         'BtnValideréquip
         '
@@ -168,7 +168,7 @@ Partial Class Rececption_équipement
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Gbaccesoires)
         Me.Controls.Add(Me.BtnValideréquip)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextboxNumsérie)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Rececption_équipement"
         Me.Text = "Rececption_équipement"
@@ -182,7 +182,7 @@ Partial Class Rececption_équipement
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextboxNumsérie As TextBox
     Friend WithEvents BtnValideréquip As Button
     Friend WithEvents Gbaccesoires As GroupBox
     Friend WithEvents CheckBox4 As CheckBox

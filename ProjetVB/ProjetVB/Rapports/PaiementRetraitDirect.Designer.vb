@@ -22,54 +22,56 @@ Partial Class PaiementRetraitDirect
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView_PRD = New System.Windows.Forms.DataGridView()
-        Me.NumeroCompte = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TypeDeCompte = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MontantPaye = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.DataGridView_PRD, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
-        '
-        'DataGridView_PRD
-        '
-        Me.DataGridView_PRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView_PRD.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumeroCompte, Me.TypeDeCompte, Me.MontantPaye})
-        Me.DataGridView_PRD.Location = New System.Drawing.Point(31, 25)
-        Me.DataGridView_PRD.Name = "DataGridView_PRD"
-        Me.DataGridView_PRD.Size = New System.Drawing.Size(367, 166)
-        Me.DataGridView_PRD.TabIndex = 0
-        '
-        'NumeroCompte
-        '
-        Me.NumeroCompte.DataPropertyName = "Numero_Compte"
-        Me.NumeroCompte.HeaderText = "Numéro de Compte"
-        Me.NumeroCompte.Name = "NumeroCompte"
-        '
-        'TypeDeCompte
-        '
-        Me.TypeDeCompte.DataPropertyName = "Type_Compte"
-        Me.TypeDeCompte.HeaderText = "Type de Compte"
-        Me.TypeDeCompte.Name = "TypeDeCompte"
-        '
-        'MontantPaye
-        '
-        Me.MontantPaye.DataPropertyName = "Montant_Paye"
-        Me.MontantPaye.HeaderText = "Montant Payé"
-        Me.MontantPaye.Name = "MontantPaye"
-        '
-        'PaiementRetraitDirect
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(460, 246)
-        Me.Controls.Add(Me.DataGridView_PRD)
-        Me.Name = "PaiementRetraitDirect"
-        Me.Text = "PaiementRetraitDirect"
-        CType(Me.DataGridView_PRD, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
+		Me.DataGridView_PRD = New System.Windows.Forms.DataGridView()
+		Me.NumeroCompte = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.TypeDeCompte = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.MontantPaye = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		CType(Me.DataGridView_PRD, System.ComponentModel.ISupportInitialize).BeginInit()
+		Me.SuspendLayout()
+		'
+		'DataGridView_PRD
+		'
+		Me.DataGridView_PRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+		Me.DataGridView_PRD.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumeroCompte, Me.TypeDeCompte, Me.MontantPaye})
+		Me.DataGridView_PRD.Location = New System.Drawing.Point(41, 31)
+		Me.DataGridView_PRD.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+		Me.DataGridView_PRD.Name = "DataGridView_PRD"
+		Me.DataGridView_PRD.Size = New System.Drawing.Size(489, 204)
+		Me.DataGridView_PRD.TabIndex = 0
+		'
+		'NumeroCompte
+		'
+		Me.NumeroCompte.DataPropertyName = "Numero_Compte"
+		Me.NumeroCompte.HeaderText = "Numéro de Compte"
+		Me.NumeroCompte.Name = "NumeroCompte"
+		'
+		'TypeDeCompte
+		'
+		Me.TypeDeCompte.DataPropertyName = "Type_Compte"
+		Me.TypeDeCompte.HeaderText = "Type de Compte"
+		Me.TypeDeCompte.Name = "TypeDeCompte"
+		'
+		'MontantPaye
+		'
+		Me.MontantPaye.DataPropertyName = "Montant_Paye"
+		Me.MontantPaye.HeaderText = "Montant Payé"
+		Me.MontantPaye.Name = "MontantPaye"
+		'
+		'PaiementRetraitDirect
+		'
+		Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+		Me.ClientSize = New System.Drawing.Size(613, 303)
+		Me.Controls.Add(Me.DataGridView_PRD)
+		Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+		Me.Name = "PaiementRetraitDirect"
+		Me.Text = "PaiementRetraitDirect"
+		CType(Me.DataGridView_PRD, System.ComponentModel.ISupportInitialize).EndInit()
+		Me.ResumeLayout(False)
 
-    End Sub
+	End Sub
 
-    Friend WithEvents DataGridView_PRD As DataGridView
+	Friend WithEvents DataGridView_PRD As DataGridView
     Friend WithEvents NumeroCompte As DataGridViewTextBoxColumn
     Friend WithEvents TypeDeCompte As DataGridViewTextBoxColumn
     Friend WithEvents MontantPaye As DataGridViewTextBoxColumn

@@ -27,18 +27,8 @@ Partial Class Modification_équipement_et_service
         Me.Btn_supprimer = New System.Windows.Forms.Button()
         Me.btnComplete = New System.Windows.Forms.Button()
         Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridView_LigneFacture = New System.Windows.Forms.DataGridView()
-        Me.Numéro_Équiement = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Type = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Description = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantité = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Prix_Unitaire = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGrid_Service = New System.Windows.Forms.DataGridView()
+        Me.DataGridView_LignesEquipement = New System.Windows.Forms.DataGridView()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnService = New System.Windows.Forms.Button()
         Me.btnEquipement = New System.Windows.Forms.Button()
@@ -48,9 +38,18 @@ Partial Class Modification_équipement_et_service
         Me.Lb_DateResi = New System.Windows.Forms.Label()
         Me.Lb_DateOuv = New System.Windows.Forms.Label()
         Me.Lb_NoContrat = New System.Windows.Forms.Label()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Numéro_Équiement = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Description = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Type = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantité = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Prix_Unitaire = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1_Contrat.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView_LigneFacture, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGrid_Service, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView_LignesEquipement, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1_Contrat
@@ -59,8 +58,8 @@ Partial Class Modification_équipement_et_service
         Me.GroupBox1_Contrat.Controls.Add(Me.Btn_supprimer)
         Me.GroupBox1_Contrat.Controls.Add(Me.btnComplete)
         Me.GroupBox1_Contrat.Controls.Add(Me.DateTimePicker3)
-        Me.GroupBox1_Contrat.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1_Contrat.Controls.Add(Me.DataGridView_LigneFacture)
+        Me.GroupBox1_Contrat.Controls.Add(Me.DataGrid_Service)
+        Me.GroupBox1_Contrat.Controls.Add(Me.DataGridView_LignesEquipement)
         Me.GroupBox1_Contrat.Controls.Add(Me.Label4)
         Me.GroupBox1_Contrat.Controls.Add(Me.btnService)
         Me.GroupBox1_Contrat.Controls.Add(Me.btnEquipement)
@@ -72,7 +71,7 @@ Partial Class Modification_équipement_et_service
         Me.GroupBox1_Contrat.Controls.Add(Me.Lb_NoContrat)
         Me.GroupBox1_Contrat.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1_Contrat.Name = "GroupBox1_Contrat"
-        Me.GroupBox1_Contrat.Size = New System.Drawing.Size(656, 539)
+        Me.GroupBox1_Contrat.Size = New System.Drawing.Size(572, 539)
         Me.GroupBox1_Contrat.TabIndex = 14
         Me.GroupBox1_Contrat.TabStop = False
         Me.GroupBox1_Contrat.Text = "Renouvellement contrat"
@@ -81,7 +80,7 @@ Partial Class Modification_équipement_et_service
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(440, 491)
+        Me.Button1.Location = New System.Drawing.Point(415, 467)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(59, 22)
         Me.Button1.TabIndex = 26
@@ -92,7 +91,7 @@ Partial Class Modification_équipement_et_service
         '
         Me.Btn_supprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_supprimer.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_supprimer.Location = New System.Drawing.Point(440, 262)
+        Me.Btn_supprimer.Location = New System.Drawing.Point(505, 238)
         Me.Btn_supprimer.Name = "Btn_supprimer"
         Me.Btn_supprimer.Size = New System.Drawing.Size(59, 22)
         Me.Btn_supprimer.TabIndex = 25
@@ -103,7 +102,7 @@ Partial Class Modification_équipement_et_service
         '
         Me.btnComplete.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnComplete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnComplete.Location = New System.Drawing.Point(540, 503)
+        Me.btnComplete.Location = New System.Drawing.Point(454, 503)
         Me.btnComplete.Name = "btnComplete"
         Me.btnComplete.Size = New System.Drawing.Size(110, 30)
         Me.btnComplete.TabIndex = 17
@@ -117,97 +116,29 @@ Partial Class Modification_équipement_et_service
         Me.DateTimePicker3.Size = New System.Drawing.Size(104, 20)
         Me.DateTimePicker3.TabIndex = 22
         '
-        'DataGridView1
+        'DataGrid_Service
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
-        Me.DataGridView1.Location = New System.Drawing.Point(9, 312)
-        Me.DataGridView1.MultiSelect = False
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(490, 177)
-        Me.DataGridView1.TabIndex = 24
+        Me.DataGrid_Service.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGrid_Service.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn5})
+        Me.DataGrid_Service.Location = New System.Drawing.Point(9, 312)
+        Me.DataGrid_Service.MultiSelect = False
+        Me.DataGrid_Service.Name = "DataGrid_Service"
+        Me.DataGrid_Service.RowHeadersVisible = False
+        Me.DataGrid_Service.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGrid_Service.Size = New System.Drawing.Size(400, 177)
+        Me.DataGrid_Service.TabIndex = 24
         '
-        'DataGridViewTextBoxColumn1
+        'DataGridView_LignesEquipement
         '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Numéro Équipement"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Numéro d'équipement"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Type"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Type"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Description"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Description"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Quantité"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Quantité"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Prix_Unitaire"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Prix Unitaire"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.ReadOnly = True
-        '
-        'DataGridView_LigneFacture
-        '
-        Me.DataGridView_LigneFacture.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView_LigneFacture.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Numéro_Équiement, Me.Type, Me.Description, Me.Quantité, Me.Prix_Unitaire})
-        Me.DataGridView_LigneFacture.Location = New System.Drawing.Point(9, 83)
-        Me.DataGridView_LigneFacture.MultiSelect = False
-        Me.DataGridView_LigneFacture.Name = "DataGridView_LigneFacture"
-        Me.DataGridView_LigneFacture.RowHeadersVisible = False
-        Me.DataGridView_LigneFacture.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView_LigneFacture.Size = New System.Drawing.Size(490, 177)
-        Me.DataGridView_LigneFacture.TabIndex = 23
-        '
-        'Numéro_Équiement
-        '
-        Me.Numéro_Équiement.DataPropertyName = "Numéro Équipement"
-        Me.Numéro_Équiement.HeaderText = "Numéro d'équipement"
-        Me.Numéro_Équiement.Name = "Numéro_Équiement"
-        Me.Numéro_Équiement.ReadOnly = True
-        '
-        'Type
-        '
-        Me.Type.DataPropertyName = "Type"
-        Me.Type.HeaderText = "Type"
-        Me.Type.Name = "Type"
-        Me.Type.ReadOnly = True
-        '
-        'Description
-        '
-        Me.Description.DataPropertyName = "Description"
-        Me.Description.HeaderText = "Description"
-        Me.Description.Name = "Description"
-        Me.Description.ReadOnly = True
-        '
-        'Quantité
-        '
-        Me.Quantité.DataPropertyName = "Quantité"
-        Me.Quantité.HeaderText = "Quantité"
-        Me.Quantité.Name = "Quantité"
-        '
-        'Prix_Unitaire
-        '
-        Me.Prix_Unitaire.DataPropertyName = "Prix Unitaire"
-        Me.Prix_Unitaire.HeaderText = "Prix Unitaire"
-        Me.Prix_Unitaire.Name = "Prix_Unitaire"
-        Me.Prix_Unitaire.ReadOnly = True
+        Me.DataGridView_LignesEquipement.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView_LignesEquipement.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Numéro_Équiement, Me.Description, Me.Type, Me.Quantité, Me.Prix_Unitaire})
+        Me.DataGridView_LignesEquipement.Location = New System.Drawing.Point(9, 83)
+        Me.DataGridView_LignesEquipement.MultiSelect = False
+        Me.DataGridView_LignesEquipement.Name = "DataGridView_LignesEquipement"
+        Me.DataGridView_LignesEquipement.RowHeadersVisible = False
+        Me.DataGridView_LignesEquipement.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView_LignesEquipement.Size = New System.Drawing.Size(490, 177)
+        Me.DataGridView_LignesEquipement.TabIndex = 23
         '
         'Label4
         '
@@ -247,14 +178,14 @@ Partial Class Modification_équipement_et_service
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(534, 48)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(450, 51)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(104, 20)
         Me.DateTimePicker2.TabIndex = 18
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(534, 22)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(450, 25)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(114, 20)
         Me.DateTimePicker1.TabIndex = 17
@@ -262,7 +193,7 @@ Partial Class Modification_équipement_et_service
         'Lb_DateResi
         '
         Me.Lb_DateResi.AutoSize = True
-        Me.Lb_DateResi.Location = New System.Drawing.Point(419, 54)
+        Me.Lb_DateResi.Location = New System.Drawing.Point(335, 57)
         Me.Lb_DateResi.Name = "Lb_DateResi"
         Me.Lb_DateResi.Size = New System.Drawing.Size(99, 13)
         Me.Lb_DateResi.TabIndex = 16
@@ -271,7 +202,7 @@ Partial Class Modification_équipement_et_service
         'Lb_DateOuv
         '
         Me.Lb_DateOuv.AutoSize = True
-        Me.Lb_DateOuv.Location = New System.Drawing.Point(419, 25)
+        Me.Lb_DateOuv.Location = New System.Drawing.Point(335, 28)
         Me.Lb_DateOuv.Name = "Lb_DateOuv"
         Me.Lb_DateOuv.Size = New System.Drawing.Size(89, 13)
         Me.Lb_DateOuv.TabIndex = 15
@@ -286,18 +217,80 @@ Partial Class Modification_équipement_et_service
         Me.Lb_NoContrat.TabIndex = 14
         Me.Lb_NoContrat.Text = "Numero Contrat:"
         '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Id"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Numéro d'équipement"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Nom"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Description"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Description"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Type"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Prix"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Prix Unitaire"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        '
+        'Numéro_Équiement
+        '
+        Me.Numéro_Équiement.DataPropertyName = "NumEquip"
+        Me.Numéro_Équiement.HeaderText = "Numéro d'équipement"
+        Me.Numéro_Équiement.Name = "Numéro_Équiement"
+        Me.Numéro_Équiement.ReadOnly = True
+        '
+        'Description
+        '
+        Me.Description.DataPropertyName = "Location"
+        Me.Description.HeaderText = "Location"
+        Me.Description.Name = "Description"
+        Me.Description.ReadOnly = True
+        '
+        'Type
+        '
+        Me.Type.DataPropertyName = "Type"
+        Me.Type.HeaderText = "Type"
+        Me.Type.Name = "Type"
+        Me.Type.ReadOnly = True
+        '
+        'Quantité
+        '
+        Me.Quantité.DataPropertyName = "Quantity"
+        Me.Quantité.HeaderText = "Quantité"
+        Me.Quantité.Name = "Quantité"
+        '
+        'Prix_Unitaire
+        '
+        Me.Prix_Unitaire.DataPropertyName = "Price"
+        Me.Prix_Unitaire.HeaderText = "Prix Unitaire"
+        Me.Prix_Unitaire.Name = "Prix_Unitaire"
+        Me.Prix_Unitaire.ReadOnly = True
+        '
         'Modification_équipement_et_service
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(679, 559)
+        Me.ClientSize = New System.Drawing.Size(597, 559)
         Me.Controls.Add(Me.GroupBox1_Contrat)
         Me.Name = "Modification_équipement_et_service"
         Me.Text = "Modification_équipement_et_service"
         Me.GroupBox1_Contrat.ResumeLayout(False)
         Me.GroupBox1_Contrat.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView_LigneFacture, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGrid_Service, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView_LignesEquipement, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -307,18 +300,8 @@ Partial Class Modification_équipement_et_service
     Friend WithEvents Btn_supprimer As Button
     Friend WithEvents btnComplete As Button
     Friend WithEvents DateTimePicker3 As DateTimePicker
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridView_LigneFacture As DataGridView
-    Friend WithEvents Numéro_Équiement As DataGridViewTextBoxColumn
-    Friend WithEvents Type As DataGridViewTextBoxColumn
-    Friend WithEvents Description As DataGridViewTextBoxColumn
-    Friend WithEvents Quantité As DataGridViewTextBoxColumn
-    Friend WithEvents Prix_Unitaire As DataGridViewTextBoxColumn
+    Friend WithEvents DataGrid_Service As DataGridView
+    Friend WithEvents DataGridView_LignesEquipement As DataGridView
     Friend WithEvents Label4 As Label
     Friend WithEvents btnService As Button
     Friend WithEvents btnEquipement As Button
@@ -328,4 +311,13 @@ Partial Class Modification_équipement_et_service
     Friend WithEvents Lb_DateResi As Label
     Friend WithEvents Lb_DateOuv As Label
     Friend WithEvents Lb_NoContrat As Label
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents Numéro_Équiement As DataGridViewTextBoxColumn
+    Friend WithEvents Description As DataGridViewTextBoxColumn
+    Friend WithEvents Type As DataGridViewTextBoxColumn
+    Friend WithEvents Quantité As DataGridViewTextBoxColumn
+    Friend WithEvents Prix_Unitaire As DataGridViewTextBoxColumn
 End Class

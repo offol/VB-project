@@ -2,10 +2,25 @@
 'Ajouter les données que vous voulez a l'intérieur de ce module
 Public Module DataBase
 
+    'Liste des utilisateurs existant
+    Public ListUser = New List(Of Utilisateur) From {
+        New Utilisateur("Mouf04", "François-Xavier Mousseau", "819-543-4673", "12345"),
+        New Utilisateur("Hebj12", "Jean-Marc Hébert", "819-435-6256", "12345"),
+        New Utilisateur("Sege09", "Émilie Séguin", "819-346-4353", "12345"),
+        New Utilisateur("Adam08", "Marc-Antoine Adam", "819-456-3253", "12345")
+    }
+
+    'Liste des fournisseurs
+    Public ListFournisseur = New List(Of Fournisseur) From {
+        New Fournisseur(1, "Costco", "234 rue du pigeon", "819-654-2334", "819-456-3255")
+    }
+
+    'Liste de paiement fait par carte de crédit
     Public PaiementCredit = New List(Of PCarteCredit) From {
         New PCarteCredit("123456789", New System.DateTime(1993, 5, 31, 12, 14, 0), "Visa", 230.99)
     }
 
+    'Liste de paiement fait par retrait direct
     Public PaiementRetrait = New List(Of PRetraitDirect) From {
         New PRetraitDirect("567546", "Desjardin", 543.82)
     }
@@ -15,11 +30,14 @@ Public Module DataBase
         New Client(1, "Entreprise", "blabla road", "819-456-3456", "819-436-7654")
     }
 
-
     'Liste de services
     Public Services = New List(Of ServiceObject) From {
-            New ServiceObject(1, "Service1", "blabla", 2.5),
-            New ServiceObject(2, "Service2", "Bonjour", 3)
+            New ServiceObject(1, "Installation des équipements", "Base", 50),
+            New ServiceObject(2, "Assistance téléphonique", "Base", 125),
+            New ServiceObject(3, "Formation du personnel", "Plus", 325),
+            New ServiceObject(4, " Impression des rapports et statistiques", "Plus", 300),
+            New ServiceObject(5, "Réparation des équipements", "Premium", 425),
+            New ServiceObject(6, "Programmation des pages Web", "Premium", 600)
         }
 
     'Liste de factures
@@ -77,5 +95,43 @@ Public Module DataBase
         New Equip_Object(10, "Mensuelle", "Multimédia", 1, 70),
         New Equip_Object(10, "Annuelle", "Multimédia", 1, 780)
     }
+
+	Public ContratsActifs = New List(Of Contrat) From {
+			New Contrat(1,
+					"actif",
+					New DateTime(2016, 5, 14, 15, 25, 0),
+					New DateTime(2018, 5, 14, 23, 59, 59),
+					New List(Of Equip_Object) From {
+						New Equip_Object(2, "Annuelle", "Bureautique", 5, 650),
+						New Equip_Object(4, "Annuelle", "Bureautique", 5, 650),
+						New Equip_Object(9, "Annuelle", "Multimédia", 2, 820)
+					},
+					New List(Of ServiceObject) From {
+						New ServiceObject(1, "Installation des équipements", "Base", 50),
+						New ServiceObject(3, "Formation du personnel", "Plus", 325),
+						New ServiceObject(5, "Réparation des équipements", "Premium", 425)
+					},
+					New DateTime(2016, 5, 15, 10, 20, 0)
+			)
+	}
+
+	Public ContratsResiliers = New List(Of Contrat) From {
+		New Contrat(1,
+					"inactif",
+					New DateTime(2010, 10, 25, 13, 57, 0),
+					New DateTime(2012, 10, 25, 23, 59, 59),
+					New List(Of Equip_Object) From {
+						New Equip_Object(2, "Annuelle", "Bureautique", 1, 650),
+						New Equip_Object(10, "Annuelle", "Multimédia", 1, 780),
+						New Equip_Object(6, "Annuelle", "Multimédia", 1, 700)
+					},
+					New List(Of ServiceObject) From {
+						New ServiceObject(1, "Installation des équipements", "Base", 50),
+						New ServiceObject(5, "Réparation des équipements", "Premium", 425),
+						New ServiceObject(6, "Programmation des pages Web", "Premium", 600)
+					},
+					New DateTime(2010, 10, 30, 12, 35, 0)
+	)
+	}
 
 End Module

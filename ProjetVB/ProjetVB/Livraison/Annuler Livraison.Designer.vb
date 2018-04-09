@@ -23,7 +23,7 @@ Partial Class Annuler_Livraison
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnComplete = New System.Windows.Forms.Button()
-        Me.NoCommande = New System.Windows.Forms.TextBox()
+        Me.NoCommandeAnnuler = New System.Windows.Forms.TextBox()
         Me.Lb_NoClient = New System.Windows.Forms.Label()
         Me.LbLivreur = New System.Windows.Forms.Label()
         Me.ComboBox_AjoutcltCom_prov = New System.Windows.Forms.ComboBox()
@@ -41,12 +41,12 @@ Partial Class Annuler_Livraison
         Me.btnComplete.Text = "Annuler"
         Me.btnComplete.UseVisualStyleBackColor = True
         '
-        'NoCommande
+        'NoCommandeAnnuler
         '
-        Me.NoCommande.Location = New System.Drawing.Point(199, 18)
-        Me.NoCommande.Name = "NoCommande"
-        Me.NoCommande.Size = New System.Drawing.Size(127, 20)
-        Me.NoCommande.TabIndex = 39
+        Me.NoCommandeAnnuler.Location = New System.Drawing.Point(199, 18)
+        Me.NoCommandeAnnuler.Name = "NoCommandeAnnuler"
+        Me.NoCommandeAnnuler.Size = New System.Drawing.Size(127, 20)
+        Me.NoCommandeAnnuler.TabIndex = 39
         '
         'Lb_NoClient
         '
@@ -95,7 +95,7 @@ Partial Class Annuler_Livraison
         Me.Controls.Add(Me.LbLivreur)
         Me.Controls.Add(Me.ComboBox_AjoutcltCom_prov)
         Me.Controls.Add(Me.btnComplete)
-        Me.Controls.Add(Me.NoCommande)
+        Me.Controls.Add(Me.NoCommandeAnnuler)
         Me.Controls.Add(Me.Lb_NoClient)
         Me.Name = "Annuler_Livraison"
         Me.Text = "Annuler_Livraison"
@@ -105,7 +105,7 @@ Partial Class Annuler_Livraison
     End Sub
 
     Friend WithEvents btnComplete As Button
-    Friend WithEvents NoCommande As TextBox
+    Friend WithEvents NoCommandeAnnuler As TextBox
     Friend WithEvents Lb_NoClient As Label
     Friend WithEvents LbLivreur As Label
     Friend WithEvents ComboBox_AjoutcltCom_prov As ComboBox

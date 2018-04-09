@@ -44,16 +44,20 @@ Partial Class Créer_Contrat
         Me.Lb_NoClient = New System.Windows.Forms.Label()
         Me.GroupBox1_Contrat = New System.Windows.Forms.GroupBox()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Btn_SuppService = New System.Windows.Forms.Button()
         Me.Btn_supprimer = New System.Windows.Forms.Button()
         Me.btnComplete = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DataGrid_Service = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridView_LignesEquipement = New System.Windows.Forms.DataGridView()
+        Me.Numéro_Équiement = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Location = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Type = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantité = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Prix_Unitaire = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnService = New System.Windows.Forms.Button()
         Me.btnEquipement = New System.Windows.Forms.Button()
         Me.NumContrat = New System.Windows.Forms.TextBox()
@@ -67,16 +71,11 @@ Partial Class Créer_Contrat
         Me.btn_cliParticulier = New System.Windows.Forms.Button()
         Me.Lb_ajoutClient = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Numéro_Équiement = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Location = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Type = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantité = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Prix_Unitaire = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EquipBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ValidationéquipementBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox1_ClientActuel.SuspendLayout()
         Me.GroupBox1_Contrat.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGrid_Service, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView_LignesEquipement, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.EquipBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -270,10 +269,10 @@ Partial Class Créer_Contrat
         'GroupBox1_Contrat
         '
         Me.GroupBox1_Contrat.Controls.Add(Me.Button2)
-        Me.GroupBox1_Contrat.Controls.Add(Me.Button1)
+        Me.GroupBox1_Contrat.Controls.Add(Me.Btn_SuppService)
         Me.GroupBox1_Contrat.Controls.Add(Me.Btn_supprimer)
         Me.GroupBox1_Contrat.Controls.Add(Me.btnComplete)
-        Me.GroupBox1_Contrat.Controls.Add(Me.DataGridView1)
+        Me.GroupBox1_Contrat.Controls.Add(Me.DataGrid_Service)
         Me.GroupBox1_Contrat.Controls.Add(Me.DataGridView_LignesEquipement)
         Me.GroupBox1_Contrat.Controls.Add(Me.btnService)
         Me.GroupBox1_Contrat.Controls.Add(Me.btnEquipement)
@@ -301,16 +300,16 @@ Partial Class Créer_Contrat
         Me.Button2.Text = "Mise en service"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Btn_SuppService
         '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(505, 469)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(59, 22)
-        Me.Button1.TabIndex = 26
-        Me.Button1.Text = "Supprimer"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Btn_SuppService.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_SuppService.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_SuppService.Location = New System.Drawing.Point(414, 469)
+        Me.Btn_SuppService.Name = "Btn_SuppService"
+        Me.Btn_SuppService.Size = New System.Drawing.Size(59, 22)
+        Me.Btn_SuppService.TabIndex = 26
+        Me.Btn_SuppService.Text = "Supprimer"
+        Me.Btn_SuppService.UseVisualStyleBackColor = True
         '
         'Btn_supprimer
         '
@@ -334,48 +333,42 @@ Partial Class Créer_Contrat
         Me.btnComplete.Text = "Compléter"
         Me.btnComplete.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'DataGrid_Service
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
-        Me.DataGridView1.Location = New System.Drawing.Point(9, 314)
-        Me.DataGridView1.MultiSelect = False
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(490, 177)
-        Me.DataGridView1.TabIndex = 24
+        Me.DataGrid_Service.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGrid_Service.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn5})
+        Me.DataGrid_Service.Location = New System.Drawing.Point(9, 314)
+        Me.DataGrid_Service.MultiSelect = False
+        Me.DataGrid_Service.Name = "DataGrid_Service"
+        Me.DataGrid_Service.RowHeadersVisible = False
+        Me.DataGrid_Service.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGrid_Service.Size = New System.Drawing.Size(399, 177)
+        Me.DataGrid_Service.TabIndex = 24
         '
         'DataGridViewTextBoxColumn1
         '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Numéro de service"
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Id"
         Me.DataGridViewTextBoxColumn1.HeaderText = "Numéro de service"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Type"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Type"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        '
         'DataGridViewTextBoxColumn3
         '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Description"
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Nom"
         Me.DataGridViewTextBoxColumn3.HeaderText = "Description"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.ReadOnly = True
         '
-        'DataGridViewTextBoxColumn4
+        'DataGridViewTextBoxColumn2
         '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Quantité"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Quantité"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Description"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Type"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
         '
         'DataGridViewTextBoxColumn5
         '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Prix_Unitaire"
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Prix"
         Me.DataGridViewTextBoxColumn5.HeaderText = "Prix Unitaire"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.ReadOnly = True
@@ -391,6 +384,39 @@ Partial Class Créer_Contrat
         Me.DataGridView_LignesEquipement.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView_LignesEquipement.Size = New System.Drawing.Size(490, 177)
         Me.DataGridView_LignesEquipement.TabIndex = 23
+        '
+        'Numéro_Équiement
+        '
+        Me.Numéro_Équiement.DataPropertyName = "NumEquip"
+        Me.Numéro_Équiement.HeaderText = "Numéro d'équipement"
+        Me.Numéro_Équiement.Name = "Numéro_Équiement"
+        Me.Numéro_Équiement.ReadOnly = True
+        '
+        'Location
+        '
+        Me.Location.DataPropertyName = "Location"
+        Me.Location.HeaderText = "Location"
+        Me.Location.Name = "Location"
+        '
+        'Type
+        '
+        Me.Type.DataPropertyName = "Type"
+        Me.Type.HeaderText = "Type"
+        Me.Type.Name = "Type"
+        Me.Type.ReadOnly = True
+        '
+        'Quantité
+        '
+        Me.Quantité.DataPropertyName = "Quantity"
+        Me.Quantité.HeaderText = "Quantité"
+        Me.Quantité.Name = "Quantité"
+        '
+        'Prix_Unitaire
+        '
+        Me.Prix_Unitaire.DataPropertyName = "Price"
+        Me.Prix_Unitaire.HeaderText = "Prix Unitaire"
+        Me.Prix_Unitaire.Name = "Prix_Unitaire"
+        Me.Prix_Unitaire.ReadOnly = True
         '
         'btnService
         '
@@ -512,39 +538,6 @@ Partial Class Créer_Contrat
         Me.Label2.Size = New System.Drawing.Size(0, 13)
         Me.Label2.TabIndex = 1
         '
-        'Numéro_Équiement
-        '
-        Me.Numéro_Équiement.DataPropertyName = "NumEquip"
-        Me.Numéro_Équiement.HeaderText = "Numéro d'équipement"
-        Me.Numéro_Équiement.Name = "Numéro_Équiement"
-        Me.Numéro_Équiement.ReadOnly = True
-        '
-        'Location
-        '
-        Me.Location.DataPropertyName = "Location"
-        Me.Location.HeaderText = "Location"
-        Me.Location.Name = "Location"
-        '
-        'Type
-        '
-        Me.Type.DataPropertyName = "Type"
-        Me.Type.HeaderText = "Type"
-        Me.Type.Name = "Type"
-        Me.Type.ReadOnly = True
-        '
-        'Quantité
-        '
-        Me.Quantité.DataPropertyName = "Quantity"
-        Me.Quantité.HeaderText = "Quantité"
-        Me.Quantité.Name = "Quantité"
-        '
-        'Prix_Unitaire
-        '
-        Me.Prix_Unitaire.DataPropertyName = "Price"
-        Me.Prix_Unitaire.HeaderText = "Prix Unitaire"
-        Me.Prix_Unitaire.Name = "Prix_Unitaire"
-        Me.Prix_Unitaire.ReadOnly = True
-        '
         'EquipBindingSource
         '
         Me.EquipBindingSource.DataSource = GetType(ProjetVB.Equip_Object)
@@ -566,7 +559,7 @@ Partial Class Créer_Contrat
         Me.GroupBox1_ClientActuel.PerformLayout()
         Me.GroupBox1_Contrat.ResumeLayout(False)
         Me.GroupBox1_Contrat.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGrid_Service, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView_LignesEquipement, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -574,8 +567,8 @@ Partial Class Créer_Contrat
         CType(Me.ValidationéquipementBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
-    End Sub
-    Friend WithEvents GroupBox1_ClientActuel As GroupBox
+	End Sub
+	Friend WithEvents GroupBox1_ClientActuel As GroupBox
     Friend WithEvents CheckBox_Entreprise As CheckBox
     Friend WithEvents CheckBox_pariculier As CheckBox
     Friend WithEvents TextBox2 As TextBox
@@ -609,15 +602,10 @@ Partial Class Créer_Contrat
     Friend WithEvents btnEquipement As Button
     Friend WithEvents btnConsulte As Button
     Friend WithEvents DataGridView_LignesEquipement As DataGridView
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DataGrid_Service As DataGridView
     Friend WithEvents btnComplete As Button
     Friend WithEvents Btn_supprimer As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents Btn_SuppService As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Numéro_Équiement As DataGridViewTextBoxColumn
     Friend WithEvents Location As DataGridViewTextBoxColumn
@@ -626,4 +614,8 @@ Partial Class Créer_Contrat
     Friend WithEvents Prix_Unitaire As DataGridViewTextBoxColumn
     Friend WithEvents ValidationéquipementBindingSource As BindingSource
     Friend WithEvents EquipBindingSource As BindingSource
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
 End Class
