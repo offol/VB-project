@@ -68,28 +68,36 @@ Public Module DataBase
         New RetraitDirect(1, "1166367", "Desjardin")
     }
 
-    'Liste lignes Équipement
-    Public LignesEquip = New List(Of Equip_Object) From {
-        New Equip_Object(1, "Mensuelle", "Bureautique", 1, 45),
-        New Equip_Object(1, "Annuelle", "Bureautique", 1, 500),
-        New Equip_Object(2, "Mensuelle", "Bureautique", 1, 60),
-        New Equip_Object(2, "Annuelle", "Bureautique", 1, 650),
-        New Equip_Object(3, "Mensuelle", "Bureautique", 1, 52),
-        New Equip_Object(3, "Annuelle", "Bureautique", 1, 600),
-        New Equip_Object(4, "Mensuelle", "Bureautique", 1, 60),
-        New Equip_Object(4, "Annuelle", "Bureautique", 1, 650),
-        New Equip_Object(5, "Mensuelle", "Bureautique", 1, 60),
-        New Equip_Object(5, "Annuelle", "Bureautique", 1, 650),
-        New Equip_Object(6, "Mensuelle", "Multimédia", 1, 65),
-        New Equip_Object(6, "Annuelle", "Multimédia", 1, 700),
-        New Equip_Object(7, "Mensuelle", "Multimédia", 1, 60),
-        New Equip_Object(7, "Annuelle", "Multimédia", 1, 650),
-        New Equip_Object(8, "Mensuelle", "Multimédia", 1, 70),
-        New Equip_Object(8, "Annuelle", "Multimédia", 1, 780),
-        New Equip_Object(9, "Mensuelle", "Multimédia", 1, 80),
-        New Equip_Object(9, "Annuelle", "Multimédia", 1, 820),
-        New Equip_Object(10, "Mensuelle", "Multimédia", 1, 70),
-        New Equip_Object(10, "Annuelle", "Multimédia", 1, 780)
-    }
+	'Liste lignes Équipement
+	Public LignesEquip = New List(Of Equip_Object) From {
+		New Equip_Object(1, "Mensuelle", "Bureautique", 1, 45),
+		New Equip_Object(1, "Annuelle", "Bureautique", 1, 500),
+		New Equip_Object(2, "Mensuelle", "Bureautique", 1, 60),
+		New Equip_Object(2, "Annuelle", "Bureautique", 1, 650),
+		New Equip_Object(3, "Mensuelle", "Bureautique", 1, 52),
+		New Equip_Object(3, "Annuelle", "Bureautique", 1, 600),
+		New Equip_Object(4, "Mensuelle", "Bureautique", 1, 60),
+		New Equip_Object(4, "Annuelle", "Bureautique", 1, 650),
+		New Equip_Object(5, "Mensuelle", "Bureautique", 1, 60),
+		New Equip_Object(5, "Annuelle", "Bureautique", 1, 650),
+		New Equip_Object(6, "Mensuelle", "Multimédia", 1, 65),
+		New Equip_Object(6, "Annuelle", "Multimédia", 1, 700),
+		New Equip_Object(7, "Mensuelle", "Multimédia", 1, 60),
+		New Equip_Object(7, "Annuelle", "Multimédia", 1, 650),
+		New Equip_Object(8, "Mensuelle", "Multimédia", 1, 70),
+		New Equip_Object(8, "Annuelle", "Multimédia", 1, 780),
+		New Equip_Object(9, "Mensuelle", "Multimédia", 1, 80),
+		New Equip_Object(9, "Annuelle", "Multimédia", 1, 820),
+		New Equip_Object(10, "Mensuelle", "Multimédia", 1, 70),
+		New Equip_Object(10, "Annuelle", "Multimédia", 1, 780)
+	}
+
+	Public ContratsActifs = New List(Of Contrat) From {
+		
+	}
+
+	Public ContratsResiliers = New List(Of Contrat) From {
+		
+	}
 
 End Module
