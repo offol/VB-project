@@ -11,7 +11,9 @@
         Dim CancelValide As New Validation_Annulation_livraison() With {
          .MdiParent = Form1
      }
-       CancelValide.Show()
+        CancelValide.Show()
+
+        NoCommandeAnnuler.ReadOnly = True
 
     End Sub
 End Class

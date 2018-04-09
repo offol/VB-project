@@ -211,4 +211,11 @@
         ToolStripStatusLabel1.Text = ""
         MsgBox("Utilisateur Déconnecté")
     End Sub
+
+    Private Sub FormationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FormationToolStripMenuItem.Click
+        Dim FormationAide As New Formation With {
+            .MdiParent = Me
+        }
+        FormationAide.Show()
+    End Sub
 End Class

@@ -68,13 +68,13 @@ Partial Class Équipement
         Me.Ordi1 = New System.Windows.Forms.ListBox()
         Me.ListBox5 = New System.Windows.Forms.ListBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
         Me.Btn_Equipsave = New System.Windows.Forms.Button()
         Me.GroupBox_Équip.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox_Équip
         '
+        Me.GroupBox_Équip.Controls.Add(Me.Btn_Equipsave)
         Me.GroupBox_Équip.Controls.Add(Me.Label5)
         Me.GroupBox_Équip.Controls.Add(Me.CB_équip10A)
         Me.GroupBox_Équip.Controls.Add(Me.CB_équip10M)
@@ -122,7 +122,7 @@ Partial Class Équipement
         Me.GroupBox_Équip.Controls.Add(Me.Label15)
         Me.GroupBox_Équip.Location = New System.Drawing.Point(12, 2)
         Me.GroupBox_Équip.Name = "GroupBox_Équip"
-        Me.GroupBox_Équip.Size = New System.Drawing.Size(396, 980)
+        Me.GroupBox_Équip.Size = New System.Drawing.Size(790, 617)
         Me.GroupBox_Équip.TabIndex = 0
         Me.GroupBox_Équip.TabStop = False
         Me.GroupBox_Équip.Text = "Équipement"
@@ -141,7 +141,7 @@ Partial Class Équipement
         '
         Me.CB_équip10A.AutoSize = True
         Me.CB_équip10A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip10A.Location = New System.Drawing.Point(336, 931)
+        Me.CB_équip10A.Location = New System.Drawing.Point(728, 475)
         Me.CB_équip10A.Name = "CB_équip10A"
         Me.CB_équip10A.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip10A.TabIndex = 97
@@ -151,7 +151,7 @@ Partial Class Équipement
         '
         Me.CB_équip10M.AutoSize = True
         Me.CB_équip10M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip10M.Location = New System.Drawing.Point(266, 931)
+        Me.CB_équip10M.Location = New System.Drawing.Point(658, 475)
         Me.CB_équip10M.Name = "CB_équip10M"
         Me.CB_équip10M.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip10M.TabIndex = 96
@@ -161,7 +161,7 @@ Partial Class Équipement
         '
         Me.CB_équip9A.AutoSize = True
         Me.CB_équip9A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip9A.Location = New System.Drawing.Point(336, 839)
+        Me.CB_équip9A.Location = New System.Drawing.Point(728, 382)
         Me.CB_équip9A.Name = "CB_équip9A"
         Me.CB_équip9A.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip9A.TabIndex = 95
@@ -171,7 +171,7 @@ Partial Class Équipement
         '
         Me.CB_équip9M.AutoSize = True
         Me.CB_équip9M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip9M.Location = New System.Drawing.Point(266, 839)
+        Me.CB_équip9M.Location = New System.Drawing.Point(658, 383)
         Me.CB_équip9M.Name = "CB_équip9M"
         Me.CB_équip9M.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip9M.TabIndex = 94
@@ -181,7 +181,7 @@ Partial Class Équipement
         '
         Me.CB_équip8A.AutoSize = True
         Me.CB_équip8A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip8A.Location = New System.Drawing.Point(336, 744)
+        Me.CB_équip8A.Location = New System.Drawing.Point(336, 563)
         Me.CB_équip8A.Name = "CB_équip8A"
         Me.CB_équip8A.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip8A.TabIndex = 93
@@ -191,7 +191,7 @@ Partial Class Équipement
         '
         Me.CB_équip8M.AutoSize = True
         Me.CB_équip8M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip8M.Location = New System.Drawing.Point(266, 744)
+        Me.CB_équip8M.Location = New System.Drawing.Point(266, 563)
         Me.CB_équip8M.Name = "CB_équip8M"
         Me.CB_équip8M.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip8M.TabIndex = 92
@@ -201,7 +201,7 @@ Partial Class Équipement
         '
         Me.CB_équip7A.AutoSize = True
         Me.CB_équip7A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip7A.Location = New System.Drawing.Point(336, 656)
+        Me.CB_équip7A.Location = New System.Drawing.Point(336, 475)
         Me.CB_équip7A.Name = "CB_équip7A"
         Me.CB_équip7A.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip7A.TabIndex = 91
@@ -211,7 +211,7 @@ Partial Class Équipement
         '
         Me.CB_équip7M.AutoSize = True
         Me.CB_équip7M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip7M.Location = New System.Drawing.Point(266, 656)
+        Me.CB_équip7M.Location = New System.Drawing.Point(266, 475)
         Me.CB_équip7M.Name = "CB_équip7M"
         Me.CB_équip7M.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip7M.TabIndex = 90
@@ -221,7 +221,7 @@ Partial Class Équipement
         '
         Me.CB_équip6A.AutoSize = True
         Me.CB_équip6A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip6A.Location = New System.Drawing.Point(336, 563)
+        Me.CB_équip6A.Location = New System.Drawing.Point(336, 382)
         Me.CB_équip6A.Name = "CB_équip6A"
         Me.CB_équip6A.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip6A.TabIndex = 89
@@ -231,7 +231,7 @@ Partial Class Équipement
         '
         Me.CB_équip6M.AutoSize = True
         Me.CB_équip6M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip6M.Location = New System.Drawing.Point(266, 563)
+        Me.CB_équip6M.Location = New System.Drawing.Point(266, 382)
         Me.CB_équip6M.Name = "CB_équip6M"
         Me.CB_équip6M.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip6M.TabIndex = 88
@@ -241,7 +241,7 @@ Partial Class Équipement
         '
         Me.CB_équip5A.AutoSize = True
         Me.CB_équip5A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip5A.Location = New System.Drawing.Point(336, 441)
+        Me.CB_équip5A.Location = New System.Drawing.Point(728, 179)
         Me.CB_équip5A.Name = "CB_équip5A"
         Me.CB_équip5A.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip5A.TabIndex = 87
@@ -251,7 +251,7 @@ Partial Class Équipement
         '
         Me.CB_équip5M.AutoSize = True
         Me.CB_équip5M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip5M.Location = New System.Drawing.Point(266, 441)
+        Me.CB_équip5M.Location = New System.Drawing.Point(658, 179)
         Me.CB_équip5M.Name = "CB_équip5M"
         Me.CB_équip5M.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip5M.TabIndex = 86
@@ -261,7 +261,7 @@ Partial Class Équipement
         '
         Me.CB_équip4A.AutoSize = True
         Me.CB_équip4A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip4A.Location = New System.Drawing.Point(336, 348)
+        Me.CB_équip4A.Location = New System.Drawing.Point(728, 86)
         Me.CB_équip4A.Name = "CB_équip4A"
         Me.CB_équip4A.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip4A.TabIndex = 85
@@ -271,7 +271,7 @@ Partial Class Équipement
         '
         Me.CB_équip4M.AutoSize = True
         Me.CB_équip4M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CB_équip4M.Location = New System.Drawing.Point(266, 348)
+        Me.CB_équip4M.Location = New System.Drawing.Point(658, 86)
         Me.CB_équip4M.Name = "CB_équip4M"
         Me.CB_équip4M.Size = New System.Drawing.Size(15, 14)
         Me.CB_équip4M.TabIndex = 84
@@ -341,7 +341,7 @@ Partial Class Équipement
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(13, 887)
+        Me.Label3.Location = New System.Drawing.Point(405, 431)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(178, 13)
         Me.Label3.TabIndex = 77
@@ -351,7 +351,7 @@ Partial Class Équipement
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 795)
+        Me.Label2.Location = New System.Drawing.Point(404, 339)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(165, 13)
         Me.Label2.TabIndex = 76
@@ -361,7 +361,7 @@ Partial Class Équipement
         '
         Me.Lbl_équip8.AutoSize = True
         Me.Lbl_équip8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_équip8.Location = New System.Drawing.Point(13, 703)
+        Me.Lbl_équip8.Location = New System.Drawing.Point(13, 522)
         Me.Lbl_équip8.Name = "Lbl_équip8"
         Me.Lbl_équip8.Size = New System.Drawing.Size(178, 13)
         Me.Lbl_équip8.TabIndex = 75
@@ -371,7 +371,7 @@ Partial Class Équipement
         '
         Me.Lbl_équip7.AutoSize = True
         Me.Lbl_équip7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_équip7.Location = New System.Drawing.Point(13, 613)
+        Me.Lbl_équip7.Location = New System.Drawing.Point(13, 432)
         Me.Lbl_équip7.Name = "Lbl_équip7"
         Me.Lbl_équip7.Size = New System.Drawing.Size(178, 13)
         Me.Lbl_équip7.TabIndex = 74
@@ -381,7 +381,7 @@ Partial Class Équipement
         '
         Me.Lbl_équip6.AutoSize = True
         Me.Lbl_équip6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_équip6.Location = New System.Drawing.Point(13, 520)
+        Me.Lbl_équip6.Location = New System.Drawing.Point(13, 339)
         Me.Lbl_équip6.Name = "Lbl_équip6"
         Me.Lbl_équip6.Size = New System.Drawing.Size(178, 13)
         Me.Lbl_équip6.TabIndex = 73
@@ -391,7 +391,7 @@ Partial Class Équipement
         '
         Me.Lbl_équip5.AutoSize = True
         Me.Lbl_équip5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_équip5.Location = New System.Drawing.Point(13, 399)
+        Me.Lbl_équip5.Location = New System.Drawing.Point(405, 137)
         Me.Lbl_équip5.Name = "Lbl_équip5"
         Me.Lbl_équip5.Size = New System.Drawing.Size(178, 13)
         Me.Lbl_équip5.TabIndex = 72
@@ -401,7 +401,7 @@ Partial Class Équipement
         '
         Me.Lbl_équip4.AutoSize = True
         Me.Lbl_équip4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_équip4.Location = New System.Drawing.Point(13, 307)
+        Me.Lbl_équip4.Location = New System.Drawing.Point(405, 45)
         Me.Lbl_équip4.Name = "Lbl_équip4"
         Me.Lbl_équip4.Size = New System.Drawing.Size(178, 13)
         Me.Lbl_équip4.TabIndex = 71
@@ -464,7 +464,7 @@ Partial Class Équipement
         Me.ListBox9.FormattingEnabled = True
         Me.ListBox9.ItemHeight = 12
         Me.ListBox9.Items.AddRange(New Object() {"Ecran de 68,5 cm : 27""", "Processeur i7 + SSD : très performant", "RAM de 16 Go : ultra rapide", "1 To + SSD 512 Go : stockez plus de 2100 films", "Carte 940MX : idéal pour la vidéo"})
-        Me.ListBox9.Location = New System.Drawing.Point(16, 905)
+        Me.ListBox9.Location = New System.Drawing.Point(408, 449)
         Me.ListBox9.Margin = New System.Windows.Forms.Padding(5)
         Me.ListBox9.Name = "ListBox9"
         Me.ListBox9.Size = New System.Drawing.Size(365, 60)
@@ -489,7 +489,7 @@ Partial Class Équipement
         Me.ListBox4.FormattingEnabled = True
         Me.ListBox4.ItemHeight = 12
         Me.ListBox4.Items.AddRange(New Object() {"Ecran Full HD de 60,5 cm : 23,8""", "Processeur i5 + SSD : performant", "RAM de 8 Go : très rapide", "1 To + SSD 128 Go : stockez plus de 1500 films", "Carte 930MX : idéal pour la vidéo"})
-        Me.ListBox4.Location = New System.Drawing.Point(16, 417)
+        Me.ListBox4.Location = New System.Drawing.Point(408, 155)
         Me.ListBox4.Margin = New System.Windows.Forms.Padding(5)
         Me.ListBox4.Name = "ListBox4"
         Me.ListBox4.Size = New System.Drawing.Size(365, 60)
@@ -504,7 +504,7 @@ Partial Class Équipement
         Me.ListBox8.FormattingEnabled = True
         Me.ListBox8.ItemHeight = 12
         Me.ListBox8.Items.AddRange(New Object() {"Ecran Ultra HD de 86,3 cm : 34""", "Processeur i7 + SSD : très performant", "RAM de 16 Go : ultra rapide", "1 To + SSD 256 Go : stockez plus de 1700 films", "Carte GTX950M 4 Go : idéal pour la vidéo et le jeu"})
-        Me.ListBox8.Location = New System.Drawing.Point(16, 813)
+        Me.ListBox8.Location = New System.Drawing.Point(408, 357)
         Me.ListBox8.Margin = New System.Windows.Forms.Padding(5)
         Me.ListBox8.Name = "ListBox8"
         Me.ListBox8.Size = New System.Drawing.Size(365, 60)
@@ -519,7 +519,7 @@ Partial Class Équipement
         Me.ListBox3.FormattingEnabled = True
         Me.ListBox3.ItemHeight = 12
         Me.ListBox3.Items.AddRange(New Object() {"Ecran Full HD de 60,5 cm : 23,8""", "Processeur i5 + SSD : performant", "RAM de 8 Go : très rapide", "1 To + SSD 128 Go : stockez plus de 1500 films", "Carte 930MX : idéal pour la vidéo"})
-        Me.ListBox3.Location = New System.Drawing.Point(16, 325)
+        Me.ListBox3.Location = New System.Drawing.Point(408, 63)
         Me.ListBox3.Margin = New System.Windows.Forms.Padding(5)
         Me.ListBox3.Name = "ListBox3"
         Me.ListBox3.Size = New System.Drawing.Size(365, 60)
@@ -534,7 +534,7 @@ Partial Class Équipement
         Me.ListBox7.FormattingEnabled = True
         Me.ListBox7.ItemHeight = 12
         Me.ListBox7.Items.AddRange(New Object() {"Ecran Full HD de 60,5 cm : 23,8""", "Processeur i7 + SSD : très performant", "RAM de 16 Go : ultra rapide", "1 To + SSD 256 Go : stockez plus de 1700 films", "Carte GTX1050 4 Go : idéal pour le jeu et la vidéo"})
-        Me.ListBox7.Location = New System.Drawing.Point(16, 721)
+        Me.ListBox7.Location = New System.Drawing.Point(16, 540)
         Me.ListBox7.Margin = New System.Windows.Forms.Padding(5)
         Me.ListBox7.Name = "ListBox7"
         Me.ListBox7.Size = New System.Drawing.Size(365, 60)
@@ -579,7 +579,7 @@ Partial Class Équipement
         Me.ListBox6.FormattingEnabled = True
         Me.ListBox6.ItemHeight = 12
         Me.ListBox6.Items.AddRange(New Object() {"Ecran Full HD de 60,5 cm : 23,8""", "Processeur i5 + SSD : performant", "RAM de 8 Go : très rapide", "1 To + SSD 128 Go : stockez plus de 1500 films", "Carte GTX1050 4 Go : idéal pour le jeu et la vidéo"})
-        Me.ListBox6.Location = New System.Drawing.Point(16, 631)
+        Me.ListBox6.Location = New System.Drawing.Point(16, 450)
         Me.ListBox6.Margin = New System.Windows.Forms.Padding(5)
         Me.ListBox6.Name = "ListBox6"
         Me.ListBox6.Size = New System.Drawing.Size(365, 60)
@@ -609,7 +609,7 @@ Partial Class Équipement
         Me.ListBox5.FormattingEnabled = True
         Me.ListBox5.ItemHeight = 12
         Me.ListBox5.Items.AddRange(New Object() {"Ecran de 68,5 cm : 27""", "Processeur i5 + SSD : performant", "RAM de 8 Go : très rapide", "1 To + SSD 128 Go : stockez plus de 1500 films", "Carte 940MX : idéal pour la vidéo"})
-        Me.ListBox5.Location = New System.Drawing.Point(15, 538)
+        Me.ListBox5.Location = New System.Drawing.Point(15, 357)
         Me.ListBox5.Margin = New System.Windows.Forms.Padding(5)
         Me.ListBox5.Name = "ListBox5"
         Me.ListBox5.Size = New System.Drawing.Size(366, 60)
@@ -619,24 +619,17 @@ Partial Class Équipement
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(13, 496)
+        Me.Label15.Location = New System.Drawing.Point(13, 315)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(79, 15)
         Me.Label15.TabIndex = 53
         Me.Label15.Text = "Multimédia"
         '
-        'VScrollBar1
-        '
-        Me.VScrollBar1.Location = New System.Drawing.Point(557, 12)
-        Me.VScrollBar1.Name = "VScrollBar1"
-        Me.VScrollBar1.Size = New System.Drawing.Size(17, 80)
-        Me.VScrollBar1.TabIndex = 1
-        '
         'Btn_Equipsave
         '
         Me.Btn_Equipsave.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Btn_Equipsave.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Equipsave.Location = New System.Drawing.Point(318, 988)
+        Me.Btn_Equipsave.Location = New System.Drawing.Point(684, 570)
         Me.Btn_Equipsave.Name = "Btn_Equipsave"
         Me.Btn_Equipsave.Size = New System.Drawing.Size(89, 30)
         Me.Btn_Equipsave.TabIndex = 55
@@ -647,9 +640,7 @@ Partial Class Équipement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(419, 1023)
-        Me.Controls.Add(Me.Btn_Equipsave)
-        Me.Controls.Add(Me.VScrollBar1)
+        Me.ClientSize = New System.Drawing.Size(815, 631)
         Me.Controls.Add(Me.GroupBox_Équip)
         Me.Name = "Équipement"
         Me.Text = "Équip_v2"
@@ -672,7 +663,6 @@ Partial Class Équipement
     Friend WithEvents ListBox6 As ListBox
     Friend WithEvents ListBox5 As ListBox
     Friend WithEvents Label15 As Label
-    Friend WithEvents VScrollBar1 As VScrollBar
     Friend WithEvents Label2 As Label
     Friend WithEvents Lbl_équip8 As Label
     Friend WithEvents Lbl_équip7 As Label

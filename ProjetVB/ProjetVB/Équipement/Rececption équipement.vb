@@ -8,6 +8,8 @@
            .MdiParent = Form1
        }
         ValidateÉquip.Show()
+
+        TextboxNumsérie.ReadOnly = True
     End Sub
 
     Private Sub btnComplete_Click(sender As Object, e As EventArgs) Handles btnComplete.Click
@@ -16,6 +18,10 @@
       }
         ConfirmRecep.Show()
         Me.Close()
+
+    End Sub
+
+    Private Sub TextboxNumsérie_TextChanged(sender As Object, e As EventArgs) Handles TextboxNumsérie.TextChanged
 
     End Sub
 End Class
