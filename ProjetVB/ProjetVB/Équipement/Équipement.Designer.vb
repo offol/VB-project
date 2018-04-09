@@ -24,24 +24,24 @@ Partial Class Équipement
     Private Sub InitializeComponent()
         Me.GroupBox_Équip = New System.Windows.Forms.GroupBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.CheckBox18 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox17 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.CB_équip10A = New System.Windows.Forms.CheckBox()
+        Me.CB_équip10M = New System.Windows.Forms.CheckBox()
+        Me.CB_équip9A = New System.Windows.Forms.CheckBox()
+        Me.CB_équip9M = New System.Windows.Forms.CheckBox()
+        Me.CB_équip8A = New System.Windows.Forms.CheckBox()
+        Me.CB_équip8M = New System.Windows.Forms.CheckBox()
+        Me.CB_équip7A = New System.Windows.Forms.CheckBox()
+        Me.CB_équip7M = New System.Windows.Forms.CheckBox()
+        Me.CB_équip6A = New System.Windows.Forms.CheckBox()
+        Me.CB_équip6M = New System.Windows.Forms.CheckBox()
+        Me.CB_équip5A = New System.Windows.Forms.CheckBox()
+        Me.CB_équip5M = New System.Windows.Forms.CheckBox()
+        Me.CB_équip4A = New System.Windows.Forms.CheckBox()
+        Me.CB_équip4M = New System.Windows.Forms.CheckBox()
+        Me.CB_équip3A = New System.Windows.Forms.CheckBox()
+        Me.CB_équip3M = New System.Windows.Forms.CheckBox()
+        Me.CB_équip2A = New System.Windows.Forms.CheckBox()
+        Me.CB_équip2M = New System.Windows.Forms.CheckBox()
         Me.CB_équip1A = New System.Windows.Forms.CheckBox()
         Me.CB_équip1M = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -76,24 +76,24 @@ Partial Class Équipement
         'GroupBox_Équip
         '
         Me.GroupBox_Équip.Controls.Add(Me.Label5)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox18)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox17)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox16)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox15)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox14)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox13)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox12)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox11)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox10)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox9)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox8)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox7)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox6)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox5)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox4)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox3)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox2)
-        Me.GroupBox_Équip.Controls.Add(Me.CheckBox1)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip10A)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip10M)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip9A)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip9M)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip8A)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip8M)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip7A)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip7M)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip6A)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip6M)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip5A)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip5M)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip4A)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip4M)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip3A)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip3M)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip2A)
+        Me.GroupBox_Équip.Controls.Add(Me.CB_équip2M)
         Me.GroupBox_Équip.Controls.Add(Me.CB_équip1A)
         Me.GroupBox_Équip.Controls.Add(Me.CB_équip1M)
         Me.GroupBox_Équip.Controls.Add(Me.Label3)
@@ -137,185 +137,185 @@ Partial Class Équipement
         Me.Label5.TabIndex = 98
         Me.Label5.Text = "Location"
         '
-        'CheckBox18
+        'CB_équip10A
         '
-        Me.CheckBox18.AutoSize = True
-        Me.CheckBox18.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox18.Location = New System.Drawing.Point(336, 931)
-        Me.CheckBox18.Name = "CheckBox18"
-        Me.CheckBox18.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox18.TabIndex = 97
-        Me.CheckBox18.UseVisualStyleBackColor = True
+        Me.CB_équip10A.AutoSize = True
+        Me.CB_équip10A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip10A.Location = New System.Drawing.Point(336, 931)
+        Me.CB_équip10A.Name = "CB_équip10A"
+        Me.CB_équip10A.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip10A.TabIndex = 97
+        Me.CB_équip10A.UseVisualStyleBackColor = True
         '
-        'CheckBox17
+        'CB_équip10M
         '
-        Me.CheckBox17.AutoSize = True
-        Me.CheckBox17.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox17.Location = New System.Drawing.Point(266, 931)
-        Me.CheckBox17.Name = "CheckBox17"
-        Me.CheckBox17.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox17.TabIndex = 96
-        Me.CheckBox17.UseVisualStyleBackColor = True
+        Me.CB_équip10M.AutoSize = True
+        Me.CB_équip10M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip10M.Location = New System.Drawing.Point(266, 931)
+        Me.CB_équip10M.Name = "CB_équip10M"
+        Me.CB_équip10M.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip10M.TabIndex = 96
+        Me.CB_équip10M.UseVisualStyleBackColor = True
         '
-        'CheckBox16
+        'CB_équip9A
         '
-        Me.CheckBox16.AutoSize = True
-        Me.CheckBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox16.Location = New System.Drawing.Point(336, 839)
-        Me.CheckBox16.Name = "CheckBox16"
-        Me.CheckBox16.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox16.TabIndex = 95
-        Me.CheckBox16.UseVisualStyleBackColor = True
+        Me.CB_équip9A.AutoSize = True
+        Me.CB_équip9A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip9A.Location = New System.Drawing.Point(336, 839)
+        Me.CB_équip9A.Name = "CB_équip9A"
+        Me.CB_équip9A.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip9A.TabIndex = 95
+        Me.CB_équip9A.UseVisualStyleBackColor = True
         '
-        'CheckBox15
+        'CB_équip9M
         '
-        Me.CheckBox15.AutoSize = True
-        Me.CheckBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox15.Location = New System.Drawing.Point(266, 839)
-        Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox15.TabIndex = 94
-        Me.CheckBox15.UseVisualStyleBackColor = True
+        Me.CB_équip9M.AutoSize = True
+        Me.CB_équip9M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip9M.Location = New System.Drawing.Point(266, 839)
+        Me.CB_équip9M.Name = "CB_équip9M"
+        Me.CB_équip9M.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip9M.TabIndex = 94
+        Me.CB_équip9M.UseVisualStyleBackColor = True
         '
-        'CheckBox14
+        'CB_équip8A
         '
-        Me.CheckBox14.AutoSize = True
-        Me.CheckBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox14.Location = New System.Drawing.Point(336, 744)
-        Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox14.TabIndex = 93
-        Me.CheckBox14.UseVisualStyleBackColor = True
+        Me.CB_équip8A.AutoSize = True
+        Me.CB_équip8A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip8A.Location = New System.Drawing.Point(336, 744)
+        Me.CB_équip8A.Name = "CB_équip8A"
+        Me.CB_équip8A.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip8A.TabIndex = 93
+        Me.CB_équip8A.UseVisualStyleBackColor = True
         '
-        'CheckBox13
+        'CB_équip8M
         '
-        Me.CheckBox13.AutoSize = True
-        Me.CheckBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox13.Location = New System.Drawing.Point(266, 744)
-        Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox13.TabIndex = 92
-        Me.CheckBox13.UseVisualStyleBackColor = True
+        Me.CB_équip8M.AutoSize = True
+        Me.CB_équip8M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip8M.Location = New System.Drawing.Point(266, 744)
+        Me.CB_équip8M.Name = "CB_équip8M"
+        Me.CB_équip8M.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip8M.TabIndex = 92
+        Me.CB_équip8M.UseVisualStyleBackColor = True
         '
-        'CheckBox12
+        'CB_équip7A
         '
-        Me.CheckBox12.AutoSize = True
-        Me.CheckBox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox12.Location = New System.Drawing.Point(336, 656)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox12.TabIndex = 91
-        Me.CheckBox12.UseVisualStyleBackColor = True
+        Me.CB_équip7A.AutoSize = True
+        Me.CB_équip7A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip7A.Location = New System.Drawing.Point(336, 656)
+        Me.CB_équip7A.Name = "CB_équip7A"
+        Me.CB_équip7A.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip7A.TabIndex = 91
+        Me.CB_équip7A.UseVisualStyleBackColor = True
         '
-        'CheckBox11
+        'CB_équip7M
         '
-        Me.CheckBox11.AutoSize = True
-        Me.CheckBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox11.Location = New System.Drawing.Point(266, 656)
-        Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox11.TabIndex = 90
-        Me.CheckBox11.UseVisualStyleBackColor = True
+        Me.CB_équip7M.AutoSize = True
+        Me.CB_équip7M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip7M.Location = New System.Drawing.Point(266, 656)
+        Me.CB_équip7M.Name = "CB_équip7M"
+        Me.CB_équip7M.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip7M.TabIndex = 90
+        Me.CB_équip7M.UseVisualStyleBackColor = True
         '
-        'CheckBox10
+        'CB_équip6A
         '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox10.Location = New System.Drawing.Point(336, 563)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox10.TabIndex = 89
-        Me.CheckBox10.UseVisualStyleBackColor = True
+        Me.CB_équip6A.AutoSize = True
+        Me.CB_équip6A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip6A.Location = New System.Drawing.Point(336, 563)
+        Me.CB_équip6A.Name = "CB_équip6A"
+        Me.CB_équip6A.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip6A.TabIndex = 89
+        Me.CB_équip6A.UseVisualStyleBackColor = True
         '
-        'CheckBox9
+        'CB_équip6M
         '
-        Me.CheckBox9.AutoSize = True
-        Me.CheckBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox9.Location = New System.Drawing.Point(266, 563)
-        Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox9.TabIndex = 88
-        Me.CheckBox9.UseVisualStyleBackColor = True
+        Me.CB_équip6M.AutoSize = True
+        Me.CB_équip6M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip6M.Location = New System.Drawing.Point(266, 563)
+        Me.CB_équip6M.Name = "CB_équip6M"
+        Me.CB_équip6M.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip6M.TabIndex = 88
+        Me.CB_équip6M.UseVisualStyleBackColor = True
         '
-        'CheckBox8
+        'CB_équip5A
         '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox8.Location = New System.Drawing.Point(336, 441)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox8.TabIndex = 87
-        Me.CheckBox8.UseVisualStyleBackColor = True
+        Me.CB_équip5A.AutoSize = True
+        Me.CB_équip5A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip5A.Location = New System.Drawing.Point(336, 441)
+        Me.CB_équip5A.Name = "CB_équip5A"
+        Me.CB_équip5A.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip5A.TabIndex = 87
+        Me.CB_équip5A.UseVisualStyleBackColor = True
         '
-        'CheckBox7
+        'CB_équip5M
         '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox7.Location = New System.Drawing.Point(266, 441)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox7.TabIndex = 86
-        Me.CheckBox7.UseVisualStyleBackColor = True
+        Me.CB_équip5M.AutoSize = True
+        Me.CB_équip5M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip5M.Location = New System.Drawing.Point(266, 441)
+        Me.CB_équip5M.Name = "CB_équip5M"
+        Me.CB_équip5M.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip5M.TabIndex = 86
+        Me.CB_équip5M.UseVisualStyleBackColor = True
         '
-        'CheckBox6
+        'CB_équip4A
         '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox6.Location = New System.Drawing.Point(336, 348)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox6.TabIndex = 85
-        Me.CheckBox6.UseVisualStyleBackColor = True
+        Me.CB_équip4A.AutoSize = True
+        Me.CB_équip4A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip4A.Location = New System.Drawing.Point(336, 348)
+        Me.CB_équip4A.Name = "CB_équip4A"
+        Me.CB_équip4A.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip4A.TabIndex = 85
+        Me.CB_équip4A.UseVisualStyleBackColor = True
         '
-        'CheckBox5
+        'CB_équip4M
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox5.Location = New System.Drawing.Point(266, 348)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox5.TabIndex = 84
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.CB_équip4M.AutoSize = True
+        Me.CB_équip4M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip4M.Location = New System.Drawing.Point(266, 348)
+        Me.CB_équip4M.Name = "CB_équip4M"
+        Me.CB_équip4M.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip4M.TabIndex = 84
+        Me.CB_équip4M.UseVisualStyleBackColor = True
         '
-        'CheckBox4
+        'CB_équip3A
         '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox4.Location = New System.Drawing.Point(336, 257)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox4.TabIndex = 83
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.CB_équip3A.AutoSize = True
+        Me.CB_équip3A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip3A.Location = New System.Drawing.Point(336, 257)
+        Me.CB_équip3A.Name = "CB_équip3A"
+        Me.CB_équip3A.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip3A.TabIndex = 83
+        Me.CB_équip3A.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'CB_équip3M
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox3.Location = New System.Drawing.Point(266, 257)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox3.TabIndex = 82
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.CB_équip3M.AutoSize = True
+        Me.CB_équip3M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip3M.Location = New System.Drawing.Point(266, 257)
+        Me.CB_équip3M.Name = "CB_équip3M"
+        Me.CB_équip3M.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip3M.TabIndex = 82
+        Me.CB_équip3M.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'CB_équip2A
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox2.Location = New System.Drawing.Point(336, 167)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox2.TabIndex = 81
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.CB_équip2A.AutoSize = True
+        Me.CB_équip2A.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip2A.Location = New System.Drawing.Point(336, 167)
+        Me.CB_équip2A.Name = "CB_équip2A"
+        Me.CB_équip2A.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip2A.TabIndex = 81
+        Me.CB_équip2A.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'CB_équip2M
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(266, 167)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 80
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.CB_équip2M.AutoSize = True
+        Me.CB_équip2M.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CB_équip2M.Location = New System.Drawing.Point(266, 167)
+        Me.CB_équip2M.Name = "CB_équip2M"
+        Me.CB_équip2M.Size = New System.Drawing.Size(15, 14)
+        Me.CB_équip2M.TabIndex = 80
+        Me.CB_équip2M.UseVisualStyleBackColor = True
         '
         'CB_équip1A
         '
@@ -684,24 +684,24 @@ Partial Class Équipement
     Friend WithEvents lbl_equip1 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents CheckBox18 As CheckBox
-    Friend WithEvents CheckBox17 As CheckBox
-    Friend WithEvents CheckBox16 As CheckBox
-    Friend WithEvents CheckBox15 As CheckBox
-    Friend WithEvents CheckBox14 As CheckBox
-    Friend WithEvents CheckBox13 As CheckBox
-    Friend WithEvents CheckBox12 As CheckBox
-    Friend WithEvents CheckBox11 As CheckBox
-    Friend WithEvents CheckBox10 As CheckBox
-    Friend WithEvents CheckBox9 As CheckBox
-    Friend WithEvents CheckBox8 As CheckBox
-    Friend WithEvents CheckBox7 As CheckBox
-    Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents CB_équip10A As CheckBox
+    Friend WithEvents CB_équip10M As CheckBox
+    Friend WithEvents CB_équip9A As CheckBox
+    Friend WithEvents CB_équip9M As CheckBox
+    Friend WithEvents CB_équip8A As CheckBox
+    Friend WithEvents CB_équip8M As CheckBox
+    Friend WithEvents CB_équip7A As CheckBox
+    Friend WithEvents CB_équip7M As CheckBox
+    Friend WithEvents CB_équip6A As CheckBox
+    Friend WithEvents CB_équip6M As CheckBox
+    Friend WithEvents CB_équip5A As CheckBox
+    Friend WithEvents CB_équip5M As CheckBox
+    Friend WithEvents CB_équip4A As CheckBox
+    Friend WithEvents CB_équip4M As CheckBox
+    Friend WithEvents CB_équip3A As CheckBox
+    Friend WithEvents CB_équip3M As CheckBox
+    Friend WithEvents CB_équip2A As CheckBox
+    Friend WithEvents CB_équip2M As CheckBox
     Friend WithEvents CB_équip1A As CheckBox
     Friend WithEvents CB_équip1M As CheckBox
     Friend WithEvents Label3 As Label
