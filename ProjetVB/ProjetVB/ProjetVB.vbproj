@@ -178,12 +178,6 @@
     <Compile Include="Rapports\ContratsResiliers.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Rapports\EquipementCommander.Designer.vb">
-      <DependentUpon>EquipementCommander.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Rapports\EquipementCommander.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Rapports\EquipementRetour.Designer.vb">
       <DependentUpon>EquipementRetour.vb</DependentUpon>
     </Compile>
@@ -457,9 +451,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rapports\ContratsResiliers.resx">
       <DependentUpon>ContratsResiliers.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Rapports\EquipementCommander.resx">
-      <DependentUpon>EquipementCommander.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Rapports\EquipementRetour.resx">
       <DependentUpon>EquipementRetour.vb</DependentUpon>

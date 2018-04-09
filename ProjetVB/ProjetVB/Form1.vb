@@ -122,21 +122,21 @@
     End Sub
 
 
-    Private Sub AchèvementDesContractsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AchèvementDesContractsToolStripMenuItem.Click
-        Dim Achevement As New AchevementContrats() With {
-            .MdiParent = Me
-        }
-        Achevement.Show()
-    End Sub
+	Private Sub AchèvementDesContractsToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim Achevement As New AchevementContrats() With {
+			.MdiParent = Me
+		}
+		Achevement.Show()
+	End Sub
 
-    Private Sub EquipementRetour_Click(sender As Object, e As EventArgs) Handles ÉquipementsÀRetournerToolStripMenuItem.Click
-        Dim EquipementRetour As New EquipementRetour() With {
-            .MdiParent = Me
-        }
-        EquipementRetour.Show()
-    End Sub
+	Private Sub EquipementRetour_Click(sender As Object, e As EventArgs)
+		Dim EquipementRetour As New EquipementRetour() With {
+			.MdiParent = Me
+		}
+		EquipementRetour.Show()
+	End Sub
 
-    Private Sub PaiementCarteCredit_Click(sender As Object, e As EventArgs) Handles PaiementParCarteCréditToolStripMenuItem.Click
+	Private Sub PaiementCarteCredit_Click(sender As Object, e As EventArgs) Handles PaiementParCarteCréditToolStripMenuItem.Click
         Dim PaiementCarte As New PaiementCarteCredit() With {
             .MdiParent = Me
         }
@@ -151,11 +151,11 @@
     End Sub
 
     Private Sub ÉquipementÀCommanderToolStripMenuItem_Click(send As Object, e As EventArgs) Handles ÉquipementÀCommanderToolStripMenuItem.Click
-        Dim EquipementCommander As New EquipementCommander() With {
-            .MdiParent = Me
-        }
-        EquipementCommander.Show()
-    End Sub
+		Dim Equipementret As New EquipementRetour() With {
+			.MdiParent = Me
+		}
+		Equipementret.Show()
+	End Sub
 
     Private Sub ContratsOuverts_Click(send As Object, e As EventArgs) Handles ContractsOuvertsToolStripMenuItem.Click
         Dim ContratsOuverts As New ContratsOuverts() With {

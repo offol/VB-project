@@ -96,4 +96,42 @@ Public Module DataBase
         New Equip_Object(10, "Annuelle", "Multimédia", 1, 780)
     }
 
+	Public ContratsActifs = New List(Of Contrat) From {
+			New Contrat(1,
+					"actif",
+					New DateTime(2016, 5, 14, 15, 25, 0),
+					New DateTime(2018, 5, 14, 23, 59, 59),
+					New List(Of Equip_Object) From {
+						New Equip_Object(2, "Annuelle", "Bureautique", 5, 650),
+						New Equip_Object(4, "Annuelle", "Bureautique", 5, 650),
+						New Equip_Object(9, "Annuelle", "Multimédia", 2, 820)
+					},
+					New List(Of ServiceObject) From {
+						New ServiceObject(1, "Installation des équipements", "Base", 50),
+						New ServiceObject(3, "Formation du personnel", "Plus", 325),
+						New ServiceObject(5, "Réparation des équipements", "Premium", 425)
+					},
+					New DateTime(2016, 5, 15, 10, 20, 0)
+			)
+	}
+
+	Public ContratsResiliers = New List(Of Contrat) From {
+		New Contrat(1,
+					"inactif",
+					New DateTime(2010, 10, 25, 13, 57, 0),
+					New DateTime(2012, 10, 25, 23, 59, 59),
+					New List(Of Equip_Object) From {
+						New Equip_Object(2, "Annuelle", "Bureautique", 1, 650),
+						New Equip_Object(10, "Annuelle", "Multimédia", 1, 780),
+						New Equip_Object(6, "Annuelle", "Multimédia", 1, 700)
+					},
+					New List(Of ServiceObject) From {
+						New ServiceObject(1, "Installation des équipements", "Base", 50),
+						New ServiceObject(5, "Réparation des équipements", "Premium", 425),
+						New ServiceObject(6, "Programmation des pages Web", "Premium", 600)
+					},
+					New DateTime(2010, 10, 30, 12, 35, 0)
+	)
+	}
+
 End Module
