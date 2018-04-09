@@ -1,10 +1,11 @@
 ﻿Public Class Créer_Contrat
 
-    Private ListEquip As List(Of Equip_Object)
+	Private ListEquip As List(Of Equip_Object)
+	Private ListService As List(Of ServiceObject)
+	Private ListContrats As List(Of Contrat)
+	Private ListResiliers As List(Of Contrat)
 
-    Private ListService As List(Of ServiceObject)
-
-    Private WithEvents Equip As New Équipement() With {
+	Private WithEvents Equip As New Équipement() With {
           .MdiParent = Form1
       }
 
@@ -31,11 +32,12 @@
     End Sub
 
     Private Sub Créer_Contrat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ListEquip = DataBase.LignesEquip
+		ListEquip = DataBase.LignesEquip
+		ListService = DataBase.Services
+		ListContrats = DataBase.ContratsActifs
+		ListResiliers = DataBase.ContratsResiliers
 
-        ListService = DataBase.Services
-
-        Dim ramdomnumber As System.Random = New System.Random()
+		Dim ramdomnumber As System.Random = New System.Random()
 
         NumContrat.Text = ramdomnumber.Next()
     End Sub
@@ -63,10 +65,11 @@
     End Sub
 
     Private Sub btnComplete_Click(sender As Object, e As EventArgs) Handles btnComplete.Click
-        Dim Print As New Impression_Contrat() With {
-            .MdiParent = Form1
-        }
-        Print.Show()
+		Dim Print As New Impression_Contrat() With {
+			.MdiParent = Form1
+		}
+		ListContrats.Add(New Contrat(NumContrat.Text, "actif", DateTimePicker1.Value, DateTimePicker2.Value, DataGridView_LignesEquipement.DataSource, DataGrid_Service.DataSource, DateTime.Now.AddDays(2)))
+		Print.Show()
         Me.Close()
     End Sub
 
