@@ -189,6 +189,27 @@
         ListeUtilisateur.Show()
     End Sub
 
+    Private Sub Aide_Click(sender As Object, e As EventArgs) Handles AideSurToolStripMenuItem.Click
+        Dim AideScreen As New Aide() With {
+            .MdiParent = Me
+        }
+        Aide.Show()
+    End Sub
+
+    Private Sub APropos_Click(sender As Object, e As EventArgs) Handles ÀProposSGARIToolStripMenuItem.Click
+        Dim Apropos As New APropos() With {
+            .MdiParent = Me
+        }
+        Apropos.Show()
+    End Sub
+
+    Private Sub SupportTechnique_Click(sender As Object, e As EventArgs) Handles SupportTechniqueToolStripMenuItem.Click
+        Dim SupportTechnique As New SupportTechnique() With {
+            .MdiParent = Me
+        }
+        SupportTechnique.Show()
+    End Sub
+
     Private Sub AjoutModificationDestructionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AjoutModificationDestructionToolStripMenuItem.Click
         Dim AjouterModificationDestruction As New Ajout() With {
             .MdiParent = Me
