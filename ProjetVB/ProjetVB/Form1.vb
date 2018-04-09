@@ -115,7 +115,10 @@
     End Sub
 
     Private Sub mnuModifierFournisseur_Click(sender As Object, e As EventArgs) Handles mnuModifierFournisseur.Click
-
+        Dim modFournisseur As New ModifierFournisseur() With {
+           .MdiParent = Me
+       }
+        modFournisseur.Show()
     End Sub
 
 
@@ -191,5 +194,21 @@
             .MdiParent = Me
         }
         AjouterModificationDestruction.Show()
+    End Sub
+
+    Private Sub ConnectionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConnectionToolStripMenuItem.Click
+        If ToolStripStatusLabel1.Text = "" Then
+            Dim login As New LogIn With {
+                .MdiParent = Me
+            }
+            login.Show()
+        Else
+            MsgBox("Vous devez être déconnecté pour vous connecter à un autre compte")
+        End If
+    End Sub
+
+    Private Sub DéconnectionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DéconnectionToolStripMenuItem.Click
+        ToolStripStatusLabel1.Text = ""
+        MsgBox("Utilisateur Déconnecté")
     End Sub
 End Class

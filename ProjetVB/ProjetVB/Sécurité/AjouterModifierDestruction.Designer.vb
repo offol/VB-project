@@ -23,24 +23,24 @@ Partial Class Ajout
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TextBox_username = New System.Windows.Forms.TextBox()
+        Me.TextBox_cell = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox_nom = New System.Windows.Forms.TextBox()
+        Me.TextBox_prenom = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -50,11 +50,11 @@ Partial Class Ajout
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.TextBox_username)
+        Me.GroupBox1.Controls.Add(Me.TextBox_cell)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.TextBox_nom)
+        Me.GroupBox1.Controls.Add(Me.TextBox_prenom)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -68,6 +68,95 @@ Partial Class Ajout
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ajouter un utilisateur"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(318, 147)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(115, 23)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "Ajouter"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'TextBox_username
+        '
+        Me.TextBox_username.Location = New System.Drawing.Point(133, 147)
+        Me.TextBox_username.Name = "TextBox_username"
+        Me.TextBox_username.Size = New System.Drawing.Size(170, 23)
+        Me.TextBox_username.TabIndex = 9
+        '
+        'TextBox_cell
+        '
+        Me.TextBox_cell.Location = New System.Drawing.Point(86, 118)
+        Me.TextBox_cell.Name = "TextBox_cell"
+        Me.TextBox_cell.Size = New System.Drawing.Size(217, 23)
+        Me.TextBox_cell.TabIndex = 8
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(131, 89)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(172, 23)
+        Me.TextBox3.TabIndex = 7
+        '
+        'TextBox_nom
+        '
+        Me.TextBox_nom.Location = New System.Drawing.Point(57, 60)
+        Me.TextBox_nom.Name = "TextBox_nom"
+        Me.TextBox_nom.Size = New System.Drawing.Size(246, 23)
+        Me.TextBox_nom.TabIndex = 6
+        '
+        'TextBox_prenom
+        '
+        Me.TextBox_prenom.Location = New System.Drawing.Point(77, 31)
+        Me.TextBox_prenom.Name = "TextBox_prenom"
+        Me.TextBox_prenom.Size = New System.Drawing.Size(226, 23)
+        Me.TextBox_prenom.TabIndex = 5
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(6, 147)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(121, 17)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "Nom d'utilisateur :"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(6, 118)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(74, 17)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Cellulaire :"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(6, 89)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(119, 17)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Adresse courriel :"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(6, 60)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(45, 17)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Nom :"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(6, 31)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(65, 17)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Prénom :"
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Button3)
@@ -79,6 +168,24 @@ Partial Class Ajout
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Modifier un compte utilisateur"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(7, 52)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(125, 23)
+        Me.Button3.TabIndex = 1
+        Me.Button3.Text = "Informations"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(6, 22)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(126, 24)
+        Me.Button2.TabIndex = 0
+        Me.Button2.Text = "Mot de passe"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
@@ -93,112 +200,21 @@ Partial Class Ajout
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Supprimer un compte utilisateur"
         '
-        'Label1
+        'Label6
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 31)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Prénom :"
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(6, 48)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(121, 17)
+        Me.Label6.TabIndex = 2
+        Me.Label6.Text = "Nom d'utilisateur :"
         '
-        'Label2
+        'TextBox6
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 60)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(45, 17)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Nom :"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 89)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(119, 17)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Adresse courriel :"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 118)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(74, 17)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Cellulaire :"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 147)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(121, 17)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Nom d'utilisateur :"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(77, 31)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(226, 23)
-        Me.TextBox1.TabIndex = 5
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(57, 60)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(246, 23)
-        Me.TextBox2.TabIndex = 6
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(131, 89)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(172, 23)
-        Me.TextBox3.TabIndex = 7
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(86, 118)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(217, 23)
-        Me.TextBox4.TabIndex = 8
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(133, 147)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(170, 23)
-        Me.TextBox5.TabIndex = 9
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(318, 147)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(115, 23)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Ajouter"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(6, 22)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(126, 24)
-        Me.Button2.TabIndex = 0
-        Me.Button2.Text = "Mot de passe"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(7, 52)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(125, 23)
-        Me.Button3.TabIndex = 1
-        Me.Button3.Text = "Informations"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.TextBox6.Location = New System.Drawing.Point(133, 48)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(170, 23)
+        Me.TextBox6.TabIndex = 1
         '
         'Button4
         '
@@ -208,22 +224,6 @@ Partial Class Ajout
         Me.Button4.TabIndex = 0
         Me.Button4.Text = "Supprimer"
         Me.Button4.UseVisualStyleBackColor = True
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(133, 48)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(170, 23)
-        Me.TextBox6.TabIndex = 1
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 48)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(121, 17)
-        Me.Label6.TabIndex = 2
-        Me.Label6.Text = "Nom d'utilisateur :"
         '
         'Button5
         '
@@ -259,11 +259,11 @@ Partial Class Ajout
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBox_username As TextBox
+    Friend WithEvents TextBox_cell As TextBox
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox_nom As TextBox
+    Friend WithEvents TextBox_prenom As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label

@@ -2,10 +2,25 @@
 'Ajouter les données que vous voulez a l'intérieur de ce module
 Public Module DataBase
 
+    'Liste des utilisateurs existant
+    Public ListUser = New List(Of Utilisateur) From {
+        New Utilisateur("Mouf04", "François-Xavier Mousseau", "819-543-4673", "12345"),
+        New Utilisateur("Hebj12", "Jean-Marc Hébert", "819-435-6256", "12345"),
+        New Utilisateur("Sege09", "Émilie Séguin", "819-346-4353", "12345"),
+        New Utilisateur("Adam08", "Marc-Antoine Adam", "819-456-3253", "12345")
+    }
+
+    'Liste des fournisseurs
+    Public ListFournisseur = New List(Of Fournisseur) From {
+        New Fournisseur(1, "Costco", "234 rue du pigeon", "819-654-2334", "819-456-3255")
+    }
+
+    'Liste de paiement fait par carte de crédit
     Public PaiementCredit = New List(Of PCarteCredit) From {
         New PCarteCredit("123456789", New System.DateTime(1993, 5, 31, 12, 14, 0), "Visa", 230.99)
     }
 
+    'Liste de paiement fait par retrait direct
     Public PaiementRetrait = New List(Of PRetraitDirect) From {
         New PRetraitDirect("567546", "Desjardin", 543.82)
     }
@@ -14,7 +29,6 @@ Public Module DataBase
     Public Clients = New List(Of Client) From {
         New Client(1, "Entreprise", "blabla road", "819-456-3456", "819-436-7654")
     }
-
 
     'Liste de services
     Public Services = New List(Of ServiceObject) From {

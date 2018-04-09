@@ -1,7 +1,10 @@
 ﻿Public Class Ajout
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MsgBox("Utilisateur ajouté !")
+        Dim DBUser = DataBase.ListUser
 
+        DBUser.Add(New Utilisateur(TextBox_username.Text, TextBox_prenom.Text + " " + TextBox_nom.Text, TextBox_cell.Text, "12345"))
+
+        MsgBox("Utilisateur ajouté !")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

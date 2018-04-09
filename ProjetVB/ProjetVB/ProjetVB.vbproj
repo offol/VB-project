@@ -204,6 +204,7 @@
     <Compile Include="Retour équipement.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Sécurité\Utilisateur.vb" />
     <Compile Include="Équipement\Impression équipement receptionné.Designer.vb">
       <DependentUpon>Impression équipement receptionné.vb</DependentUpon>
     </Compile>
