@@ -98,6 +98,7 @@
     <Compile Include="Contrat\Confirmation Livraison.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Contrat\Contrat.vb" />
     <Compile Include="Contrat\Equip_Object.vb" />
     <Compile Include="Contrat\Impression Contrat.Designer.vb">
       <DependentUpon>Impression Contrat.vb</DependentUpon>
