@@ -117,6 +117,12 @@
     <Compile Include="Contrat\Mise en Service.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Fournisseur\StatutFournisseur.Designer.vb">
+      <DependentUpon>StatutFournisseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fournisseur\StatutFournisseur.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Livraison\Annuler Livraison.Designer.vb">
       <DependentUpon>Annuler Livraison.vb</DependentUpon>
     </Compile>
@@ -413,6 +419,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Contrat\Mise en Service.resx">
       <DependentUpon>Mise en Service.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fournisseur\StatutFournisseur.resx">
+      <DependentUpon>StatutFournisseur.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Livraison\Annuler Livraison.resx">
       <DependentUpon>Annuler Livraison.vb</DependentUpon>
