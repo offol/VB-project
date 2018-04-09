@@ -26,7 +26,6 @@ Partial Class ListeUtilisateur
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.ListBox4 = New System.Windows.Forms.ListBox()
-        Me.ListBox5 = New System.Windows.Forms.ListBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -46,7 +45,7 @@ Partial Class ListeUtilisateur
         Me.ListBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.35!)
         Me.ListBox2.FormattingEnabled = True
         Me.ListBox2.ItemHeight = 17
-        Me.ListBox2.Items.AddRange(New Object() {"Nom d'utilisateur : sege09", "Nom : Emilie Séguin", "Cellulaire : 819-360-4493"})
+        Me.ListBox2.Items.AddRange(New Object() {"Nom d'utilisateur : Sege09", "Nom : Emilie Séguin", "Cellulaire : 819-360-4493"})
         Me.ListBox2.Location = New System.Drawing.Point(12, 73)
         Me.ListBox2.Name = "ListBox2"
         Me.ListBox2.Size = New System.Drawing.Size(219, 55)
@@ -74,21 +73,10 @@ Partial Class ListeUtilisateur
         Me.ListBox4.Size = New System.Drawing.Size(219, 55)
         Me.ListBox4.TabIndex = 3
         '
-        'ListBox5
-        '
-        Me.ListBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.35!)
-        Me.ListBox5.FormattingEnabled = True
-        Me.ListBox5.ItemHeight = 17
-        Me.ListBox5.Items.AddRange(New Object() {"Nom d'utilisateur : Juct23", "Nom : Julien Catafard", "Cellulaire : 819-356-3209"})
-        Me.ListBox5.Location = New System.Drawing.Point(12, 256)
-        Me.ListBox5.Name = "ListBox5"
-        Me.ListBox5.Size = New System.Drawing.Size(219, 55)
-        Me.ListBox5.TabIndex = 4
-        '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!)
-        Me.Button1.Location = New System.Drawing.Point(12, 335)
+        Me.Button1.Location = New System.Drawing.Point(12, 265)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(219, 23)
         Me.Button1.TabIndex = 5
@@ -99,9 +87,8 @@ Partial Class ListeUtilisateur
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(252, 370)
+        Me.ClientSize = New System.Drawing.Size(252, 297)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ListBox5)
         Me.Controls.Add(Me.ListBox4)
         Me.Controls.Add(Me.ListBox3)
         Me.Controls.Add(Me.ListBox2)
@@ -116,6 +103,5 @@ Partial Class ListeUtilisateur
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents ListBox3 As ListBox
     Friend WithEvents ListBox4 As ListBox
-    Friend WithEvents ListBox5 As ListBox
     Friend WithEvents Button1 As Button
 End Class

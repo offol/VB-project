@@ -36,19 +36,20 @@ Partial Class ChangerMotDePasse
         '
         'Changer
         '
-        Me.Changer.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Changer.Location = New System.Drawing.Point(12, 254)
+        Me.Changer.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.35!)
+        Me.Changer.Location = New System.Drawing.Point(12, 118)
         Me.Changer.Name = "Changer"
-        Me.Changer.Size = New System.Drawing.Size(75, 23)
+        Me.Changer.Size = New System.Drawing.Size(118, 23)
         Me.Changer.TabIndex = 0
         Me.Changer.Text = "Changer"
         Me.Changer.UseVisualStyleBackColor = True
         '
         'btn_Annuler
         '
-        Me.btn_Annuler.Location = New System.Drawing.Point(190, 254)
+        Me.btn_Annuler.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.35!)
+        Me.btn_Annuler.Location = New System.Drawing.Point(228, 118)
         Me.btn_Annuler.Name = "btn_Annuler"
-        Me.btn_Annuler.Size = New System.Drawing.Size(75, 23)
+        Me.btn_Annuler.Size = New System.Drawing.Size(118, 23)
         Me.btn_Annuler.TabIndex = 1
         Me.btn_Annuler.Text = "Annuler"
         Me.btn_Annuler.UseVisualStyleBackColor = True
@@ -57,7 +58,7 @@ Partial Class ChangerMotDePasse
         '
         Me.Lbl_nomUtilisateur.AutoSize = True
         Me.Lbl_nomUtilisateur.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.35!)
-        Me.Lbl_nomUtilisateur.Location = New System.Drawing.Point(3, 97)
+        Me.Lbl_nomUtilisateur.Location = New System.Drawing.Point(3, 9)
         Me.Lbl_nomUtilisateur.Name = "Lbl_nomUtilisateur"
         Me.Lbl_nomUtilisateur.Size = New System.Drawing.Size(113, 16)
         Me.Lbl_nomUtilisateur.TabIndex = 2
@@ -67,7 +68,7 @@ Partial Class ChangerMotDePasse
         '
         Me.lbl_motdePasse.AutoSize = True
         Me.lbl_motdePasse.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.35!)
-        Me.lbl_motdePasse.Location = New System.Drawing.Point(3, 127)
+        Me.lbl_motdePasse.Location = New System.Drawing.Point(3, 28)
         Me.lbl_motdePasse.Name = "lbl_motdePasse"
         Me.lbl_motdePasse.Size = New System.Drawing.Size(96, 16)
         Me.lbl_motdePasse.TabIndex = 3
@@ -77,7 +78,7 @@ Partial Class ChangerMotDePasse
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.35!)
-        Me.Label3.Location = New System.Drawing.Point(3, 155)
+        Me.Label3.Location = New System.Drawing.Point(3, 51)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(154, 16)
         Me.Label3.TabIndex = 4
@@ -87,7 +88,7 @@ Partial Class ChangerMotDePasse
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.35!)
-        Me.Label4.Location = New System.Drawing.Point(3, 181)
+        Me.Label4.Location = New System.Drawing.Point(3, 74)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(170, 16)
         Me.Label4.TabIndex = 5
@@ -95,30 +96,30 @@ Partial Class ChangerMotDePasse
         '
         'TextBoxNomUtilisateur
         '
-        Me.TextBoxNomUtilisateur.Location = New System.Drawing.Point(172, 97)
+        Me.TextBoxNomUtilisateur.Location = New System.Drawing.Point(122, 5)
         Me.TextBoxNomUtilisateur.Name = "TextBoxNomUtilisateur"
-        Me.TextBoxNomUtilisateur.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxNomUtilisateur.Size = New System.Drawing.Size(224, 20)
         Me.TextBoxNomUtilisateur.TabIndex = 6
         '
         'TextBoxConfirmerMotdePasse
         '
-        Me.TextBoxConfirmerMotdePasse.Location = New System.Drawing.Point(172, 181)
+        Me.TextBoxConfirmerMotdePasse.Location = New System.Drawing.Point(172, 74)
         Me.TextBoxConfirmerMotdePasse.Name = "TextBoxConfirmerMotdePasse"
-        Me.TextBoxConfirmerMotdePasse.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxConfirmerMotdePasse.Size = New System.Drawing.Size(174, 20)
         Me.TextBoxConfirmerMotdePasse.TabIndex = 7
         '
         'TextBoxNouveauMotdePasse
         '
-        Me.TextBoxNouveauMotdePasse.Location = New System.Drawing.Point(172, 154)
+        Me.TextBoxNouveauMotdePasse.Location = New System.Drawing.Point(163, 51)
         Me.TextBoxNouveauMotdePasse.Name = "TextBoxNouveauMotdePasse"
-        Me.TextBoxNouveauMotdePasse.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxNouveauMotdePasse.Size = New System.Drawing.Size(183, 20)
         Me.TextBoxNouveauMotdePasse.TabIndex = 8
         '
         'TextBoxMotdePasse
         '
-        Me.TextBoxMotdePasse.Location = New System.Drawing.Point(172, 123)
+        Me.TextBoxMotdePasse.Location = New System.Drawing.Point(105, 28)
         Me.TextBoxMotdePasse.Name = "TextBoxMotdePasse"
-        Me.TextBoxMotdePasse.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxMotdePasse.Size = New System.Drawing.Size(241, 20)
         Me.TextBoxMotdePasse.TabIndex = 9
         '
         'ChangerMotDePasse
@@ -126,7 +127,7 @@ Partial Class ChangerMotDePasse
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(277, 289)
+        Me.ClientSize = New System.Drawing.Size(352, 148)
         Me.Controls.Add(Me.TextBoxMotdePasse)
         Me.Controls.Add(Me.TextBoxNouveauMotdePasse)
         Me.Controls.Add(Me.TextBoxConfirmerMotdePasse)

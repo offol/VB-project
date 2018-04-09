@@ -185,4 +185,11 @@
         }
         ListeUtilisateur.Show()
     End Sub
+
+    Private Sub AjoutModificationDestructionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AjoutModificationDestructionToolStripMenuItem.Click
+        Dim AjouterModificationDestruction As New Ajout() With {
+            .MdiParent = Me
+        }
+        AjouterModificationDestruction.Show()
+    End Sub
 End Class
