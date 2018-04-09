@@ -5,5 +5,9 @@
 
     Private Sub Consulter_Region_Click(sender As Object, e As EventArgs) Handles Consulter_Region.Click
         MsgBox("Recherche en cours...")
+        Dim Statut As New StatutFournisseur() With {
+            .MdiParent = Form1
+        }
+        Statut.Show()
     End Sub
 End Class

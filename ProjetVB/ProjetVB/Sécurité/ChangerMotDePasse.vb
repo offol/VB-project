@@ -8,6 +8,6 @@
     End Sub
 
     Private Sub Changer_Click(sender As Object, e As EventArgs) Handles Changer.Click
-        MsgBox("Votre mot de passe à été changé avec succès")
+        MsgBox("Votre mot de passe a été changé avec succès")
     End Sub
 End Class

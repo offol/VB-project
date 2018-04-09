@@ -379,10 +379,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Service\ServiceObject.vb" />
-    <Compile Include="Sécurité\Ajout.Modifier.Destruction.Designer.vb">
-      <DependentUpon>Ajout.Modifier.Destruction.vb</DependentUpon>
+    <Compile Include="Sécurité\AjouterModifierDestruction.Designer.vb">
+      <DependentUpon>AjouterModifierDestruction.vb</DependentUpon>
     </Compile>
-    <Compile Include="Sécurité\Ajout.Modifier.Destruction.vb">
+    <Compile Include="Sécurité\AjouterModifierDestruction.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Sécurité\ChangerMotDePasse.Designer.vb">
@@ -458,6 +458,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rapports\PaiementRetraitDirect.resx">
       <DependentUpon>PaiementRetraitDirect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sécurité\AjouterModifierDestruction.resx">
+      <DependentUpon>AjouterModifierDestruction.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Équipement\Impression équipement receptionné.resx">
       <DependentUpon>Impression équipement receptionné.vb</DependentUpon>
